@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="15" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-10T21:17:13 EET" name="Suite" finished-at="2024-12-10T21:17:15 EET" duration-ms="2116">
+    <groups>
+    </groups>
+    <test started-at="2024-12-10T21:17:13 EET" name="Test" finished-at="2024-12-10T21:17:15 EET" duration-ms="2116">
+      <class name="tests.CheckoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutPageTest@7749bf93]" started-at="2024-12-10T21:17:15 EET" name="setUp" finished-at="2024-12-10T21:17:15 EET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="goToCheckoutOverview()[pri:0, instance:tests.CheckoutPageTest@7749bf93]" started-at="2024-12-10T21:17:15 EET" name="goToCheckoutOverview" finished-at="2024-12-10T21:17:15 EET" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCheckoutOverview -->
+      </class> <!-- tests.CheckoutPageTest -->
+      <class name="tests.CartPageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.CartPageTest@1b84f475]" started-at="2024-12-10T21:17:15 EET" name="beforeTest" finished-at="2024-12-10T21:17:15 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="goToCheckout()[pri:0, instance:tests.CartPageTest@1b84f475]" started-at="2024-12-10T21:17:15 EET" name="goToCheckout" finished-at="2024-12-10T21:17:15 EET" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCheckout -->
+      </class> <!-- tests.CartPageTest -->
+      <class name="tests.LandingPageTest">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.LandingPageTest@27eedb64]" started-at="2024-12-10T21:17:10 EET" name="intialize" finished-at="2024-12-10T21:17:13 EET" duration-ms="3313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LandingPageTest@27eedb64]" started-at="2024-12-10T21:17:13 EET" name="setUp" finished-at="2024-12-10T21:17:14 EET" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:tests.LandingPageTest@27eedb64]" started-at="2024-12-10T21:17:14 EET" name="loginTest" finished-at="2024-12-10T21:17:14 EET" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingPageTest@27eedb64]" started-at="2024-12-10T21:17:15 EET" name="tearDown" finished-at="2024-12-10T21:17:17 EET" duration-ms="1288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LandingPageTest -->
+      <class name="tests.CompletePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CompletePageTest@539d019]" started-at="2024-12-10T21:17:15 EET" name="setUp" finished-at="2024-12-10T21:17:15 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifiedConfirmationText()[pri:0, instance:tests.CompletePageTest@539d019]" started-at="2024-12-10T21:17:15 EET" name="verifiedConfirmationText" finished-at="2024-12-10T21:17:15 EET" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifiedConfirmationText -->
+      </class> <!-- tests.CompletePageTest -->
+      <class name="tests.CheckoutOverviewTest">
+        <test-method signature="gotToCheclOutOverView()[pri:0, instance:tests.CheckoutOverviewTest@13330ac6]" started-at="2024-12-10T21:17:15 EET" name="gotToCheclOutOverView" finished-at="2024-12-10T21:17:15 EET" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotToCheclOutOverView -->
+      </class> <!-- tests.CheckoutOverviewTest -->
+      <class name="tests.ProductCatalogueTest">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ProductCatalogueTest@6bffbc6d]" started-at="2024-12-10T21:17:14 EET" name="intialize" finished-at="2024-12-10T21:17:14 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="testAddItemsLessThanTenDollarsToCart()[pri:0, instance:tests.ProductCatalogueTest@6bffbc6d]" started-at="2024-12-10T21:17:14 EET" name="testAddItemsLessThanTenDollarsToCart" finished-at="2024-12-10T21:17:15 EET" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddItemsLessThanTenDollarsToCart -->
+      </class> <!-- tests.ProductCatalogueTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
