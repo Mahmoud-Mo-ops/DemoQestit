@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.CartPageTest" class="method navigator-link" hash-for-method="goToCheckout">goToCheckout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.CartPageTest" class="method navigator-link" hash-for-method="clickTest">clickTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -227,9 +227,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="goToCheckout">
-                  </a> <!-- goToCheckout -->
-                  <span class="method-name">goToCheckout</span>
+                  <a name="clickTest">
+                  </a> <!-- clickTest -->
+                  <span class="method-name">clickTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,32 +295,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'tests.LandingPageTest')
-data.setCell(0, 3, 336);
+data.setCell(0, 3, 301);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testAddItemsLessThanTenDollarsToCart')
 data.setCell(1, 2, 'tests.ProductCatalogueTest')
-data.setCell(1, 3, 324);
+data.setCell(1, 3, 283);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'goToCheckoutOverview')
 data.setCell(2, 2, 'tests.CheckoutPageTest')
-data.setCell(2, 3, 262);
+data.setCell(2, 3, 227);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'goToCheckout')
+data.setCell(3, 1, 'clickTest')
 data.setCell(3, 2, 'tests.CartPageTest')
 data.setCell(3, 3, 81);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'gotToCheclOutOverView')
 data.setCell(4, 2, 'tests.CheckoutOverviewTest')
-data.setCell(4, 3, 77);
+data.setCell(4, 3, 60);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifiedConfirmationText')
 data.setCell(5, 2, 'tests.CompletePageTest')
-data.setCell(5, 3, 30);
+data.setCell(5, 3, 23);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 975 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -335,22 +335,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.CheckoutOverviewTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">intialize</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.ProductCatalogueTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -359,8 +350,6 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">intialize</span>
                 <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
@@ -368,16 +357,12 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">intialize</span>
                 <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.CartPageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">intialize</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -396,70 +381,63 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3373 ms</span>
+                <span class="method-start">3256 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">4286 ms</span>
+                <span class="method-start">4880 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ProductCatalogueTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">intialize</span>
-                <span class="method-start">4638 ms</span>
+                <span class="method-start">5195 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddItemsLessThanTenDollarsToCart</span>
-                <span class="method-start">4640 ms</span>
+                <span class="method-start">5197 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CartPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">4967 ms</span>
+                <span class="method-start">5484 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">goToCheckout</span>
-                <span class="method-start">4970 ms</span>
+                <span class="method-name">clickTest</span>
+                <span class="method-start">5486 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckoutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5054 ms</span>
+                <span class="method-start">5572 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToCheckoutOverview</span>
-                <span class="method-start">5059 ms</span>
+                <span class="method-start">5574 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckoutOverviewTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">gotToCheclOutOverView</span>
-                <span class="method-start">5325 ms</span>
+                <span class="method-start">5804 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CompletePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5404 ms</span>
+                <span class="method-start">5867 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifiedConfirmationText</span>
-                <span class="method-start">5407 ms</span>
+                <span class="method-start">5869 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LandingPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5465 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,43 +1,35 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import data.LandingPageData;
-import procedures2.Prodcedures;
-import utils.BrowserUtils;
+
+import procedures.CartPageProcedures;
 import utils.GlobalVariables;
 
 public class CartPageTest extends BaseTest {
-	/* WebDriver driver; */
-
-	private Prodcedures prodcedures;
+    private CartPageProcedures cartPageProcedures;
+    private By checkoutButton = By.id("checkout");
     @BeforeMethod
     public void beforeTest() {
-		/*
-		 * driver = BrowserUtils.getDriver(); driver.manage().window().maximize();
-		 * driver.get("https://www.saucedemo.com/");
-		 */
-    	prodcedures = new Prodcedures(GlobalVariables.driver);
+        // Initialize procedures
+        cartPageProcedures = new CartPageProcedures(GlobalVariables.driver);
+        System.out.println(cartPageProcedures == null);
     }
+
+    
 
     @Test
-    public void goToCheckout() {
-        // Initialize procedures
-        prodcedures = new Prodcedures(GlobalVariables.driver);
-
-        // Login to the landing page
-//        LandingPageData landingPageData = new LandingPageData();
-//        landingPageData.setUserName("standard_user");
-//        landingPageData.setPassword("secret_sauce");
-//        prodcedures.login(landingPageData, GlobalVariables.driver);
-
-        // Add items to the cart
-//        prodcedures.addItemsLessThanTenDollarsToCart();
-
-        // Proceed to checkout
-        prodcedures.proceedToCheckout();
-
-        // Add assertions to verify the checkout process was initiated
+    public void clickTest() {
+        WebElement checkoutBtn = GlobalVariables.driver.findElement(checkoutButton);
+        checkoutBtn.click();
     }
+//    @Test
+//    public void goToCheckout() {
+//        // Proceed to checkout
+//    	checkoutButton.click();
+//
+//        // Add assertions to verify the checkout process was initiated
+//    }
 }

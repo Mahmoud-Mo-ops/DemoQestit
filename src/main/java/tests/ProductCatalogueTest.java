@@ -1,25 +1,23 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import procedures2.Prodcedures;
+import procedures.ProductCatalogueProcedures;
 import utils.GlobalVariables;
 
 public class ProductCatalogueTest extends BaseTest {
 
-	Prodcedures prodcedures;
+	ProductCatalogueProcedures addItemToCartProcedure;
 	
 	@BeforeMethod
 	public void intialize() {
-		prodcedures= new Prodcedures(GlobalVariables.driver);
+		addItemToCartProcedure= new ProductCatalogueProcedures(GlobalVariables.driver);
 	}
 	
 	@Test
 	public void testAddItemsLessThanTenDollarsToCart() {
-		prodcedures.addItemsLessThanTenDollarsToCart();
+		addItemToCartProcedure.addItemsLessThanTenDollarsToCart();
 
 	}
 }

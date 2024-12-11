@@ -1,9 +1,10 @@
 package procedures;
 
 import org.openqa.selenium.WebDriver;
+
 import pageobjects.CartPage;
 
-public class CartPageProcedures {
+public class CartPageProcedures  {
     private CartPage cartPage;
 	private WebDriver driver;
 
@@ -12,7 +13,7 @@ public class CartPageProcedures {
     }
 
     public void proceedToCheckout() {
-        cartPage.clickOnCheckoutButton().click();
+        cartPage.getCheckoutButton().click();
         System.out.println("clicked");
     }
 }
