@@ -2,66 +2,66 @@
 <testng-results ignored="4" total="10" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T13:35:16 EET" name="Suite" finished-at="2024-12-11T13:35:18 EET" duration-ms="2136">
+  <suite started-at="2024-12-11T13:46:33 EET" name="Suite" finished-at="2024-12-11T13:46:35 EET" duration-ms="1988">
     <groups>
     </groups>
-    <test started-at="2024-12-11T13:35:16 EET" name="Test" finished-at="2024-12-11T13:35:18 EET" duration-ms="2136">
-      <class name="tests.CheckoutPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutPageTest@69f0b0f4]" started-at="2024-12-11T13:35:18 EET" name="setUp" finished-at="2024-12-11T13:35:18 EET" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="goToCheckoutOverview()[pri:0, instance:tests.CheckoutPageTest@69f0b0f4]" started-at="2024-12-11T13:35:18 EET" name="goToCheckoutOverview" finished-at="2024-12-11T13:35:18 EET" duration-ms="242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToCheckoutOverview -->
-      </class> <!-- tests.CheckoutPageTest -->
+    <test started-at="2024-12-11T13:46:33 EET" name="Test" finished-at="2024-12-11T13:46:35 EET" duration-ms="1988">
       <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.CartPageTest@6ca8fcf3]" started-at="2024-12-11T13:35:17 EET" name="beforeTest" finished-at="2024-12-11T13:35:17 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.CartPageTest@29a0cdb]" started-at="2024-12-11T13:46:35 EET" name="beforeTest" finished-at="2024-12-11T13:46:35 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="clickTest()[pri:0, instance:tests.CartPageTest@6ca8fcf3]" started-at="2024-12-11T13:35:17 EET" name="clickTest" finished-at="2024-12-11T13:35:18 EET" duration-ms="73" status="PASS">
+        <test-method signature="clickTest()[pri:0, instance:tests.CartPageTest@29a0cdb]" started-at="2024-12-11T13:46:35 EET" name="clickTest" finished-at="2024-12-11T13:46:35 EET" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTest -->
       </class> <!-- tests.CartPageTest -->
-      <class name="tests.LandingPageTest">
-        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.LandingPageTest@3e5fd2b1]" started-at="2024-12-11T13:35:12 EET" name="intialize" finished-at="2024-12-11T13:35:16 EET" duration-ms="3512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LandingPageTest@3e5fd2b1]" started-at="2024-12-11T13:35:16 EET" name="setUp" finished-at="2024-12-11T13:35:17 EET" duration-ms="865" status="PASS">
+      <class name="tests.CheckoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutPageTest@32a68f4f]" started-at="2024-12-11T13:46:35 EET" name="setUp" finished-at="2024-12-11T13:46:35 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:tests.LandingPageTest@3e5fd2b1]" started-at="2024-12-11T13:35:17 EET" name="loginTest" finished-at="2024-12-11T13:35:17 EET" duration-ms="345" status="PASS">
+        <test-method signature="goToCheckoutOverview()[pri:0, instance:tests.CheckoutPageTest@32a68f4f]" started-at="2024-12-11T13:46:35 EET" name="goToCheckoutOverview" finished-at="2024-12-11T13:46:35 EET" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCheckoutOverview -->
+      </class> <!-- tests.CheckoutPageTest -->
+      <class name="tests.LandingPageTest">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.LandingPageTest@528c868]" started-at="2024-12-11T13:46:30 EET" name="intialize" finished-at="2024-12-11T13:46:33 EET" duration-ms="3252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LandingPageTest@528c868]" started-at="2024-12-11T13:46:33 EET" name="setUp" finished-at="2024-12-11T13:46:34 EET" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:tests.LandingPageTest@528c868]" started-at="2024-12-11T13:46:34 EET" name="loginTest" finished-at="2024-12-11T13:46:34 EET" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
       </class> <!-- tests.LandingPageTest -->
       <class name="tests.CompletePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CompletePageTest@2f7efd0b]" started-at="2024-12-11T13:35:18 EET" name="setUp" finished-at="2024-12-11T13:35:18 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CompletePageTest@6eb2384f]" started-at="2024-12-11T13:46:35 EET" name="setUp" finished-at="2024-12-11T13:46:35 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifiedConfirmationText()[pri:0, instance:tests.CompletePageTest@2f7efd0b]" started-at="2024-12-11T13:35:18 EET" name="verifiedConfirmationText" finished-at="2024-12-11T13:35:18 EET" duration-ms="30" status="PASS">
+        <test-method signature="verifiedConfirmationText()[pri:0, instance:tests.CompletePageTest@6eb2384f]" started-at="2024-12-11T13:46:35 EET" name="verifiedConfirmationText" finished-at="2024-12-11T13:46:35 EET" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifiedConfirmationText -->
       </class> <!-- tests.CompletePageTest -->
       <class name="tests.CheckoutOverviewTest">
-        <test-method signature="gotToCheclOutOverView()[pri:0, instance:tests.CheckoutOverviewTest@66933239]" started-at="2024-12-11T13:35:18 EET" name="gotToCheclOutOverView" finished-at="2024-12-11T13:35:18 EET" duration-ms="62" status="PASS">
+        <test-method signature="gotToCheclOutOverView()[pri:0, instance:tests.CheckoutOverviewTest@73194df]" started-at="2024-12-11T13:46:35 EET" name="gotToCheclOutOverView" finished-at="2024-12-11T13:46:35 EET" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotToCheclOutOverView -->
       </class> <!-- tests.CheckoutOverviewTest -->
       <class name="tests.ProductCatalogueTest">
-        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ProductCatalogueTest@4f3faa70]" started-at="2024-12-11T13:35:17 EET" name="intialize" finished-at="2024-12-11T13:35:17 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ProductCatalogueTest@24ba9639]" started-at="2024-12-11T13:46:34 EET" name="intialize" finished-at="2024-12-11T13:46:34 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialize -->
-        <test-method signature="testAddItemsLessThanTenDollarsToCart()[pri:0, instance:tests.ProductCatalogueTest@4f3faa70]" started-at="2024-12-11T13:35:17 EET" name="testAddItemsLessThanTenDollarsToCart" finished-at="2024-12-11T13:35:17 EET" duration-ms="307" status="PASS">
+        <test-method signature="testAddItemsLessThanTenDollarsToCart()[pri:0, instance:tests.ProductCatalogueTest@24ba9639]" started-at="2024-12-11T13:46:34 EET" name="testAddItemsLessThanTenDollarsToCart" finished-at="2024-12-11T13:46:35 EET" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddItemsLessThanTenDollarsToCart -->

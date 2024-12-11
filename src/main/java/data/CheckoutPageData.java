@@ -1,9 +1,9 @@
 package data;
 
 public class CheckoutPageData {
-	private String firstName = "mahmoud";
-	private String lastName = "Goma";
-	private String postalCode = "1234";
+	private String firstName;
+	private String lastName;
+	private String postalCode;
 
 	public String getFirstName() {
 		return firstName;

@@ -1,9 +1,12 @@
 package tests;
 
+import java.io.IOException;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import data.CheckoutPageData;
+import data.JsonDataReader;
 import procedures.CheckoutPageProcedures;
 import utils.GlobalVariables;
 
@@ -22,7 +25,8 @@ public class CheckoutPageTest extends BaseTest {
 	}
 
 	@Test()
-	public void goToCheckoutOverview() {
+	public void goToCheckoutOverview() throws IOException {
+		data=JsonDataReader.getCutomerAdressInformation();
 		checkoutPageProcedures.fillOutDataUser(data);
 		// Add assertions to verify the checkout process was initiated
 	}

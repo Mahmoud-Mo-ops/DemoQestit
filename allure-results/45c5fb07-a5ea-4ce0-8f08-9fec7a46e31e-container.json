@@ -1,0 +1,1 @@
+{"uuid":"45c5fb07-a5ea-4ce0-8f08-9fec7a46e31e","name":"tests.CheckoutPageTest.setUp","children":["b5c965f3-da45-4a2b-af45-63f6c590489e"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1733917595213,"stop":1733917595214}],"afters":[],"start":1733917595213,"stop":1733917595214}
