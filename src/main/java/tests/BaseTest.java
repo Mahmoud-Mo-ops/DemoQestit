@@ -1,5 +1,8 @@
 package tests;
 
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
 
@@ -11,7 +14,7 @@ public class BaseTest {
 	public WebDriver driver;
 
 	@BeforeSuite
-	public void intialize() {
+	public void intialize() throws MalformedURLException, URISyntaxException {
 		GlobalVariables.driver = BrowserUtils.getDriver();
 	}
 	

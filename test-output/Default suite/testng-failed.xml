@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.CartPageTest">
         <methods>
-          <include name="goToCheckout"/>
+          <include name="clickTest"/>
           <include name="intialize"/>
           <include name="beforeTest"/>
         </methods>

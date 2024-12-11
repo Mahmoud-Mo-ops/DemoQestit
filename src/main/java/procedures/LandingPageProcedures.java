@@ -3,8 +3,6 @@ package procedures;
 import org.openqa.selenium.WebDriver;
 
 import data.LandingPageData;
-import pageobjects.CartPage;
-import pageobjects.CheckoutPage;
 import pageobjects.LandingPage;
 
 public class LandingPageProcedures {

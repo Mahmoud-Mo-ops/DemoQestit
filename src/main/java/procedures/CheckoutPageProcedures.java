@@ -1,6 +1,5 @@
 package procedures;
 
-import org.openqa.selenium.WebDriver;
 import data.CheckoutPageData;
 import pageobjects.CheckoutPage;
 
@@ -11,9 +10,6 @@ public class CheckoutPageProcedures {
         this.checkoutPage = new CheckoutPage();
     }
 
-//    public CheckoutPage getCheckoutPage() {
-//        return checkoutPage;
-//    }
 
     public void fillOutDataUser(CheckoutPageData data) {
     	checkoutPage.sendFirstNameTextField(data.getFirstName())

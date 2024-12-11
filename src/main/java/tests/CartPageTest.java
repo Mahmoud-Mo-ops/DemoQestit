@@ -22,14 +22,7 @@ public class CartPageTest extends BaseTest {
 
     @Test
     public void clickTest() {
-        WebElement checkoutBtn = GlobalVariables.driver.findElement(checkoutButton);
-        checkoutBtn.click();
+    	cartPageProcedures.NavigateToCheckOutReview();
     }
-//    @Test
-//    public void goToCheckout() {
-//        // Proceed to checkout
-//    	checkoutButton.click();
-//
-//        // Add assertions to verify the checkout process was initiated
-//    }
+
 }
