@@ -1,9 +1,8 @@
 package data;
 
 public class LandingPageData {
-// file to extract data will be needed 
-	private String username="standard_user";
-	private String password="secret_sauce";
+	private String username;
+	private String password;
 
 	public String getUserName() {
 		return username;

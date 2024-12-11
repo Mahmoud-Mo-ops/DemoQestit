@@ -9,6 +9,19 @@
           <include name="intialize"/>
         </methods>
       </class> <!-- tests.CheckoutOverviewTest -->
+      <class name="tests.ProductCatalogueTest">
+        <methods>
+          <include name="testAddItemsLessThanTenDollarsToCart"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- tests.ProductCatalogueTest -->
+      <class name="tests.LandingPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="intialize"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LandingPageTest -->
       <class name="tests.CompletePageTest">
         <methods>
           <include name="verifiedConfirmationText"/>
