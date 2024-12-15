@@ -1,9 +1,9 @@
-{
-  "username":"standard_user",
-  "password": "secret_sauce",
-  "firstName":"Mahnoud",
-  "lastName":"Goma",
-  "postalCode":"1235"
-}
-
-
+[
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "firstName": "Mahmoud",
+        "lastName": "Goma",
+        "postalCode": "925"
+    }
+]

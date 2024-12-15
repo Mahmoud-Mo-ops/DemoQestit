@@ -7,24 +7,41 @@
         <methods>
           <include name="verifiedConfirmationText"/>
           <include name="intialize"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.CompletePageTest -->
       <class name="tests.CheckoutPageTest">
         <methods>
           <include name="intialize"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="goToCheckoutOverview"/>
         </methods>
       </class> <!-- tests.CheckoutPageTest -->
+      <class name="tests.CartPageTest">
+        <methods>
+          <include name="clickTest"/>
+          <include name="intialize"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- tests.CartPageTest -->
+      <class name="tests.ProductCatalogueTest">
+        <methods>
+          <include name="testAddItemsLessThanTenDollarsToCart"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- tests.ProductCatalogueTest -->
       <class name="tests.CheckoutOverviewTest">
         <methods>
           <include name="gotToCheclOutOverView"/>
           <include name="intialize"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.CheckoutOverviewTest -->
+      <class name="tests.LandingPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="intialize"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LandingPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

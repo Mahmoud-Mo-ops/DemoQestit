@@ -19,10 +19,10 @@ public class BaseTest {
 		GlobalVariables.driver = BrowserUtils.getDriver();
 	}
 	
-      	@AfterSuite
-     	public void tearDown() {
-		GlobalVariables.driver.quit();
-        }
+//      	@AfterSuite
+//     	public void tearDown() {
+//		GlobalVariables.driver.quit();
+//        }
 
 }
 

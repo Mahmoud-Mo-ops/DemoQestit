@@ -19,5 +19,7 @@ public class LoginLandingPageData {
 	public String getPassword() {
 		return password;
 	}
+    
+	
 
 }

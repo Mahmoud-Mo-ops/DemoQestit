@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ConfigReader {
     private Properties properties;
-
+   // C:\Users\Mahmoud.Gomaa\eclipse-workspace\Demo\src\main\resources\config.properties
     public ConfigReader() {
         properties = new Properties();
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream("utils/config.properties");
@@ -28,4 +28,7 @@ public class ConfigReader {
     public String getHUbURL() {
     	return properties.getProperty("HUB_URL");
     }
+    
+   
+    
 }
