@@ -2,14 +2,12 @@ package procedures;
 
 import org.openqa.selenium.WebDriver;
 
-import data.LandingPageData;
+import data.LoginLandingPageData;
 import pageobjects.LandingPage;
 
 public class LandingPageProcedures {
-//	private CheckoutPage checkoutPage;
-//	private CartPage cartPage;
 	private WebDriver driver;
-	private  LandingPage loginLandingPage;
+	private LandingPage loginLandingPage;
 
 	public LandingPageProcedures(WebDriver driver) {
 		this.driver = driver;
@@ -18,9 +16,8 @@ public class LandingPageProcedures {
 	}
 
 	// Landing page
-	public  void login(LandingPageData data, WebDriver driver) {
-		loginLandingPage.sendKeysUserNameTextField(data.getUserName());
-		loginLandingPage.sendKeysPasswordTextField(data.getPassword());
-		loginLandingPage.clickLoginButton();
+	public void login(LoginLandingPageData data, WebDriver driver) {
+		loginLandingPage.sendKeysUserNameTextField(data.getUserName()).sendKeysPasswordTextField(data.getPassword())
+				.clickLoginButton();
 	}
 }

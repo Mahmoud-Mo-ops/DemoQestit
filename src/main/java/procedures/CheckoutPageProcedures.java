@@ -1,5 +1,4 @@
 package procedures;
-
 import data.CheckoutPageData;
 import pageobjects.CheckoutPage;
 

@@ -19,8 +19,5 @@ public class CartPage {
 
     public WebElement getCheckoutButton() {
     	return driver.findElement(By.id("checkout"));
-//
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10 seconds wait
-//        return wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutButton));
     }
 }

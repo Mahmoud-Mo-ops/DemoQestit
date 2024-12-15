@@ -1,63 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="10" passed="6" failed="0" skipped="0">
+<testng-results ignored="9" total="15" passed="3" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T22:07:02 EET" name="Suite" finished-at="2024-12-11T22:07:05 EET" duration-ms="2703">
+  <suite started-at="2024-12-15T11:27:31 EET" name="Suite" finished-at="2024-12-15T11:27:33 EET" duration-ms="2076">
     <groups>
     </groups>
-    <test started-at="2024-12-11T22:07:02 EET" name="Test" finished-at="2024-12-11T22:07:05 EET" duration-ms="2703">
-      <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.CartPageTest@29a0cdb]" started-at="2024-12-11T22:07:04 EET" name="beforeTest" finished-at="2024-12-11T22:07:04 EET" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="clickTest()[pri:0, instance:tests.CartPageTest@29a0cdb]" started-at="2024-12-11T22:07:04 EET" name="clickTest" finished-at="2024-12-11T22:07:04 EET" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickTest -->
-      </class> <!-- tests.CartPageTest -->
+    <test started-at="2024-12-15T11:27:31 EET" name="Test" finished-at="2024-12-15T11:27:33 EET" duration-ms="2076">
       <class name="tests.CheckoutPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutPageTest@32a68f4f]" started-at="2024-12-11T22:07:04 EET" name="setUp" finished-at="2024-12-11T22:07:04 EET" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutPageTest@4ed5eb72]" started-at="2024-12-15T11:27:33 EET" name="setUp" finished-at="2024-12-15T11:27:33 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="goToCheckoutOverview()[pri:0, instance:tests.CheckoutPageTest@32a68f4f]" started-at="2024-12-11T22:07:04 EET" name="goToCheckoutOverview" finished-at="2024-12-11T22:07:04 EET" duration-ms="294" status="PASS">
+        <test-method signature="goToCheckoutOverview()[pri:0, instance:tests.CheckoutPageTest@4ed5eb72]" started-at="2024-12-15T11:27:33 EET" name="goToCheckoutOverview" finished-at="2024-12-15T11:27:33 EET" duration-ms="3" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[\Users\Mahmoud.Gomaa\eclipse-workspace\Demo\src\main\java\data\globalData.json (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: \Users\Mahmoud.Gomaa\eclipse-workspace\Demo\src\main\java\data\globalData.json (The system cannot find the file specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+at java.base/java.io.FileReader.<init>(FileReader.java:60)
+at utils.JsonDataReader.getCutomerAdressInformation(JsonDataReader.java:24)
+at tests.CheckoutPageTest.goToCheckoutOverview(CheckoutPageTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToCheckoutOverview -->
       </class> <!-- tests.CheckoutPageTest -->
+      <class name="tests.CartPageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.CartPageTest@31dadd46]" started-at="2024-12-15T11:27:33 EET" name="beforeTest" finished-at="2024-12-15T11:27:33 EET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="clickTest()[pri:0, instance:tests.CartPageTest@31dadd46]" started-at="2024-12-15T11:27:33 EET" name="clickTest" finished-at="2024-12-15T11:27:33 EET" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTest -->
+      </class> <!-- tests.CartPageTest -->
       <class name="tests.LandingPageTest">
-        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.LandingPageTest@528c868]" started-at="2024-12-11T22:06:59 EET" name="intialize" finished-at="2024-12-11T22:07:02 EET" duration-ms="3360" status="PASS">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.LandingPageTest@2b76ff4e]" started-at="2024-12-15T11:27:28 EET" name="intialize" finished-at="2024-12-15T11:27:31 EET" duration-ms="3342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LandingPageTest@528c868]" started-at="2024-12-11T22:07:02 EET" name="setUp" finished-at="2024-12-11T22:07:03 EET" duration-ms="1343" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LandingPageTest@2b76ff4e]" started-at="2024-12-15T11:27:31 EET" name="setUp" finished-at="2024-12-15T11:27:33 EET" duration-ms="1252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:tests.LandingPageTest@528c868]" started-at="2024-12-11T22:07:03 EET" name="loginTest" finished-at="2024-12-11T22:07:04 EET" duration-ms="342" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:tests.LandingPageTest@2b76ff4e]" started-at="2024-12-15T11:27:33 EET" name="loginTest" finished-at="2024-12-15T11:27:33 EET" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LandingPageTest@2b76ff4e]" started-at="2024-12-15T11:27:33 EET" name="tearDown" finished-at="2024-12-15T11:27:35 EET" duration-ms="1316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.LandingPageTest -->
       <class name="tests.CompletePageTest">
-        <test-method signature="verifiedConfirmationText()[pri:0, instance:tests.CompletePageTest@6eb2384f]" started-at="2024-12-11T22:07:05 EET" name="verifiedConfirmationText" finished-at="2024-12-11T22:07:05 EET" duration-ms="39" status="PASS">
+        <test-method signature="verifiedConfirmationText()[pri:0, instance:tests.CompletePageTest@19b93fa8]" started-at="2024-12-15T11:27:33 EET" name="verifiedConfirmationText" finished-at="2024-12-15T11:27:33 EET" duration-ms="14" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".complete-header"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f69f7e2ce6a05db3b2ff2b0bbac3917c, findElement {using=css selector, value=.complete-header}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60294}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60294/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f69f7e2ce6a05db3b2ff2b0bbac3917c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".complete-header"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f69f7e2ce6a05db3b2ff2b0bbac3917c, findElement {using=css selector, value=.complete-header}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60294}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60294/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f69f7e2ce6a05db3b2ff2b0bbac3917c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pageobjects.CompletePage.findConfirmationText(CompletePage.java:18)
+at procedures.CompletePageProcedures.extractConfirmationText(CompletePageProcedures.java:10)
+at tests.CompletePageTest.verifiedConfirmationText(CompletePageTest.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifiedConfirmationText -->
       </class> <!-- tests.CompletePageTest -->
       <class name="tests.CheckoutOverviewTest">
-        <test-method signature="gotToCheclOutOverView()[pri:0, instance:tests.CheckoutOverviewTest@73194df]" started-at="2024-12-11T22:07:04 EET" name="gotToCheclOutOverView" finished-at="2024-12-11T22:07:05 EET" duration-ms="81" status="PASS">
+        <test-method signature="gotToCheclOutOverView()[pri:0, instance:tests.CheckoutOverviewTest@12f9af83]" started-at="2024-12-15T11:27:33 EET" name="gotToCheclOutOverView" finished-at="2024-12-15T11:27:33 EET" duration-ms="22" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f69f7e2ce6a05db3b2ff2b0bbac3917c, findElement {using=id, value=finish}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60294}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60294/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f69f7e2ce6a05db3b2ff2b0bbac3917c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: MicrosoftEdge=131.0.2903.99)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f69f7e2ce6a05db3b2ff2b0bbac3917c, findElement {using=id, value=finish}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60294}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60294/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f69f7e2ce6a05db3b2ff2b0bbac3917c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pageobjects.CheckoutOverviewPage.getFinishButton(CheckoutOverviewPage.java:16)
+at procedures.CheckoutOverviewProcedures.gotToCompletePage(CheckoutOverviewProcedures.java:13)
+at tests.CheckoutOverviewTest.gotToCheclOutOverView(CheckoutOverviewTest.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotToCheclOutOverView -->
       </class> <!-- tests.CheckoutOverviewTest -->
       <class name="tests.ProductCatalogueTest">
-        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ProductCatalogueTest@24ba9639]" started-at="2024-12-11T22:07:04 EET" name="intialize" finished-at="2024-12-11T22:07:04 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ProductCatalogueTest@13330ac6]" started-at="2024-12-15T11:27:33 EET" name="intialize" finished-at="2024-12-15T11:27:33 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialize -->
-        <test-method signature="testAddItemsLessThanTenDollarsToCart()[pri:0, instance:tests.ProductCatalogueTest@24ba9639]" started-at="2024-12-11T22:07:04 EET" name="testAddItemsLessThanTenDollarsToCart" finished-at="2024-12-11T22:07:04 EET" duration-ms="334" status="PASS">
+        <test-method signature="testAddItemsLessThanTenDollarsToCart()[pri:0, instance:tests.ProductCatalogueTest@13330ac6]" started-at="2024-12-15T11:27:33 EET" name="testAddItemsLessThanTenDollarsToCart" finished-at="2024-12-15T11:27:33 EET" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddItemsLessThanTenDollarsToCart -->

@@ -3,32 +3,28 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.CheckoutOverviewTest">
-        <methods>
-          <include name="gotToCheclOutOverView"/>
-          <include name="intialize"/>
-        </methods>
-      </class> <!-- tests.CheckoutOverviewTest -->
       <class name="tests.CompletePageTest">
         <methods>
           <include name="verifiedConfirmationText"/>
           <include name="intialize"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.CompletePageTest -->
       <class name="tests.CheckoutPageTest">
         <methods>
           <include name="intialize"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="goToCheckoutOverview"/>
         </methods>
       </class> <!-- tests.CheckoutPageTest -->
-      <class name="tests.CartPageTest">
+      <class name="tests.CheckoutOverviewTest">
         <methods>
-          <include name="clickTest"/>
+          <include name="gotToCheclOutOverView"/>
           <include name="intialize"/>
-          <include name="beforeTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.CartPageTest -->
+      </class> <!-- tests.CheckoutOverviewTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

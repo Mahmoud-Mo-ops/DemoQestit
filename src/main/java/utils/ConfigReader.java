@@ -24,4 +24,8 @@ public class ConfigReader {
     public String getUrl() {
         return properties.getProperty("url");
     }
+    
+    public String getHUbURL() {
+    	return properties.getProperty("HUB_URL");
+    }
 }

@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import data.CheckoutPageData;
-import data.JsonDataReader;
+import utils.JsonDataReader;
 import procedures.CheckoutPageProcedures;
 import utils.GlobalVariables;
 
