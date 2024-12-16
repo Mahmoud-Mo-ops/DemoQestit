@@ -11,12 +11,12 @@ import org.testng.annotations.Test;
 
 import data.CheckoutPageData;
 import procedures.CheckoutPageProcedures;
+import utils.BaseTest;
 import utils.DataReaderUtil;
 
 public class CheckoutPageTest extends BaseTest {
 	WebDriver driver;
 	private CheckoutPageProcedures checkoutPageProcedures;
-//	private CheckoutPageData data;
 	List<CheckoutPageData> dataList;
 
 	@BeforeMethod
@@ -36,12 +36,6 @@ public class CheckoutPageTest extends BaseTest {
 		dataList = DataReaderUtil.getJsonDataToList(filePath, CheckoutPageData.class);
 		for (CheckoutPageData data : dataList) {
 			checkoutPageProcedures.fillOutDataUser(data);
-		}
-		// data=JsonDataReader.getCutomerAdressInformation();
-
-		for (CheckoutPageData data : dataList) {
-			System.out.println(data.getFirstName());
-
-		}
+		}	
 	}
 }

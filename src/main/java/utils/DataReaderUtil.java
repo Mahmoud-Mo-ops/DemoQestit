@@ -10,10 +10,9 @@ import org.apache.commons.io.FileUtils;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class DataReaderUtil  {
-	String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\globalData.json";
+public class DataReaderUtil {
 
-	public static <T> List<T> getJsonDataToList(String filepath, Class<T> clazz) throws IOException {
+       public static <T> List<T> getJsonDataToList(String filepath, Class<T> clazz) throws IOException {
 		// read json to string
 		String jsonContent = FileUtils.readFileToString(new File(filepath), StandardCharsets.UTF_8);
 
@@ -23,7 +22,5 @@ public class DataReaderUtil  {
 
 		return data;
 	}
-	
-	
-}
 
+}

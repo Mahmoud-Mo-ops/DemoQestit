@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import procedures.ProductCatalogueProcedures;
+import utils.BaseTest;
 import utils.GlobalVariables;
 
 public class ProductCatalogueTest extends BaseTest {

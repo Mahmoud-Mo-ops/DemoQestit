@@ -3,32 +3,37 @@ package utils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import freemarker.log.Logger;
 
 public class ConfigReader {
+    private static final Logger logger = Logger.getLogger(ConfigReader.class.getName());
     private Properties properties;
-   // C:\Users\Mahmoud.Gomaa\eclipse-workspace\Demo\src\main\resources\config.properties
+
     public ConfigReader() {
         properties = new Properties();
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("utils/config.properties");
-        if (inputStream != null) {
-            try {
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("config.properties")) {
+            if (inputStream != null) {
                 properties.load(inputStream);
-            } catch (IOException e) {
-                e.printStackTrace();
+                logger.info("config.properties file loaded successfully.");
+            } else {
+                logger.error("config.properties file not found in the classpath.");
+                throw new RuntimeException("config.properties file not found in the classpath");
             }
-        } else {
-            throw new RuntimeException("config.properties file not found in the classpath");
+        } catch (IOException e) {
+            logger.error("Error while loading config.properties file: " + e.getMessage(), e);
+            throw new RuntimeException("Error while reading config.properties", e);
         }
     }
 
     public String getUrl() {
-        return properties.getProperty("url");
+        String url = properties.getProperty("url", "http://default-url.com");
+        logger.debug("Fetched URL from config: " + url);
+        return url;
     }
-    
-    public String getHUbURL() {
-    	return properties.getProperty("HUB_URL");
+
+    public String getHubURL() {
+        String hubURL = properties.getProperty("HUB_URL", "http://172.26.240.1:4444");
+        logger.debug("Fetched HUB_URL from config: " + hubURL);
+        return hubURL;
     }
-    
-   
-    
 }

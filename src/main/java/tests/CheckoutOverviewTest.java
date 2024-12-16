@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import data.CheckoutPageData;
 import procedures.CheckoutOverviewProcedures;
 import procedures.CheckoutPageProcedures;
+import utils.BaseTest;
 import utils.BrowserUtils;
 
 public class CheckoutOverviewTest extends BaseTest {

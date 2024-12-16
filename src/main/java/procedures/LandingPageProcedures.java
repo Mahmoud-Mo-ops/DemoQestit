@@ -17,7 +17,9 @@ public class LandingPageProcedures {
 
 	// Landing page
 	public void login(LoginLandingPageData data, WebDriver driver) {
-		loginLandingPage.sendKeysUserNameTextField(data.getUserName()).sendKeysPasswordTextField(data.getPassword())
-				.clickLoginButton();
+		loginLandingPage.sendKeysUserNameTextField(data.getUserName())
+		                .sendKeysPasswordTextField(data.getPassword())
+				        .clickLoginButton();
+		
 	}
 }
