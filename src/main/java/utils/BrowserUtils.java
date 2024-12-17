@@ -17,6 +17,8 @@ public class BrowserUtils {
 			// Set the desired browser options
 			EdgeOptions options = new EdgeOptions();
 			options.addArguments("--start-maximized");
+			options.addArguments("--headless");
+			options.addArguments("--disable-gpu");
 
 			// Initialize RemoteWebDriver with the Grid Hub URL and options
 			driver = new RemoteWebDriver(new URL(hubUrl), options);

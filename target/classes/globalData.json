@@ -5,14 +5,8 @@
         "firstName": "Mahmoud",
         "lastName": "Goma",
         "postalCode": "925"
-    },
-	//errorovalidatioontest
-    {
-        "usernameWrong": "wrongUserName",
-        "passwordWrong": "wrongPassword"
     }
+
+
 ]
-
-
-
 /**/

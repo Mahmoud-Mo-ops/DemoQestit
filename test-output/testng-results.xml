@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="2" passed="0" failed="1" skipped="0">
+<testng-results retried="1" ignored="9" total="17" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-17T15:40:39 EET" name="Default suite" finished-at="2024-12-17T15:40:44 EET" duration-ms="4315">
+  <suite started-at="2024-12-17T16:18:56 EET" name="Suite" finished-at="2024-12-17T16:18:59 EET" duration-ms="2838">
     <groups>
-      <group name="ErrorValidaion">
-        <method signature="ErrorValidationTest.testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@2392212b]" name="testInvalidLoginLandingPage" class="tests.ErrorValidationTest"/>
-      </group> <!-- ErrorValidaion -->
+      <group name="ErrorValidation">
+        <method signature="ErrorValidationTest.testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@757f675c]" name="testInvalidLoginLandingPage" class="tests.ErrorValidationTest"/>
+      </group> <!-- ErrorValidation -->
     </groups>
-    <test started-at="2024-12-17T15:40:39 EET" name="Default test" finished-at="2024-12-17T15:40:44 EET" duration-ms="4315">
-      <class name="tests.ErrorValidationTest">
-        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ErrorValidationTest@2392212b]" started-at="2024-12-17T15:40:36 EET" name="intialize" finished-at="2024-12-17T15:40:39 EET" duration-ms="3459" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@2392212b]" started-at="2024-12-17T15:40:39 EET" name="setUp" finished-at="2024-12-17T15:40:42 EET" duration-ms="3091" status="PASS">
+    <test started-at="2024-12-17T16:18:56 EET" name="Test" finished-at="2024-12-17T16:18:58 EET" duration-ms="2211">
+      <class name="tests.CheckoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutPageTest@742d4e15]" started-at="2024-12-17T16:18:58 EET" name="setUp" finished-at="2024-12-17T16:18:58 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@2392212b]" started-at="2024-12-17T15:40:42 EET" name="testInvalidLoginLandingPage" finished-at="2024-12-17T15:40:43 EET" duration-ms="370" status="SKIP">
+        <test-method signature="goToCheckoutOverView(data.CheckoutPageData)[pri:0, instance:tests.CheckoutPageTest@742d4e15]" started-at="2024-12-17T16:18:58 EET" name="goToCheckoutOverView" data-provider="getCheckoutPageData" finished-at="2024-12-17T16:18:58 EET" duration-ms="251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.CheckoutPageData@27755487]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCheckoutOverView -->
+      </class> <!-- tests.CheckoutPageTest -->
+      <class name="tests.CartPageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.CartPageTest@23c650a3]" started-at="2024-12-17T16:18:58 EET" name="beforeTest" finished-at="2024-12-17T16:18:58 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="clickTest()[pri:0, instance:tests.CartPageTest@23c650a3]" started-at="2024-12-17T16:18:58 EET" name="clickTest" finished-at="2024-12-17T16:18:58 EET" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTest -->
+      </class> <!-- tests.CartPageTest -->
+      <class name="tests.LandingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LandingPageTest@6b530eb9]" started-at="2024-12-17T16:18:56 EET" name="setUp" finished-at="2024-12-17T16:18:57 EET" duration-ms="1035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.LandingPageTest@6b530eb9]" started-at="2024-12-17T16:18:57 EET" name="testLoginLandingPage" data-provider="getLandingPageData" finished-at="2024-12-17T16:18:58 EET" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.LoginLandingPageData@26586b74]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginLandingPage -->
+      </class> <!-- tests.LandingPageTest -->
+      <class name="tests.CompletePageTest">
+        <test-method signature="verifiedConfirmationText()[pri:0, instance:tests.CompletePageTest@50b1f030]" started-at="2024-12-17T16:18:58 EET" name="verifiedConfirmationText" finished-at="2024-12-17T16:18:58 EET" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifiedConfirmationText -->
+      </class> <!-- tests.CompletePageTest -->
+      <class name="tests.CheckoutOverviewTest">
+        <test-method signature="gotToCheclOutOverView()[pri:0, instance:tests.CheckoutOverviewTest@88a8218]" started-at="2024-12-17T16:18:58 EET" name="gotToCheclOutOverView" finished-at="2024-12-17T16:18:58 EET" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotToCheclOutOverView -->
+      </class> <!-- tests.CheckoutOverviewTest -->
+      <class name="tests.ProductCatalogueTest">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ProductCatalogueTest@6aa648b9]" started-at="2024-12-17T16:18:58 EET" name="intialize" finished-at="2024-12-17T16:18:58 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="testAddItemsLessThanTenDollarsToCart()[pri:0, instance:tests.ProductCatalogueTest@6aa648b9]" started-at="2024-12-17T16:18:58 EET" name="testAddItemsLessThanTenDollarsToCart" finished-at="2024-12-17T16:18:58 EET" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddItemsLessThanTenDollarsToCart -->
+      </class> <!-- tests.ProductCatalogueTest -->
+    </test> <!-- Test -->
+    <test started-at="2024-12-17T16:18:58 EET" name="ErrorValidationTest" finished-at="2024-12-17T16:18:59 EET" duration-ms="602">
+      <class name="tests.ErrorValidationTest">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:tests.ErrorValidationTest@757f675c]" started-at="2024-12-17T16:18:53 EET" name="intialize" finished-at="2024-12-17T16:18:56 EET" duration-ms="3242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@757f675c]" started-at="2024-12-17T16:18:58 EET" name="setUp" finished-at="2024-12-17T16:18:59 EET" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@757f675c]" started-at="2024-12-17T16:18:59 EET" name="testInvalidLoginLandingPage" finished-at="2024-12-17T16:18:59 EET" duration-ms="192" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [correct error message is Epic sadface: Password is required] but found [Epic sadface: Password is required]]]>
@@ -64,11 +132,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginLandingPage -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@2392212b]" started-at="2024-12-17T15:40:43 EET" name="setUp" finished-at="2024-12-17T15:40:43 EET" duration-ms="530" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@757f675c]" started-at="2024-12-17T16:18:59 EET" name="setUp" finished-at="2024-12-17T16:18:59 EET" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@2392212b]" started-at="2024-12-17T15:40:43 EET" name="testInvalidLoginLandingPage" finished-at="2024-12-17T15:40:44 EET" duration-ms="218" status="FAIL">
+        <test-method signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@757f675c]" started-at="2024-12-17T16:18:59 EET" name="testInvalidLoginLandingPage" finished-at="2024-12-17T16:18:59 EET" duration-ms="203" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [correct error message is Epic sadface: Password is required] but found [Epic sadface: Password is required]]]>
@@ -114,7 +182,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginLandingPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@757f675c]" started-at="2024-12-17T16:18:59 EET" name="tearDown" finished-at="2024-12-17T16:19:00 EET" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.ErrorValidationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ErrorValidationTest -->
+  </suite> <!-- Suite -->
 </testng-results>

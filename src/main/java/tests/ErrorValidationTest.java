@@ -32,7 +32,7 @@ public class ErrorValidationTest extends BaseTest {
         }
     
     
-    @Test(groups= {"ErrorValidaion"}, retryAnalyzer=Retry.class)
+    @Test(groups= {"ErrorValidation"}, retryAnalyzer=Retry.class)
     public void testInvalidLoginLandingPage() {
     	procedures.LoginInvalidUserName();
     	//correct error message is Epic sadface: Password is required

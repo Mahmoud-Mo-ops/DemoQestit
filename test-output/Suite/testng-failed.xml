@@ -1,47 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" name="ErrorValidationTest(failed)">
     <classes>
-      <class name="tests.CompletePageTest">
+      <class name="tests.ErrorValidationTest">
         <methods>
-          <include name="verifiedConfirmationText"/>
-          <include name="intialize"/>
-        </methods>
-      </class> <!-- tests.CompletePageTest -->
-      <class name="tests.CheckoutPageTest">
-        <methods>
-          <include name="goToCheckoutOverView"/>
+          <include name="tearDown"/>
+          <include name="testInvalidLoginLandingPage"/>
           <include name="setUp"/>
           <include name="intialize"/>
         </methods>
-      </class> <!-- tests.CheckoutPageTest -->
-      <class name="tests.CartPageTest">
-        <methods>
-          <include name="clickTest"/>
-          <include name="beforeTest"/>
-          <include name="intialize"/>
-        </methods>
-      </class> <!-- tests.CartPageTest -->
-      <class name="tests.ProductCatalogueTest">
-        <methods>
-          <include name="testAddItemsLessThanTenDollarsToCart"/>
-          <include name="intialize"/>
-        </methods>
-      </class> <!-- tests.ProductCatalogueTest -->
-      <class name="tests.CheckoutOverviewTest">
-        <methods>
-          <include name="gotToCheclOutOverView"/>
-          <include name="intialize"/>
-        </methods>
-      </class> <!-- tests.CheckoutOverviewTest -->
-      <class name="tests.LandingPageTest">
-        <methods>
-          <include name="testLoginLandingPage"/>
-          <include name="setUp"/>
-          <include name="intialize"/>
-        </methods>
-      </class> <!-- tests.LandingPageTest -->
+      </class> <!-- tests.ErrorValidationTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ErrorValidationTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
