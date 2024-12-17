@@ -19,7 +19,8 @@ public class CartPageTest extends BaseTest {
 
     
 
-    @Test
+    @Test(description = "Navigate to checkout page by clicking the checkout button")
+
     public void clickTest() {
     	cartPageProcedures.NavigateToCheckOutReview();
     }

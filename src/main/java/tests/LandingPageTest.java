@@ -32,7 +32,7 @@ public class LandingPageTest extends BaseTest {
 		procedures = new LandingPageProcedures(driver);
 	}
 
-	@Test(dataProvider = "getLandingPageData")
+	@Test(dataProvider = "getLandingPageData", description="Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.")
 	public void testLoginLandingPage(LoginLandingPageData data) {
 		logger.info("Testing login with valid username: " + data.getUserName());
 		procedures.login(data, driver);

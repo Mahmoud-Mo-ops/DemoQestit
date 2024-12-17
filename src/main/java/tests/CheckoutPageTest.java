@@ -26,7 +26,7 @@ public class CheckoutPageTest extends BaseTest {
         checkoutPageProcedures = new CheckoutPageProcedures(driver);
     }
 
-    @Test(dataProvider="getCheckoutPageData")
+    @Test(dataProvider="getCheckoutPageData" , description="Verify user can enter their shipping address (first name, last name, and postal code) and proceed to the checkout overview page")
     public void goToCheckoutOverView(CheckoutPageData data) {
         if (data == null) {
             logger.error("Received null data for checkout. Skipping test.");

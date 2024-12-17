@@ -16,7 +16,7 @@ public class ProductCatalogueTest extends BaseTest {
 		addItemToCartProcedure= new ProductCatalogueProcedures(GlobalVariables.driver);
 	}
 	
-	@Test
+	@Test(description="Verify user can successfully add items priced under ten dollars to the shopping cart.")
 	public void testAddItemsLessThanTenDollarsToCart() {
 		addItemToCartProcedure.addItemsLessThanTenDollarsToCart();
 
