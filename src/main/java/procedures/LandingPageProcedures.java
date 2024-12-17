@@ -23,14 +23,20 @@ public class LandingPageProcedures {
 		
 	}
 	
-//	// Method to capture error message
-//    public String catchErrorMessage() {
-//        return loginLandingPage.getErrorField().getText();
-//    }
-//	// Landing page
-//	public void Errorlogin(String errorUserName) {
-//		loginLandingPage.sendKeysUserNameTextField(errorUserName);
-//		               
-//		
-//	}
+
+	public void LoginInvalidUserName() {
+	   loginLandingPage.sendKeysUserNameTextField("invalidUserName");
+	   loginLandingPage.clickLoginButton();
+	   
+	}
+	
+    // Validate error message
+    public boolean validateErrorMessage(String expectedError) {
+        String actualError = loginLandingPage.getErrorMessageText();
+        return actualError.equals(expectedError);
+    }
+    
+    public String  getErrorMessage() {
+        return loginLandingPage.getErrorMessageText();
+    }
 }

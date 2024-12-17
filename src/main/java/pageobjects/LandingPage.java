@@ -37,10 +37,11 @@ public class LandingPage {
         return this;
     }
 
-//    public WebElement getErrorField() {
-//        logger.info("Fetching error message");
-//        return driver.findElement(errorMessage);
-//    }
+    // Retrieve error message text
+    public String getErrorMessageText() {
+        logger.info("Fetching error message");
+        return driver.findElement(errorMessage).getText();
+    }
 
   
 

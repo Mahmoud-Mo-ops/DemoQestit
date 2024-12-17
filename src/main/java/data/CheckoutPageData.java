@@ -1,6 +1,8 @@
 package data;
 
 public class CheckoutPageData {
+ 
+
 	private String firstName;
 	private String lastName;
 	private String postalCode;

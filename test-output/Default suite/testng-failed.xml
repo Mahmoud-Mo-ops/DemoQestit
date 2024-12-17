@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CheckoutPageTest">
+      <class name="tests.ErrorValidationTest">
         <methods>
-          <include name="goToCheckoutOverView" invocation-numbers="0"/>
+          <include name="testInvalidLoginLandingPage"/>
           <include name="setUp"/>
           <include name="intialize"/>
         </methods>
-      </class> <!-- tests.CheckoutPageTest -->
+      </class> <!-- tests.ErrorValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
