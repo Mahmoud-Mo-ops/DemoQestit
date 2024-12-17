@@ -22,4 +22,15 @@ public class LandingPageProcedures {
 				        .clickLoginButton();
 		
 	}
+	
+//	// Method to capture error message
+//    public String catchErrorMessage() {
+//        return loginLandingPage.getErrorField().getText();
+//    }
+//	// Landing page
+//	public void Errorlogin(String errorUserName) {
+//		loginLandingPage.sendKeysUserNameTextField(errorUserName);
+//		               
+//		
+//	}
 }

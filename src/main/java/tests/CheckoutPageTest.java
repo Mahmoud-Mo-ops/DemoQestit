@@ -1,41 +1,63 @@
 package tests;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import data.CheckoutPageData;
 import procedures.CheckoutPageProcedures;
 import utils.BaseTest;
 import utils.DataReaderUtil;
+import utils.GlobalVariables;
 
 public class CheckoutPageTest extends BaseTest {
-	WebDriver driver;
-	private CheckoutPageProcedures checkoutPageProcedures;
-	List<CheckoutPageData> dataList;
+    WebDriver driver;
+    private CheckoutPageProcedures checkoutPageProcedures;
+    final Logger logger = LogManager.getLogger(CheckoutPageTest.class);
 
-	@BeforeMethod
-	public void setUp() throws IOException {
-		final Logger logger = LogManager.getLogger(CheckoutPageTest.class);
+    @BeforeMethod
+    public void setUp() throws IOException {
+//        driver = GlobalVariables.driver;
+        checkoutPageProcedures = new CheckoutPageProcedures(driver);
+    }
 
-		// data = new CheckoutPageData();
-		checkoutPageProcedures = new CheckoutPageProcedures(driver);
-		String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\globalData.json";
-		dataList = DataReaderUtil.getJsonDataToList(filePath, CheckoutPageData.class);
+    @Test(dataProvider="getCheckoutPageData")
+    public void goToCheckoutOverView(CheckoutPageData data) {
+        if (data == null) {
+            logger.error("Received null data for checkout. Skipping test.");
+            return;
+        }
+        logger.info("First Name: " + data.getFirstName());
+        logger.debug("Last Name: " + data.getLastName());
+        logger.debug("Postal Code: " + data.getPostalCode());
 
-	}
+        checkoutPageProcedures.fillOutDataUser(data);
+    }
 
-	@Test()
-	public void goToCheckoutOverview() throws IOException, InterruptedException {
-		String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\globalData.json";
-		dataList = DataReaderUtil.getJsonDataToList(filePath, CheckoutPageData.class);
-		for (CheckoutPageData data : dataList) {
-			checkoutPageProcedures.fillOutDataUser(data);
-		}	
-	}
+    @DataProvider
+    public Object[][] getCheckoutPageData() throws IOException {
+        // Define the file path of the JSON data
+        String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json"; // Use forward slashes
+
+        // Read data from the JSON file and map it to the appropriate data type (CheckoutPageData)
+        CheckoutPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, CheckoutPageData[].class);
+
+        // Initialize a 2D Object array to match the data provider format required by TestNG
+        Object[][] data = new Object[dataArray.length][1];
+
+        // Populate the 2D array with data for checkout (firstName, lastName, postalCode)
+        for (int i = 0; i < dataArray.length; i++) {
+            // Check if the data contains firstName, lastName, and postalCode for checkout
+            if (dataArray[i].getFirstName() != null && dataArray[i].getLastName() != null && dataArray[i].getPostalCode() != null) {
+                data[i][0] = dataArray[i];  // Store valid checkout data
+            }
+        }
+
+        return data; // Return the populated 2D array of checkout data
+    }
 }
