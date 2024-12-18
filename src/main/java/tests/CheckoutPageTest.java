@@ -20,7 +20,7 @@ public class CheckoutPageTest extends BaseTest {
     private CheckoutPageProcedures checkoutPageProcedures;
     final Logger logger = LogManager.getLogger(CheckoutPageTest.class);
 
-    @BeforeMethod
+    @BeforeMethod(description = "Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL.")
     public void setUp() throws IOException {
 //        driver = GlobalVariables.driver;
         checkoutPageProcedures = new CheckoutPageProcedures(driver);

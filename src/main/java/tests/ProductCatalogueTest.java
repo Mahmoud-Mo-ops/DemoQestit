@@ -11,9 +11,9 @@ public class ProductCatalogueTest extends BaseTest {
 
 	ProductCatalogueProcedures addItemToCartProcedure;
 	
-	@BeforeMethod
+	@BeforeMethod(description = "Initializes the ProductCatalogueProcedures instance before each test method.")
 	public void intialize() {
-		addItemToCartProcedure= new ProductCatalogueProcedures(GlobalVariables.driver);
+		addItemToCartProcedure= new ProductCatalogueProcedures(GlobalVariables.getDriver());
 	}
 	
 	@Test(description="Verify user can successfully add items priced under ten dollars to the shopping cart.")

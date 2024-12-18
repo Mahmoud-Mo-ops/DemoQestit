@@ -24,10 +24,10 @@ public class LandingPageTest extends BaseTest {
 	LandingPageProcedures procedures;
 	ConfigReader configReader;
 
-	@BeforeMethod
+	@BeforeMethod(description = "Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL.")
 	public void setUp() throws IOException {
 		configReader = new ConfigReader();
-		driver = GlobalVariables.driver;
+		driver = GlobalVariables.getDriver();
 		driver.get(configReader.getUrl());
 		procedures = new LandingPageProcedures(driver);
 	}

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" name="ErrorValidationTest(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="ErrorValidationTest(failed)">
     <classes>
       <class name="tests.ErrorValidationTest">
         <methods>
           <include name="tearDown"/>
+          <include name="initialize"/>
           <include name="testInvalidLoginLandingPage"/>
           <include name="setUp"/>
-          <include name="intialize"/>
         </methods>
       </class> <!-- tests.ErrorValidationTest -->
     </classes>

@@ -9,7 +9,7 @@ public class CheckoutOverviewProcedures {
 	private static WebDriver driver;
 
 	public static void gotToCompletePage() {
-		CheckoutOverviewPage checkoutOverview = new CheckoutOverviewPage(GlobalVariables.driver);
+		CheckoutOverviewPage checkoutOverview = new CheckoutOverviewPage(GlobalVariables.getDriver());
 		checkoutOverview.getFinishButton().click();
 	}
 

@@ -9,7 +9,7 @@ public class CartPageProcedures  {
     private CartPage cartPage;
 	private WebDriver driver;
     public CartPageProcedures(WebDriver driver) {
-        this.driver =GlobalVariables.driver;
+        this.driver =GlobalVariables.getDriver();
         cartPage=new CartPage(driver);
     }
 

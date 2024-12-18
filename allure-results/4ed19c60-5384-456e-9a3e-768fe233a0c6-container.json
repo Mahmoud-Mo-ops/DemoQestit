@@ -1,0 +1,1 @@
+{"uuid":"4ed19c60-5384-456e-9a3e-768fe233a0c6","name":"tests.ErrorValidationTest.setUp","children":["82c69dac-f385-48f2-b95f-c1f0d799cab6"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734513351769,"stop":1734513352557}],"afters":[],"start":1734513351769,"stop":1734513352557}

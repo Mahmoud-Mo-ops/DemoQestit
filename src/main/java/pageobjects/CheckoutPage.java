@@ -14,7 +14,7 @@ public class CheckoutPage {
     private By continueButton = By.id("continue");
 
     public CheckoutPage() {
-        this.driver = GlobalVariables.driver;
+        this.driver = GlobalVariables.getDriver();
     }
 
     public CheckoutPage sendFirstNameTextField(String firstNameText) {

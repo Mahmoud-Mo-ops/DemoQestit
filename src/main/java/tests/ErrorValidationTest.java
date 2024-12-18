@@ -21,18 +21,16 @@ public class ErrorValidationTest extends BaseTest {
 	private static final Logger logger = LogManager.getLogger(ErrorValidationTest.class);
 
     
-
-    @BeforeMethod
+	@BeforeMethod(description = "Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL.")
     public void setUp() throws IOException  {
         configReader = new ConfigReader();
-        driver = GlobalVariables.driver; 
+        driver = GlobalVariables.getDriver(); 
         driver.get(configReader.getUrl());
         procedures = new LandingPageProcedures(driver);
-        
         }
     
     
-    @Test(groups= {"ErrorValidation"}, retryAnalyzer=Retry.class)
+    @Test(groups= {"ErrorValidation"}, retryAnalyzer=Retry.class, description = "Validates error message for invalid login attempts on the landing page.")
     public void testInvalidLoginLandingPage() {
     	procedures.LoginInvalidUserName();
     	//correct error message is Epic sadface: Password is required

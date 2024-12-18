@@ -13,7 +13,7 @@ import java.time.Duration;
 public class CartPage {
     private WebDriver driver;
     public CartPage(WebDriver driver) {
-        this.driver = GlobalVariables.driver;
+        this.driver = GlobalVariables.getDriver();
 
     }
 
