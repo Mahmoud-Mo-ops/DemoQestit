@@ -1,19 +1,23 @@
 package utils;
-import java.net.MalformedURLException;
+
+import java.io.IOException;
+
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
-	@BeforeTest(description = "Sets up the browser instance and prepares the driver for the test execution.")
-    public void initialize() throws MalformedURLException {
-        // Initialize browser instance for the current test
+    @BeforeTest(description = "Sets up the browser instance for each test.")
+    public void initialize() throws IOException {
+        // Initialize the WebDriver for each test method, so each test runs in isolation
         GlobalVariables.setDriver(BrowserUtils.getDriver());
     }
 
-	@AfterTest(description = "Cleans up resources by quitting the browser instance and removing the driver after test execution.")
+    @AfterTest(description = "Cleans up resources and quits the browser after each test.")
     public void tearDown() {
-        // Quit browser after the test finishes
+        // Quit the WebDriver after each test to ensure no WebDriver sharing
         if (GlobalVariables.getDriver() != null) {
             GlobalVariables.getDriver().quit();
             GlobalVariables.removeDriver();

@@ -36,7 +36,7 @@ public class ErrorValidationTest extends BaseTest {
     	//correct error message is Epic sadface: Password is required
     	procedures.validateErrorMessage("log failed");
     	procedures.getErrorMessage();
-    	Assert.assertEquals(procedures.getErrorMessage(),"correct error message is Epic sadface: Password is required"); //retry done 
+    	Assert.assertEquals(procedures.getErrorMessage(),"Password is required"); //retry done 
          
 }
 }

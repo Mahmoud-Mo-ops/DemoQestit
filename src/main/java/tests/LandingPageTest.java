@@ -1,6 +1,7 @@
 package tests;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -51,7 +52,7 @@ public class LandingPageTest extends BaseTest {
 	}
 
 	private Object[][] filterValidLoginData(LoginLandingPageData[] dataArray) {
-		return java.util.Arrays.stream(dataArray)
+		return Arrays.stream(dataArray)
 				.filter(data -> data.getUserName() != null && data.getPassword() != null)
 				.map(data -> new Object[] { data }).toArray(Object[][]::new);
 	}

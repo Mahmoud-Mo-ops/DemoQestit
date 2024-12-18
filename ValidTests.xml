@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="6">
-    <!-- Test 1: MainTestSuite with parallel execution of classes -->
-    <test name="MainTestSuite"  thread-count="6">
+<suite name="Suite" parallel="classes" thread-count="6">
+    <!-- Test 1: MainTestSuite with parallel execution of methods -->
+    <test name="MainTestSuite" parallel="classes" thread-count="6">
         <classes>
             <class name="tests.LandingPageTest" />
             <class name="tests.ProductCatalogueTest"/>
