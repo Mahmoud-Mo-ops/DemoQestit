@@ -1,8 +1,8 @@
+
 package utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
@@ -13,10 +13,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class BrowserUtils {
     static Properties property = new Properties();
 
-    public static WebDriver getDriver() throws MalformedURLException {
+    public static WebDriver getDriver() throws IOException {
         WebDriver driver = null;
-
-        try {
             // Load the config.properties file
             String currentDir = System.getProperty("user.dir");
             String filePath = currentDir + "\\src\\main\\resources\\config.properties";
@@ -51,11 +49,10 @@ public class BrowserUtils {
                 System.out.println("The configured browser is not supported or not set to edge.");
             }
 
-        } catch (IOException e) {
-            e.printStackTrace();
-            throw new RuntimeException("Error reading the config.properties file.");
-        }
+        
 
         return driver; // Ensure a driver is always returned
     }
+    
+    
 }
