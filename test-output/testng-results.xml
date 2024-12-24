@@ -2,31 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-19T15:37:47 EET" name="Default suite" finished-at="2024-12-19T15:37:50 EET" duration-ms="3781">
+  <suite started-at="2024-12-24T17:56:23 EET" name="Default suite" finished-at="2024-12-24T17:56:28 EET" duration-ms="4843">
     <groups>
-      <group name="ErrorValidation">
-        <method signature="ErrorValidationTest.testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@5c84624f]" name="testInvalidLoginLandingPage" class="tests.ErrorValidationTest"/>
-      </group> <!-- ErrorValidation -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestNGTestRunner@52c3cb31]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-12-19T15:37:47 EET" name="Default test" finished-at="2024-12-19T15:37:50 EET" duration-ms="3781">
-      <class name="tests.ErrorValidationTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ErrorValidationTest@5c84624f]" started-at="2024-12-19T15:37:47 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2024-12-19T15:37:48 EET" duration-ms="1495" status="PASS">
+    <test started-at="2024-12-24T17:56:23 EET" name="Default test" finished-at="2024-12-24T17:56:28 EET" duration-ms="4843">
+      <class name="tests.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.TestNGTestRunner@52c3cb31]" started-at="2024-12-24T17:56:23 EET" name="setUpClass" finished-at="2024-12-24T17:56:23 EET" duration-ms="420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@55c57422]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@5c84624f]" started-at="2024-12-19T15:37:48 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2024-12-19T15:37:49 EET" duration-ms="816" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestNGTestRunner@52c3cb31]" started-at="2024-12-24T17:56:23 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-24T17:56:28 EET" duration-ms="4277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@5c84624f]" started-at="2024-12-19T15:37:49 EET" name="testInvalidLoginLandingPage" description="Validates error message for invalid login attempts on the landing page." finished-at="2024-12-19T15:37:49 EET" duration-ms="281" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.TestNGTestRunner@52c3cb31]" started-at="2024-12-24T17:56:28 EET" name="tearDownClass" finished-at="2024-12-24T17:56:28 EET" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLoginLandingPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@5c84624f]" started-at="2024-12-19T15:37:49 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2024-12-19T15:37:50 EET" duration-ms="1074" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.ErrorValidationTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.TestNGTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

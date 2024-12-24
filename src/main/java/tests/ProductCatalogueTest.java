@@ -4,7 +4,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import procedures.ProductCatalogueProcedures;
-import utils.BaseTest;
 import utils.GlobalVariables;
 
 public class ProductCatalogueTest extends BaseTest {
@@ -20,5 +19,10 @@ public class ProductCatalogueTest extends BaseTest {
 	public void testAddItemsLessThanTenDollarsToCart() {
 		addItemToCartProcedure.addItemsLessThanTenDollarsToCart();
 
+	}
+	
+	@Test
+	public void check() {
+		addItemToCartProcedure.addProductToCart("Sauce Labs Bolt T-Shirt");
 	}
 }

@@ -25,20 +25,6 @@ public class LoginLandingPageData {
         this.password = password;
     }
     
-    //for error validation class
-    public String getpasswordWrong() {
-    	return passwordWrong;
-    }
-    public void setpasswordWrong(String passwordWrong) {
-    	this.passwordWrong=passwordWrong;
-    }
     
-    public String getusernameWrong() {
-    	return usernameWrong;
-    }
-    
-    public void setusernameWrong(String usernameWrong) {
-    	this.usernameWrong=usernameWrong;
-    }
     
 }

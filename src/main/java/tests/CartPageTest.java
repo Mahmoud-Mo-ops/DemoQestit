@@ -4,7 +4,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import procedures.CartPageProcedures;
-import utils.BaseTest;
 import utils.GlobalVariables;
 
 public class CartPageTest extends BaseTest {

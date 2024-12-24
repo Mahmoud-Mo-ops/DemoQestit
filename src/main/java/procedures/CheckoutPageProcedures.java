@@ -18,4 +18,12 @@ public class CheckoutPageProcedures {
                     .sendPostalCodeTextField(data.getPostalCode())
                     .clickOnContinueButton();
     }
+
+
+	public void fillOutDataUser(String firstName, String lastName, String postalCode) {
+		checkoutPage.sendFirstNameTextField(firstName)
+        .sendLastNameTextField(lastName)
+        .sendPostalCodeTextField(postalCode)
+        .clickOnContinueButton();		
+	}
 }

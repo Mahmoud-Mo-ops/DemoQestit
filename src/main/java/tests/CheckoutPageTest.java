@@ -11,9 +11,7 @@ import org.testng.annotations.Test;
 
 import data.CheckoutPageData;
 import procedures.CheckoutPageProcedures;
-import utils.BaseTest;
 import utils.DataReaderUtil;
-import utils.GlobalVariables;
 
 public class CheckoutPageTest extends BaseTest {
     WebDriver driver;
@@ -42,7 +40,7 @@ public class CheckoutPageTest extends BaseTest {
     @DataProvider
     public Object[][] getCheckoutPageData() throws IOException {
         // Define the file path of the JSON data
-        String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json"; // Use forward slashes
+        String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json"; 
 
         // Read data from the JSON file and map it to the appropriate data type (CheckoutPageData)
         CheckoutPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, CheckoutPageData[].class);

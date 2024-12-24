@@ -39,4 +39,12 @@ public class LandingPageProcedures {
     public String  getErrorMessage() {
         return loginLandingPage.getErrorMessageText();
     }
+
+    //for cucumber
+    public void login(String username, String password) {
+        loginLandingPage.sendKeysUserNameTextField(username)
+                        .sendKeysPasswordTextField(password)
+                        .clickLoginButton();
+    }
+
 }

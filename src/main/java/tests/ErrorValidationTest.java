@@ -1,5 +1,4 @@
 package tests;
-
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -10,15 +9,16 @@ import org.testng.annotations.Test;
 
 import procedures.LandingPageProcedures;
 import utils.AssertionFactory;
-import utils.BaseTest;
 import utils.ConfigReader;
 import utils.GlobalVariables;
+import utils.Retry;
 
 public class ErrorValidationTest extends BaseTest {
 	private WebDriver driver;
 	private LandingPageProcedures procedures;
 	private ConfigReader configReader;
 	private static final Logger logger = LogManager.getLogger(ErrorValidationTest.class);
+	AssertionFactory assertionFactory;
 
 	@BeforeMethod(description = "Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL.")
 	public void setUp() throws IOException {
@@ -41,7 +41,7 @@ public class ErrorValidationTest extends BaseTest {
 		logger.info("Captured error message: {}", errorMessage);
 
 // Initialize the AssertionFactory
-		AssertionFactory assertionFactory = new AssertionFactory(driver);
+		assertionFactory = new AssertionFactory(driver);
 
 // Define the expected error message
 		String expectedMessage = "Epic sadface: Password is required";
@@ -55,30 +55,32 @@ public class ErrorValidationTest extends BaseTest {
 
 		logger.info("Assertions completed for invalid login validation.");
 	}
+	
+	/*
+	//error validation method
+	@Test(dataProvider = "getLandingPageData",description="verify the selcted prodcut")
+	public void testSelectedProduct(LoginLandingPageData data) {
+		procedures.login(data, driver);
+		ProductCatalogueProcedures productCatalogueProcedures= new ProductCatalogueProcedures(driver);
+		productCatalogueProcedures.logSelectedItemName("Sauce Labs Bolt T-Shirt");		
+	}
+	
+	
+	@DataProvider
+	public Object[][] getLandingPageData() throws IOException {
+		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
+		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
 
+		// Filter only valid login credentials
+		return filterValidLoginData(dataArray);
+	}
+
+	private Object[][] filterValidLoginData(LoginLandingPageData[] dataArray) {
+		return Arrays.stream(dataArray)
+				.filter(data -> data.getUserName() != null && data.getPassword() != null)
+				.map(data -> new Object[] { data }).toArray(Object[][]::new);
+	}
+*/
 }
 
-/*
- * 
- * 
- * 
- * logger.info("Testing login with invalid username: " +
- * data.getusernameWrong()); procedures.login(data, driver);
- * 
- * // Validate the error message // String expectedError =
- * "Epic sadface: Username and password do not match any user in this service";
- * // Assert.assertTrue(procedures.validateErrorMessage(expectedError),
- * "Error message validation failed!"); }
- * 
- * @DataProvider public Object[][] getLandingPageData() throws IOException {
- * String filePath = System.getProperty("user.dir") +
- * "/src/main/resources/globalData.json"; LoginLandingPageData[] dataArray =
- * DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
- * 
- * // Include both valid and invalid login credentials return
- * java.util.Arrays.stream(dataArray).map(data -> new Object[] { data
- * }).toArray(Object[][]::new); }
- * 
- * 
- * 
- */
+

@@ -1,4 +1,3 @@
-
 package utils;
 
 import java.io.FileInputStream;
@@ -6,13 +5,16 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BrowserUtils {
-    static Properties property = new Properties();
+	private static final Logger logger = LogManager.getLogger(BrowserUtils.class);
 
+    static Properties property = new Properties();
     public static WebDriver getDriver() throws IOException {
         WebDriver driver = null;
             // Load the config.properties file
@@ -46,7 +48,7 @@ public class BrowserUtils {
                 driver = new RemoteWebDriver(new URL(hubUrl), options);
             } else {
                 // Optionally, handle other browsers if needed
-                System.out.println("The configured browser is not supported or not set to edge.");
+            	logger.info("The configured browser is not supported or not set to edge.");
             }
 
         

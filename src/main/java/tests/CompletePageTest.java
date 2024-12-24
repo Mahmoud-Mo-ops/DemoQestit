@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import procedures.CompletePageProcedures;
-import utils.BaseTest;
 import utils.GlobalVariables;
 
 public class CompletePageTest extends BaseTest {

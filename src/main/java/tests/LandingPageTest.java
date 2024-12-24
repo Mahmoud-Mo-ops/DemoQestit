@@ -6,14 +6,12 @@ import java.util.Arrays;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import data.LoginLandingPageData;
 import procedures.LandingPageProcedures;
-import utils.BaseTest;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
 import utils.GlobalVariables;
@@ -33,27 +31,27 @@ public class LandingPageTest extends BaseTest {
 		procedures = new LandingPageProcedures(driver);
 	}
 
-	@Test(dataProvider = "getLandingPageData", description="Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.")
+	@Test(dataProvider = "getLandingPageData", description = "Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.")
 	public void testLoginLandingPage(LoginLandingPageData data) {
 		logger.info("Testing login with valid username: " + data.getUserName());
 		procedures.login(data, driver);
-
-		// Add validation for successful login
-	//	Assert.assertTrue(procedures.isLoginSuccessful(), "Login was not successful!");
 	}
 
 	@DataProvider
 	public Object[][] getLandingPageData() throws IOException {
 		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
+		// deserialize the JSON data into an array of LoginLandingPageData objects.
 		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
 
 		// Filter only valid login credentials
 		return filterValidLoginData(dataArray);
 	}
 
+//The code operates on a stream of elements where each element is an array (Object[]). The final goal is to collect these arrays into a 2-dimensional array (Object[][]).
 	private Object[][] filterValidLoginData(LoginLandingPageData[] dataArray) {
-		return Arrays.stream(dataArray)
-				.filter(data -> data.getUserName() != null && data.getPassword() != null)
-				.map(data -> new Object[] { data }).toArray(Object[][]::new);
+		return Arrays.stream(dataArray).filter(data -> data.getUserName() != null && data.getPassword() != null)
+				.map(data -> new Object[] { data }).toArray(Object[][]::new); // method reference constructor,convert a
+																				// stream of elements into a
+																				// 2-dimensional array
 	}
 }
