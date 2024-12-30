@@ -43,6 +43,4 @@ public class LandingPage {
         return driver.findElement(errorMessage).getText();
     }
 
-  
-
 }

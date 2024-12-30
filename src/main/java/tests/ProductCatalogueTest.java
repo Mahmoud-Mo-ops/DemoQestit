@@ -21,8 +21,5 @@ public class ProductCatalogueTest extends BaseTest {
 
 	}
 	
-	@Test
-	public void check() {
-		addItemToCartProcedure.addProductToCart("Sauce Labs Bolt T-Shirt");
-	}
+
 }

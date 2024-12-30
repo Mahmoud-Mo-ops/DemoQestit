@@ -51,25 +51,30 @@ public class ProductCatalogueProcedures {
 //	}
 	
 /*cucumber*/
-	 public void addProductToCart(String productName) {
-	        ProductCataloguePage productCataloguePage = new ProductCataloguePage(driver);
-	        //productNames
-	        List<WebElement> productNames = productCataloguePage.getProductNames();
-	        //Buttons
-	        List<WebElement> addToCartButtons = productCataloguePage.getAddToCartButtons();
-	        //carts
-	        List<WebElement> ListOfProductCarts=productCataloguePage.getProductCarts();
+	public void addProductToCart(String productName) {
+	    ProductCataloguePage productCataloguePage = new ProductCataloguePage(driver);
+	    List<WebElement> productNames = productCataloguePage.getProductNames();
+	    List<WebElement> addToCartButtons = productCataloguePage.getAddToCartButtons();
+	    
+	    boolean productFound = false;
 
-	        for (int i = 0; i < productNames.size(); i++) {
-	            String currentProductName = productNames.get(i).getText();
-	            if (currentProductName.equalsIgnoreCase("Sauce Labs Bolt T-Shirt")) {
-	                productCataloguePage.addItemToCart(addToCartButtons.get(i));
-		            System.out.println("this is product of cucumnber " +currentProductName);
-	                break;
-	            }
+	    for (int i = 0; i < productNames.size(); i++) {
+	        String currentProductName = productNames.get(i).getText();
+	        if (currentProductName.equalsIgnoreCase(productName)) {
+	            productCataloguePage.addItemToCart(addToCartButtons.get(i));
+	            productFound = true;
+	            break;
 	        }
-	        productCataloguePage.goToCart().click();
 	    }
+
+	    if (!productFound) {
+	        // If product is not found, throw an exception
+	        throw new IllegalArgumentException("Product not available for adding to cart.");
+	    }
+	    
+	    // Go to cart if the product was added successfully
+	    productCataloguePage.goToCart().click();
+	}
 
 	
 }

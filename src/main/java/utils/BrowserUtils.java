@@ -31,7 +31,7 @@ public class BrowserUtils {
             if ("edge".equalsIgnoreCase(browserName)) {
                 // Load the Hub URL from config
                 ConfigReader configReader = new ConfigReader();
-                String hubUrl = configReader.getHubURL();
+                String hubUrl = configReader.getHubURL(); 
 
                 // Set the desired browser options
                 EdgeOptions options = new EdgeOptions();

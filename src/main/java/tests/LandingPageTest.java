@@ -34,7 +34,7 @@ public class LandingPageTest extends BaseTest {
 	@Test(dataProvider = "getLandingPageData", description = "Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.")
 	public void testLoginLandingPage(LoginLandingPageData data) {
 		logger.info("Testing login with valid username: " + data.getUserName());
-		procedures.login(data, driver);
+		procedures.login(data, driver); 
 	}
 
 	@DataProvider
@@ -42,16 +42,14 @@ public class LandingPageTest extends BaseTest {
 		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
 		// deserialize the JSON data into an array of LoginLandingPageData objects.
 		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
-
 		// Filter only valid login credentials
 		return filterValidLoginData(dataArray);
 	}
 
-//The code operates on a stream of elements where each element is an array (Object[]). The final goal is to collect these arrays into a 2-dimensional array (Object[][]).
 	private Object[][] filterValidLoginData(LoginLandingPageData[] dataArray) {
 		return Arrays.stream(dataArray).filter(data -> data.getUserName() != null && data.getPassword() != null)
-				.map(data -> new Object[] { data }).toArray(Object[][]::new); // method reference constructor,convert a
-																				// stream of elements into a
-																				// 2-dimensional array
+				.map(data -> new Object[] { data }).toArray(Object[][]::new); 
 	}
+	
+	
 }
