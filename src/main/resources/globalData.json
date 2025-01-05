@@ -5,7 +5,19 @@
         "firstName": "Mahmoud",
         "lastName": "Goma",
         "postalCode": "925"
+    },
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "firstName": "Mahmoud",
+        "lastName": "Goma",
+        "postalCode": "925"
+    },
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "firstName": "Mahmoud",
+        "lastName": "Goma",
+        "postalCode": "925"
     }
-
-
 ]

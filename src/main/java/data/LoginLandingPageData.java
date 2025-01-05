@@ -3,11 +3,7 @@ package data;
 public class LoginLandingPageData {
     private String username;
     private String password;
-    private String usernameWrong;
-    private String passwordWrong;
-    // Default constructor (implicit if no other constructors exist)
-    public LoginLandingPageData() {}
-    
+   
     // Getters and Setters
     public String getUserName() {
         return username;

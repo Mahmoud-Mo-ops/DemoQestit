@@ -1,27 +1,39 @@
 package tests;
 
+import java.io.File;
+
 import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import io.qameta.allure.Attachment;
 import utils.BrowserUtils;
 import utils.GlobalVariables;
 
 public class BaseTest {
-    private static final Logger logger = LogManager.getLogger(BaseTest.class);
 
-    @BeforeTest(description = "Sets up the browser instance for each test.")
-    public void initialize() throws IOException {
-        GlobalVariables.setDriver(BrowserUtils.getDriver());
-  
-    }
+	@BeforeTest(description = "Sets up the browser instance for each test.")
+	public void initialize() throws IOException {
+		GlobalVariables.setDriver(BrowserUtils.getDriver());
+	}
 
-//    @AfterTest(description = "Cleans up resources and quits the browser after each test.")
-//    public void tearDown() {
-//        if (GlobalVariables.getDriver() != null) {
-//            GlobalVariables.getDriver().quit();
-//          
-//        } 
-//    }
+	@AfterTest(description = "Cleans up resources and quits the browser after each test.")
+	public void tearDown() {
+		if (GlobalVariables.getDriver() != null) {
+			GlobalVariables.getDriver().quit();
+		}
+	}
+
+	// Capture screenshot and attach to Allure report
+	@Attachment(value = "Screenshot on Failure", type = "image/png")
+	public byte[] captureScreenshot() throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) GlobalVariables.getDriver(); // Use GlobalVariables.getDriver() here
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		byte[] fileContent = FileUtils.readFileToByteArray(source); // Convert file to byte array
+		return fileContent; // Return byte array to be attached to Allure
+	}
 }
