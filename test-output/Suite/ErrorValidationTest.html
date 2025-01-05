@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ErrorValidationTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 30 01:26:37 EET 2024</td>
+<td>Started on:</td><td>Sun Jan 05 11:44:51 EET 2025</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8340 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8081 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,22 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.ErrorValidationTest.testInvalidLoginLandingPage()'><b>testInvalidLoginLandingPage</b><br>Test class: tests.ErrorValidationTest<br>Test method: Validates error message for invalid login attempts on the landing page.</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match the expected text. (Expected: &quot;Epic sadface:  is required&quot;, Found: &quot;Epic sadface: Password is required&quot;) expected [true] but found [false]
-	at utils.AssertionFactory.assertAll(AssertionFactory.java:43)
-	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:60)
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1350980645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1350980645'><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match the expected text. (Expected: &quot;Epic sadface:  is required&quot;, Found: &quot;Epic sadface: Password is required&quot;) expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at utils.AssertionFactory.assertAll(AssertionFactory.java:43)
-	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:60)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2057721234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2057721234'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:59)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -115,20 +115,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>tests.ErrorValidationTest@718607eb</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.ErrorValidationTest.testWrongSelectedProduct()'><b>testWrongSelectedProduct</b><br>Test class: tests.ErrorValidationTest<br>Test method: Validates that adding a non-existent product to the cart throws an IllegalArgumentException with the appropriate error message.</td>
-<td></td>
-<td>0</td>
-<td>tests.ErrorValidationTest@718607eb</td></tr>
+<td>tests.ErrorValidationTest@867ba60</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -139,22 +126,22 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.ErrorValidationTest.testInvalidLoginLandingPage()'><b>testInvalidLoginLandingPage</b><br>Test class: tests.ErrorValidationTest<br>Test method: Validates error message for invalid login attempts on the landing page.</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match the expected text. (Expected: &quot;Epic sadface:  is required&quot;, Found: &quot;Epic sadface: Password is required&quot;) expected [true] but found [false]
-	at utils.AssertionFactory.assertAll(AssertionFactory.java:43)
-	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:60)
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1329567793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1329567793'><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match the expected text. (Expected: &quot;Epic sadface:  is required&quot;, Found: &quot;Epic sadface: Password is required&quot;) expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at utils.AssertionFactory.assertAll(AssertionFactory.java:43)
-	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:60)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2024070968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2024070968'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:59)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -178,7 +165,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>tests.ErrorValidationTest@718607eb</td></tr>
+<td>tests.ErrorValidationTest@867ba60</td></tr>
 </table><p>
 </body>
 </html>

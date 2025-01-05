@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 02 17:11:38 EET 2025</td>
+<td>Started on:</td><td>Sun Jan 05 11:44:51 EET 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9354 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10131 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.CheckoutPageTest.goToCheckoutOverView()'><b>goToCheckoutOverView</b><br>Test class: tests.CheckoutPageTest<br>Test method: Verify user can enter their shipping address (first name, last name, and postal code) and proceed to the checkout overview page<br>Parameters: data.CheckoutPageData@3762c4fc</td>
+<td title='tests.CheckoutPageTest.goToCheckoutOverView()'><b>goToCheckoutOverView</b><br>Test class: tests.CheckoutPageTest<br>Test method: Verify user can enter their shipping address (first name, last name, and postal code) and proceed to the checkout overview page<br>Parameters: data.CheckoutPageData@4466bfc5</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
   (Session info: MicrosoftEdge=131.0.2903.112)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [8718b03ac50d1b08d42fcd6c4d76ab8a, findElement {using=id, value=first-name}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54268}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
+Command: [d9051b39f4a6abb5fe07455e33540f7e, findElement {value=first-name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53115}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9051b39f4a6abb5fe07455e33540f7e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -99,16 +99,20 @@ Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
 	at procedures.CheckoutPageProcedures.fillOutDataUser(CheckoutPageProcedures.java:16)
 	at tests.CheckoutPageTest.goToCheckoutOverView(CheckoutPageTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744942100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1744942100'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1156640917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1156640917'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
   (Session info: MicrosoftEdge=131.0.2903.112)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [8718b03ac50d1b08d42fcd6c4d76ab8a, findElement {using=id, value=first-name}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54268}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
+Command: [d9051b39f4a6abb5fe07455e33540f7e, findElement {value=first-name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53115}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9051b39f4a6abb5fe07455e33540f7e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -139,32 +143,27 @@ Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>tests.CheckoutPageTest@328572f0</td></tr>
+<td>tests.CheckoutPageTest@23c650a3</td></tr>
 <tr>
-<td title='tests.CheckoutPageTest.goToCheckoutOverView()'><b>goToCheckoutOverView</b><br>Test class: tests.CheckoutPageTest<br>Test method: Verify user can enter their shipping address (first name, last name, and postal code) and proceed to the checkout overview page<br>Parameters: data.CheckoutPageData@4f327096</td>
+<td title='tests.CheckoutPageTest.goToCheckoutOverView()'><b>goToCheckoutOverView</b><br>Test class: tests.CheckoutPageTest<br>Test method: Verify user can enter their shipping address (first name, last name, and postal code) and proceed to the checkout overview page<br>Parameters: data.CheckoutPageData@4b252f04</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
   (Session info: MicrosoftEdge=131.0.2903.112)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [8718b03ac50d1b08d42fcd6c4d76ab8a, findElement {using=id, value=first-name}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54268}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
+Command: [d9051b39f4a6abb5fe07455e33540f7e, findElement {value=first-name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53115}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9051b39f4a6abb5fe07455e33540f7e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -179,16 +178,20 @@ Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
 	at procedures.CheckoutPageProcedures.fillOutDataUser(CheckoutPageProcedures.java:16)
 	at tests.CheckoutPageTest.goToCheckoutOverView(CheckoutPageTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1250956357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1250956357'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1632374279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1632374279'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
   (Session info: MicrosoftEdge=131.0.2903.112)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [8718b03ac50d1b08d42fcd6c4d76ab8a, findElement {using=id, value=first-name}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54268}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
+Command: [d9051b39f4a6abb5fe07455e33540f7e, findElement {value=first-name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53115}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\MAHMOU~1.GOM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.176.1:4444/sess..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9051b39f4a6abb5fe07455e33540f7e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -219,21 +222,16 @@ Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>0</td>
-<td>tests.CheckoutPageTest@328572f0</td></tr>
+<td>tests.CheckoutPageTest@23c650a3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -243,45 +241,45 @@ Session ID: 8718b03ac50d1b08d42fcd6c4d76ab8a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LandingPageTest.testLoginLandingPage()'><b>testLoginLandingPage</b><br>Test class: tests.LandingPageTest<br>Test method: Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.<br>Parameters: data.LoginLandingPageData@4c86da0c</td>
+<td title='tests.CartPageTest.clickTest()'><b>clickTest</b><br>Test class: tests.CartPageTest<br>Test method: Navigate to checkout page by clicking the checkout button</td>
 <td></td>
 <td>0</td>
-<td>tests.LandingPageTest@553f3b6e</td></tr>
+<td>tests.CartPageTest@6aa648b9</td></tr>
 <tr>
-<td title='tests.ProductCatalogueTest.testAddItemsLessThanTenDollarsToCart()'><b>testAddItemsLessThanTenDollarsToCart</b><br>Test class: tests.ProductCatalogueTest<br>Test method: Verify user can successfully add items priced under ten dollars to the shopping cart.</td>
+<td title='tests.LandingPageTest.testLoginLandingPage()'><b>testLoginLandingPage</b><br>Test class: tests.LandingPageTest<br>Test method: Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.<br>Parameters: data.LoginLandingPageData@79d5aee0</td>
 <td></td>
 <td>0</td>
-<td>tests.ProductCatalogueTest@41c62850</td></tr>
+<td>tests.LandingPageTest@41c62850</td></tr>
 <tr>
-<td title='tests.LandingPageTest.testLoginLandingPage()'><b>testLoginLandingPage</b><br>Test class: tests.LandingPageTest<br>Test method: Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.<br>Parameters: data.LoginLandingPageData@31ddb930</td>
+<td title='tests.LandingPageTest.testLoginLandingPage()'><b>testLoginLandingPage</b><br>Test class: tests.LandingPageTest<br>Test method: Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.<br>Parameters: data.LoginLandingPageData@73e22e32</td>
 <td></td>
 <td>0</td>
-<td>tests.LandingPageTest@553f3b6e</td></tr>
+<td>tests.LandingPageTest@41c62850</td></tr>
+<tr>
+<td title='tests.CheckoutPageTest.goToCheckoutOverView()'><b>goToCheckoutOverView</b><br>Test class: tests.CheckoutPageTest<br>Test method: Verify user can enter their shipping address (first name, last name, and postal code) and proceed to the checkout overview page<br>Parameters: data.CheckoutPageData@602ab644</td>
+<td></td>
+<td>0</td>
+<td>tests.CheckoutPageTest@23c650a3</td></tr>
 <tr>
 <td title='tests.CompletePageTest.verifiedConfirmationText()'><b>verifiedConfirmationText</b><br>Test class: tests.CompletePageTest<br>Test method: Verify the confirmation message displayed after completing the checkout process correctly indicates that the product has been successfully ordered</td>
 <td></td>
 <td>0</td>
-<td>tests.CompletePageTest@17f460bb</td></tr>
-<tr>
-<td title='tests.CheckoutPageTest.goToCheckoutOverView()'><b>goToCheckoutOverView</b><br>Test class: tests.CheckoutPageTest<br>Test method: Verify user can enter their shipping address (first name, last name, and postal code) and proceed to the checkout overview page<br>Parameters: data.CheckoutPageData@4fd05028</td>
-<td></td>
-<td>0</td>
-<td>tests.CheckoutPageTest@328572f0</td></tr>
-<tr>
-<td title='tests.CartPageTest.clickTest()'><b>clickTest</b><br>Test class: tests.CartPageTest<br>Test method: Navigate to checkout page by clicking the checkout button</td>
-<td></td>
-<td>0</td>
-<td>tests.CartPageTest@6b530eb9</td></tr>
-<tr>
-<td title='tests.LandingPageTest.testLoginLandingPage()'><b>testLoginLandingPage</b><br>Test class: tests.LandingPageTest<br>Test method: Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.<br>Parameters: data.LoginLandingPageData@8d8f754</td>
-<td></td>
-<td>0</td>
-<td>tests.LandingPageTest@553f3b6e</td></tr>
+<td>tests.CompletePageTest@88a8218</td></tr>
 <tr>
 <td title='tests.CheckoutOverviewTest.gotToCompletePage()'><b>gotToCompletePage</b><br>Test class: tests.CheckoutOverviewTest<br>Test method: Verify user can successfully navigate to the completion page after entering all necessary information during checkout and confirm the selected product is correctly displayed.</td>
 <td></td>
 <td>0</td>
-<td>tests.CheckoutOverviewTest@678040b3</td></tr>
+<td>tests.CheckoutOverviewTest@742d4e15</td></tr>
+<tr>
+<td title='tests.ProductCatalogueTest.testAddItemsLessThanTenDollarsToCart()'><b>testAddItemsLessThanTenDollarsToCart</b><br>Test class: tests.ProductCatalogueTest<br>Test method: Verify user can successfully add items priced under ten dollars to the shopping cart.</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductCatalogueTest@44d70181</td></tr>
+<tr>
+<td title='tests.LandingPageTest.testLoginLandingPage()'><b>testLoginLandingPage</b><br>Test class: tests.LandingPageTest<br>Test method: Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.<br>Parameters: data.LoginLandingPageData@8c55f9f</td>
+<td></td>
+<td>0</td>
+<td>tests.LandingPageTest@41c62850</td></tr>
 </table><p>
 </body>
 </html>

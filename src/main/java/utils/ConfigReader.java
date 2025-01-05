@@ -36,4 +36,31 @@ public class ConfigReader {
         logger.debug("Fetched HUB_URL from config: " + hubURL);
         return hubURL;
     }
+
+    // Environment-related properties
+    public String getEnvironment() {
+        String environment = properties.getProperty("environment", "Unknown");
+        logger.debug("Fetched environment: " + environment);
+        return environment;
+    }
+
+    public String getTestPlatform() {
+        return properties.getProperty("testPlatform", "Unknown");
+    } 
+
+    public String getBrowser() {
+        return properties.getProperty("browser", "Unknown");
+    }
+
+    public String getBrowserVersion() {
+        return properties.getProperty("browserVersion", "Unknown");
+    }
+
+    public String getTestExecutionDate() {
+        return properties.getProperty("testExecutionDate", "Unknown");
+    }
+
+    public String getTestFramework() {
+        return properties.getProperty("testFramework", "Unknown");
+    }
 }

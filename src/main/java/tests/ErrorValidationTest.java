@@ -1,16 +1,17 @@
 package tests;
 
 import java.io.IOException;
-import io.qameta.allure.Allure;
-import io.qameta.allure.Description;
-import io.qameta.allure.Step;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import data.LoginLandingPageData;
+
+import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import procedures.LandingPageProcedures;
 import procedures.ProductCatalogueProcedures;
 import utils.AssertionFactory;
