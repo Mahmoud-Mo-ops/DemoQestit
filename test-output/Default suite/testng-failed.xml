@@ -5,8 +5,9 @@
     <classes>
       <class name="tests.SubmitOrderTest">
         <methods>
+          <include name="extractData"/>
           <include name="initialize"/>
-          <include name="submitOrderTest" invocation-numbers="0 1 2"/>
+          <include name="submitOrderTest" invocation-numbers="1"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

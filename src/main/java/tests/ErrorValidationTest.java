@@ -61,15 +61,13 @@ public class ErrorValidationTest extends BaseTest {
             logger.info("Assertion passed: Error message matches the expected text.");
         } catch (AssertionError e) {
             // Capture and attach a screenshot on failure
-            ScreenshotUtil.captureScreenshot(driver, "Invalid Login Error Screenshot");
-            String errorDetails = e.getMessage() != null ? e.getMessage() : "No error message available.";
-            Allure.addAttachment("Error Details", errorDetails);
-            throw e; // Re-throw the exception to mark the test as failed
+        	getScreenShoot(driver, "Invalid Login Error Screenshot");
+            throw e; 
         }
     }
 
     @Step("Logging test details for Allure.")
     private void logTestDetails() {
-        Allure.addAttachment("Test Body", "This test validates the error message displayed during an invalid login attempt.");
+        Allure.addAttachment("error description", "This test validates the error message displayed during an invalid login attempt.");
     }
 }

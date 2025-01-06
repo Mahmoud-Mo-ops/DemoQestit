@@ -9,15 +9,15 @@
     {
         "username": "standard_user",
         "password": "secret_sauce",
-        "firstName": "Mahmoud",
-        "lastName": "Goma",
-        "postalCode": "925"
+		"firstName": "Mueller",
+		"lastName": "Mattius",
+		"postalCode": "15234"
     },
     {
         "username": "standard_user",
         "password": "secret_sauce",
-        "firstName": "Mahmoud",
-        "lastName": "Goma",
-        "postalCode": "925"
+		"firstName": "John",
+		"lastName": "Dohn",
+		"postalCode": "1153"
     }
 ]

@@ -16,7 +16,7 @@ public class ScreenshotUtil {
 	
 	   @BeforeTest(description = "Sets up the browser instance for each test.")
 	    public void initialize() throws IOException {
-	        GlobalVariables.setDriver(BrowserUtils.getDriver());
+	        GlobalVariables.setDriver(BrowserUtils.getDriver()); 
 	    }
 	   
     public static void captureScreenshot(WebDriver driver, String screenshotName) {

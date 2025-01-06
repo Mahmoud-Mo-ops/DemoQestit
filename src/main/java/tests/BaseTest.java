@@ -2,6 +2,7 @@ package tests;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -70,7 +71,13 @@ public class BaseTest {
     }
 
 
-
+    
+    /* screen shoot method */
+	public void getScreenShoot(WebDriver driver, String screenshotName) {
+		ScreenshotUtil.captureScreenshot( driver,"Invalid Login Error Screenshot");
+	}
+    
+    /*close window*/
     @AfterTest(description = "Cleans up resources and quits the browser after each test.")
     public void tearDown() {
         if (GlobalVariables.getDriver() != null) {

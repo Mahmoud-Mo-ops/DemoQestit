@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import freemarker.log.Logger;
-
+import io.qameta.allure.Allure;
+import io.qameta.allure.model.Label;
 public class ConfigReader {
     private static final Logger logger = Logger.getLogger(ConfigReader.class.getName());
     private Properties properties;
@@ -63,4 +64,34 @@ public class ConfigReader {
     public String getTestFramework() {
         return properties.getProperty("testFramework", "Unknown");
     }
+    
+  
+
+    public void addEnvironmentVariablesToAllure() {
+        // Fetch environment details from config
+        String environment = getEnvironment();
+        String url = getUrl();
+        String hubUrl = getHubURL();
+        String browser = getBrowser();
+        String browserVersion = getBrowserVersion();
+        String testPlatform = getTestPlatform();
+        String testExecutionDate = getTestExecutionDate();
+        String testFramework = getTestFramework();
+
+        // Add these details to Allure environment file
+        Allure.getLifecycle().updateTestCase(testCase -> {
+            testCase.getLabels().add(new Label().setName("environment").setValue(environment));
+            testCase.getLabels().add(new Label().setName("url").setValue(url));
+            testCase.getLabels().add(new Label().setName("hubUrl").setValue(hubUrl));
+            testCase.getLabels().add(new Label().setName("browser").setValue(browser));
+            testCase.getLabels().add(new Label().setName("browserVersion").setValue(browserVersion));
+            testCase.getLabels().add(new Label().setName("testPlatform").setValue(testPlatform));
+            testCase.getLabels().add(new Label().setName("testExecutionDate").setValue(testExecutionDate));
+            testCase.getLabels().add(new Label().setName("testFramework").setValue(testFramework));
+        });
+    }
+
+    
+    
+    
 }
