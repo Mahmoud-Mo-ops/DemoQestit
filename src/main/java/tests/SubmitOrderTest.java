@@ -5,14 +5,14 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import com.google.gson.Gson;
 
 import data.SubmitOrderData;
 import io.qameta.allure.Allure;
 import procedures.SubmitOrderPurchase;
+import utils.AllureEnvironment;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
 import utils.GlobalVariables;
@@ -21,6 +21,7 @@ public class SubmitOrderTest extends BaseTest {
 	SubmitOrderPurchase submitOrderPurchase;
 	ConfigReader configReader;
 	WebDriver driver;
+
 
 	@BeforeMethod
 	public void setup() throws IOException {
@@ -33,7 +34,8 @@ public class SubmitOrderTest extends BaseTest {
 	@Test(dataProvider = "getSubmitOrderData", description = "End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation.")
 	public void submitOrderTest(String username, String password, String firstName, String lastName, String postalCode)
 			throws IOException {
-		/***/
+	
+
 		extractData();
 
 		// Log the login step

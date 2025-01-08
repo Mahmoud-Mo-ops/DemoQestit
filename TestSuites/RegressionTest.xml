@@ -13,4 +13,5 @@
 			<class name="tests.ErrorValidationTest" />
 		</classes>
 	</test>
+	
 </suite>
