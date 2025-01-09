@@ -1,0 +1,1 @@
+{"uuid":"67fcfc40-01f3-4e26-927e-390b291bfa0c","name":"tests.PriceLowtoHighTest.setup","children":["c5ef47d6-f1f7-45e2-bb8e-84604e6a80ad"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1736428728834,"stop":1736428728838}],"afters":[],"start":1736428728834,"stop":1736428728838}

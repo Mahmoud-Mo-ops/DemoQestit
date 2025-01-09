@@ -15,7 +15,9 @@ import utils.AllureEnvironment;
 import utils.BrowserUtils;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
+import utils.ExtractJsonData;
 import utils.GlobalVariables;
+import utils.ScreenshotUtil;
 
 public class BaseTest {
 
@@ -30,35 +32,18 @@ public class BaseTest {
 	   configReader = new ConfigReader();
 		//environment section
 		AllureEnvironment.setEnvironment();
-		// Extract and attach JSON data (optional)
-		extractData();
-	}
-
-	/* extract data from json to allure report */
-	@BeforeSuite
-	public void extractData() throws IOException {
-		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
-
-		// Read and deserialize the JSON into an array of SubmitOrderData objects
-		SubmitOrderData[] submitOrderDataArray = DataReaderUtil.getJsonDataToArray(filePath, SubmitOrderData[].class);
-
-		// Convert the array back to a JSON string (you can customize how you want it
-		// displayed)
-		Gson gson = new Gson();
-		String jsonContent = gson.toJson(submitOrderDataArray);
-
-		// Attach the JSON data to the Allure report
-		Allure.addAttachment("JSON Data", "application/json", jsonContent, ".json");
-
-		// Optionally, log the content if needed
-		// System.out.println("Attached JSON Data: " + jsonContent);
+		//  Attach JSON data to Allure at the suite level
+//	    String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
+//		ExtractJsonData.extractData(filePath);
 	}
 
 	@BeforeTest(description = "Sets up the browser instance for each test.")
 	public void initialize() throws IOException {
 		// Set up WebDriver
 		GlobalVariables.setDriver(BrowserUtils.getDriver());
-
+		// Attach JSON data for each test case (added here to ensure it appears in the report)
+        String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
+        ExtractJsonData.extractData(filePath);
 	}
 
 	/* screen shoot method */

@@ -1,1 +1,0 @@
-{"uuid":"7872eeed-6007-4204-b60a-bec05398d06d","name":"tests.SubmitOrderTest.setup","children":["794a3cb2-5ba2-4c03-b831-5fb906e8051e"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1736346380738,"stop":1736346380926}],"afters":[],"start":1736346380738,"stop":1736346380926}

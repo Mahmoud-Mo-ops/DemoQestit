@@ -13,5 +13,12 @@
 			<class name="tests.ErrorValidationTest" />
 		</classes>
 	</test>
+	   
+	
+	<test name="PriceLowtoHighTest">
+		<classes>
+			<class name="tests.PriceLowtoHighTest" />
+		</classes>
+	</test>
 	
 </suite>

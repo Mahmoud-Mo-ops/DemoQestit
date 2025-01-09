@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="5" passed="3" failed="1" skipped="0">
+<testng-results retried="1" ignored="0" total="8" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-08T16:26:16 EET" name="RegressionTest" finished-at="2025-01-08T16:26:24 EET" duration-ms="7991">
+  <suite started-at="2025-01-09T15:18:47 EET" name="RegressionTest" finished-at="2025-01-09T15:19:07 EET" duration-ms="20649">
     <groups>
       <group name="ErrorValidation">
-        <method signature="ErrorValidationTest.testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" name="testInvalidLoginLandingPage" class="tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@79c5636f]" name="testInvalidLoginLandingPage" class="tests.ErrorValidationTest"/>
       </group> <!-- ErrorValidation -->
     </groups>
-    <test started-at="2025-01-08T16:26:16 EET" name="LoginErrorValidation" finished-at="2025-01-08T16:26:22 EET" duration-ms="6317">
+    <test started-at="2025-01-09T15:18:47 EET" name="LoginErrorValidation" finished-at="2025-01-09T15:18:54 EET" duration-ms="7521">
       <class name="tests.ErrorValidationTest">
-        <test-method is-config="true" signature="extractData()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:16 EET" name="extractData" finished-at="2025-01-08T16:26:16 EET" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extractData -->
-        <test-method is-config="true" signature="setupEnvironment()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:16 EET" name="setupEnvironment" description="Sets up the environment for Allure reporting." finished-at="2025-01-08T16:26:16 EET" duration-ms="44" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupEnvironment -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:16 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-01-08T16:26:19 EET" duration-ms="3293" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ErrorValidationTest@79c5636f]" started-at="2025-01-09T15:18:47 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-01-09T15:18:50 EET" duration-ms="3696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:19 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-01-08T16:26:20 EET" duration-ms="763" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@79c5636f]" started-at="2025-01-09T15:18:50 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-01-09T15:18:51 EET" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:20 EET" name="testInvalidLoginLandingPage" description="Validates error message for invalid login attempts on the landing page." finished-at="2025-01-08T16:26:20 EET" duration-ms="467" status="SKIP">
+        <test-method retried="true" signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@79c5636f]" started-at="2025-01-09T15:18:51 EET" name="testInvalidLoginLandingPage" description="Validates error message for invalid login attempts on the landing page." finished-at="2025-01-09T15:18:52 EET" duration-ms="592" status="SKIP">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
@@ -61,11 +53,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginLandingPage -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:20 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-01-08T16:26:20 EET" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@79c5636f]" started-at="2025-01-09T15:18:52 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-01-09T15:18:52 EET" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:20 EET" name="testInvalidLoginLandingPage" description="Validates error message for invalid login attempts on the landing page." finished-at="2025-01-08T16:26:21 EET" duration-ms="356" status="FAIL">
+        <test-method signature="testInvalidLoginLandingPage()[pri:0, instance:tests.ErrorValidationTest@79c5636f]" started-at="2025-01-09T15:18:52 EET" name="testInvalidLoginLandingPage" description="Validates error message for invalid login attempts on the landing page." finished-at="2025-01-09T15:18:53 EET" duration-ms="528" status="FAIL">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
@@ -100,23 +92,23 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginLandingPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@676f0a60]" started-at="2025-01-08T16:26:21 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-01-08T16:26:22 EET" duration-ms="1293" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@79c5636f]" started-at="2025-01-09T15:18:53 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-01-09T15:18:54 EET" duration-ms="1452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ErrorValidationTest -->
     </test> <!-- LoginErrorValidation -->
-    <test started-at="2025-01-08T16:26:16 EET" name="SubmitOrderTest" finished-at="2025-01-08T16:26:24 EET" duration-ms="7991">
+    <test started-at="2025-01-09T15:18:47 EET" name="SubmitOrderTest" finished-at="2025-01-09T15:19:00 EET" duration-ms="13700">
       <class name="tests.SubmitOrderTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:16 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-01-08T16:26:17 EET" duration-ms="1620" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:47 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-01-09T15:18:50 EET" duration-ms="3686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:17 EET" name="setup" finished-at="2025-01-08T16:26:18 EET" duration-ms="874" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:50 EET" name="setup" finished-at="2025-01-09T15:18:51 EET" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:18 EET" name="submitOrderTest" description="End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation." data-provider="getSubmitOrderData" finished-at="2025-01-08T16:26:20 EET" duration-ms="1809" status="PASS">
+        <test-method signature="submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:51 EET" name="submitOrderTest" description="End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation." data-provider="getSubmitOrderData" finished-at="2025-01-09T15:18:54 EET" duration-ms="3178" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,11 +139,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:20 EET" name="setup" finished-at="2025-01-08T16:26:20 EET" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:54 EET" name="setup" finished-at="2025-01-09T15:18:54 EET" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:20 EET" name="submitOrderTest" description="End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation." data-provider="getSubmitOrderData" finished-at="2025-01-08T16:26:22 EET" duration-ms="1127" status="PASS">
+        <test-method signature="submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:54 EET" name="submitOrderTest" description="End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation." data-provider="getSubmitOrderData" finished-at="2025-01-09T15:18:57 EET" duration-ms="2594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,11 +174,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:22 EET" name="setup" finished-at="2025-01-08T16:26:22 EET" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:57 EET" name="setup" finished-at="2025-01-09T15:18:57 EET" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:22 EET" name="submitOrderTest" description="End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation." data-provider="getSubmitOrderData" finished-at="2025-01-08T16:26:23 EET" duration-ms="844" status="PASS">
+        <test-method signature="submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:57 EET" name="submitOrderTest" description="End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation." data-provider="getSubmitOrderData" finished-at="2025-01-09T15:18:59 EET" duration-ms="2094" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,11 +209,72 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@5812f68b]" started-at="2025-01-08T16:26:23 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-01-08T16:26:24 EET" duration-ms="1314" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6f63b475]" started-at="2025-01-09T15:18:59 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-01-09T15:19:00 EET" duration-ms="1432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.SubmitOrderTest -->
     </test> <!-- SubmitOrderTest -->
+    <test started-at="2025-01-09T15:18:47 EET" name="PriceLowtoHighTest" finished-at="2025-01-09T15:19:07 EET" duration-ms="20649">
+      <class name="tests.PriceLowtoHighTest">
+        <test-method is-config="true" signature="setupEnvironment()[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:18:46 EET" name="setupEnvironment" description="Sets up the environment for Allure reporting." finished-at="2025-01-09T15:18:47 EET" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupEnvironment -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:18:47 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-01-09T15:18:48 EET" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:18:48 EET" name="setup" finished-at="2025-01-09T15:18:48 EET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:18:48 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-01-09T15:18:55 EET" duration-ms="6949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.LoginLandingPageData@3ec582f7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceLowToHighSorting -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:18:55 EET" name="setup" finished-at="2025-01-09T15:18:55 EET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:18:55 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-01-09T15:19:01 EET" duration-ms="5844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.LoginLandingPageData@468ab43]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceLowToHighSorting -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:19:01 EET" name="setup" finished-at="2025-01-09T15:19:01 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:19:01 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-01-09T15:19:06 EET" duration-ms="4714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.LoginLandingPageData@753e4e12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceLowToHighSorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PriceLowtoHighTest@867ba60]" started-at="2025-01-09T15:19:06 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-01-09T15:19:07 EET" duration-ms="1272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PriceLowtoHighTest -->
+    </test> <!-- PriceLowtoHighTest -->
   </suite> <!-- RegressionTest -->
 </testng-results>

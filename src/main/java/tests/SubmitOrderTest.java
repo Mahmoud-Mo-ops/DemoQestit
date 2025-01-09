@@ -15,6 +15,7 @@ import procedures.SubmitOrderPurchase;
 import utils.AllureEnvironment;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
+import utils.ExtractJsonData;
 import utils.GlobalVariables;
 
 public class SubmitOrderTest extends BaseTest {
@@ -29,15 +30,12 @@ public class SubmitOrderTest extends BaseTest {
 		configReader = new ConfigReader();
 		driver.get(configReader.getUrl());
 		submitOrderPurchase = new SubmitOrderPurchase(driver);
+
 	}
 
 	@Test(dataProvider = "getSubmitOrderData", description = "End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation.")
 	public void submitOrderTest(String username, String password, String firstName, String lastName, String postalCode)
 			throws IOException {
-	
-
-		extractData();
-
 		// Log the login step
 		Allure.step("Logging in on the landing page with username: " + username + " and password: " + password, () -> {
 			submitOrderPurchase.LogIn(username, password);

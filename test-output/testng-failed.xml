@@ -5,7 +5,6 @@
     <classes>
       <class name="tests.ErrorValidationTest">
         <methods>
-          <include name="extractData"/>
           <include name="initialize"/>
           <include name="testInvalidLoginLandingPage"/>
           <include name="setUp"/>
