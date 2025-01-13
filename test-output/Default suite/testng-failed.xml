@@ -5,10 +5,9 @@
     <classes>
       <class name="tests.PriceLowtoHighTest">
         <methods>
-          <include name="extractData"/>
           <include name="initialize"/>
           <include name="setup"/>
-          <include name="verifyPriceLowToHighSorting" invocation-numbers="0 1 2"/>
+          <include name="verifyPriceLowToHighSorting"/>
           <include name="setupEnvironment"/>
           <include name="tearDown"/>
         </methods>

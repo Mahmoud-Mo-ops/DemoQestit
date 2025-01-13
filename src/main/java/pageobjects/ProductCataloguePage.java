@@ -17,7 +17,7 @@ public class ProductCataloguePage {
 	private By arrowButtonFiltration = By.className("product_sort_container");
 
 	private WebDriver driver;
-
+ 
 	public ProductCataloguePage(WebDriver driver) {
             this.driver = driver;
 	}

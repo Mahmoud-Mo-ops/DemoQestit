@@ -5,17 +5,15 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import data.SubmitOrderData;
 import io.qameta.allure.Allure;
+import io.qameta.allure.TmsLink;
 import procedures.SubmitOrderPurchase;
-import utils.AllureEnvironment;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
-import utils.ExtractJsonData;
 import utils.GlobalVariables;
 
 public class SubmitOrderTest extends BaseTest {
@@ -33,6 +31,7 @@ public class SubmitOrderTest extends BaseTest {
 
 	}
 
+	@TmsLink("TC-01")
 	@Test(dataProvider = "getSubmitOrderData", description = "End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation.")
 	public void submitOrderTest(String username, String password, String firstName, String lastName, String postalCode)
 			throws IOException {

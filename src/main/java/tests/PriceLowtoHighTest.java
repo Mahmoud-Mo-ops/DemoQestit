@@ -1,7 +1,6 @@
 package tests;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +9,7 @@ import org.testng.annotations.Test;
 
 import data.LoginLandingPageData;
 import io.qameta.allure.Allure;
+import io.qameta.allure.TmsLink;
 import procedures.LandingPageProcedures;
 import procedures.ProductCatalogueProcedures;
 import utils.ConfigReader;
@@ -32,36 +32,39 @@ public class PriceLowtoHighTest extends BaseTest {
     }
 
     // Test method for Price Low to High Sorting
+	@TmsLink("TC-03")
     @Test(dataProvider = "getLandingPageData")
-    public void verifyPriceLowToHighSorting(LoginLandingPageData data) {
+    public void verifyPriceLowToHighSorting(LoginLandingPageData data) {    	
+    	Allure.parameter("Username", data.getUserName());
+    	Allure.parameter("Password",data.getPassword());
         Allure.step("Open the Landing Page", () -> {
             driver.get(configReader.getUrl());
         });
 
-        Allure.step("Login with username: " + data.getUserName(), () -> {
+        Allure.step("Login with username: " + data.getUserName()+ "and password "+ data.getPassword(), () -> {
             procedures.login(data, driver);
         });
 
         Allure.step("Sort Products by Price Low to High", () -> {
             productCatalogueProcedures.PriceSortingLowToHoghProcedures();
         });
+        
     }
+    
+	@DataProvider
+	public Object[][] getLandingPageData() throws IOException {
+	    // Path to the JSON file
+	    String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
 
-    // Data provider for login credentials
-    @DataProvider
-    public Object[][] getLandingPageData() throws IOException {
-        String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
-        // Deserialize the JSON data into an array of LoginLandingPageData objects
-        LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
-        // Filter only valid login credentials
-        return filterValidLoginData(dataArray);
-    }
+	    // Read the JSON file and convert it into an array of LoginLandingPageData
+	    LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
 
-    // Helper method to filter valid login credentials
-    private Object[][] filterValidLoginData(LoginLandingPageData[] dataArray) {
-        return Arrays.stream(dataArray)
-                .filter(data -> data.getUserName() != null && data.getPassword() != null)
-                .map(data -> new Object[]{data})
-                .toArray(Object[][]::new);
-    }
+	    // Wrap the array in an Object[][] structure
+	    Object[][] data = new Object[dataArray.length][1];
+	    for (int i = 0; i < dataArray.length; i++) {
+	        data[i][0] = dataArray[i];
+	    }
+
+	    return data;
+	}
 }

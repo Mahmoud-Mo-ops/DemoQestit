@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
+import io.qameta.allure.TmsLink;
 import procedures.LandingPageProcedures;
 import procedures.ProductCatalogueProcedures;
 import utils.AssertionFactory;
@@ -35,7 +36,8 @@ public class ErrorValidationTest extends BaseTest {
         productCatalogueProcedures = new ProductCatalogueProcedures(driver);
         logger.info("Test environment set up successfully.");
     }
-
+    
+	@TmsLink("TC-02")
     @Test(groups = {"ErrorValidation"}, retryAnalyzer = Retry.class, description = "Validates error message for invalid login attempts on the landing page.")
     @Description("This test performs an invalid login and validates the error message displayed on the landing page.")
     public void testInvalidLoginLandingPage() {

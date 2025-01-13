@@ -36,7 +36,7 @@ public class LandingPageTest extends BaseTest {
 		logger.info("Testing login with valid username: " + data.getUserName());
 		procedures.login(data, driver); 
 	}
-
+ 
 	@DataProvider
 	public Object[][] getLandingPageData() throws IOException {
 		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
