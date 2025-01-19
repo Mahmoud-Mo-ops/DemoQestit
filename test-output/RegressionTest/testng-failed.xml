@@ -9,7 +9,6 @@
           <include name="testInvalidLoginLandingPage"/>
           <include name="setUp"/>
           <include name="setupEnvironment"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.ErrorValidationTest -->
     </classes>

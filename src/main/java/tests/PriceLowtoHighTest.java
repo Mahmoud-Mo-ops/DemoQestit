@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 
 import data.LoginLandingPageData;
 import io.qameta.allure.Allure;
-import io.qameta.allure.TmsLink;
 import procedures.LandingPageProcedures;
 import procedures.ProductCatalogueProcedures;
 import utils.ConfigReader;
@@ -31,12 +30,12 @@ public class PriceLowtoHighTest extends BaseTest {
         productCatalogueProcedures = new ProductCatalogueProcedures(driver);
     }
 
-    // Test method for Price Low to High Sorting
-	@TmsLink("TC-03")
+    
     @Test(dataProvider = "getLandingPageData")
     public void verifyPriceLowToHighSorting(LoginLandingPageData data) {    	
     	Allure.parameter("Username", data.getUserName());
     	Allure.parameter("Password",data.getPassword());
+    	
         Allure.step("Open the Landing Page", () -> {
             driver.get(configReader.getUrl());
         });
@@ -64,7 +63,6 @@ public class PriceLowtoHighTest extends BaseTest {
 	    for (int i = 0; i < dataArray.length; i++) {
 	        data[i][0] = dataArray[i];
 	    }
-
 	    return data;
 	}
 }

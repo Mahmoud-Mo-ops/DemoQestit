@@ -34,7 +34,6 @@ public class ErrorValidationTest extends BaseTest {
         driver = GlobalVariables.getDriver();
         driver.get(configReader.getUrl());
         productCatalogueProcedures = new ProductCatalogueProcedures(driver);
-        logger.info("Test environment set up successfully.");
     }
     
 	@TmsLink("TC-02")
@@ -68,7 +67,7 @@ public class ErrorValidationTest extends BaseTest {
         }
     }
 
-    @Step("Logging test details for Allure.")
+    @Step("Logging test details for Allure.")  
     private void logTestDetails() {
         Allure.addAttachment("error description", "This test validates the error message displayed during an invalid login attempt.");
     }

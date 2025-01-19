@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.PriceLowtoHighTest">
+      <class name="tests.LogOutTest">
         <methods>
+          <include name="testLoginLandingPage" invocation-numbers="0"/>
           <include name="initialize"/>
-          <include name="setup"/>
-          <include name="verifyPriceLowToHighSorting"/>
+          <include name="setUp"/>
           <include name="setupEnvironment"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.PriceLowtoHighTest -->
+      </class> <!-- tests.LogOutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

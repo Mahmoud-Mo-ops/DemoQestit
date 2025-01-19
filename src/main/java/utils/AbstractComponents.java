@@ -9,7 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractComponents {
+import tests.BaseTest;
+
+public class AbstractComponents extends BaseTest {
 	WebDriver driver;
 
 	public AbstractComponents(WebDriver driver) {

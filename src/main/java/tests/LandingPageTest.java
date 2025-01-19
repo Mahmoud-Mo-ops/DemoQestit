@@ -1,7 +1,6 @@
 package tests;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -33,23 +32,25 @@ public class LandingPageTest extends BaseTest {
 
 	@Test(dataProvider = "getLandingPageData", description = "Verify user can log in to the landing page using a valid username and password, and successfully submit the login form.")
 	public void testLoginLandingPage(LoginLandingPageData data) {
-		logger.info("Testing login with valid username: " + data.getUserName());
-		procedures.login(data, driver); 
-	}
- 
-	@DataProvider
-	public Object[][] getLandingPageData() throws IOException {
-		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
-		// deserialize the JSON data into an array of LoginLandingPageData objects.
-		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
-		// Filter only valid login credentials
-		return filterValidLoginData(dataArray);
+		// logger.info("Testing login with valid username: " + data.getUserName());
+		procedures.login(data, driver);
 	}
 
-	private Object[][] filterValidLoginData(LoginLandingPageData[] dataArray) {
-		return Arrays.stream(dataArray).filter(data -> data.getUserName() != null && data.getPassword() != null)
-				.map(data -> new Object[] { data }).toArray(Object[][]::new); 
+	@DataProvider
+	public Object[][] getLandingPageData() throws IOException {
+		// Path to the JSON file
+		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
+
+		// Read the JSON file and convert it into an array of LoginLandingPageData
+		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
+
+		// Wrap the array in an Object[][] structure
+		Object[][] data = new Object[dataArray.length][1];
+		for (int i = 0; i < dataArray.length; i++) {
+			data[i][0] = dataArray[i];
+		}
+
+		return data;
 	}
-	
-	
+
 }

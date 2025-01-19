@@ -21,4 +21,17 @@
 		</classes>
 	</test>
 	
+	<test name="RemoveFromCartTest">
+		<classes>
+			<class name="tests.RemoveFromCartTest" />
+		</classes>
+	</test>
+	
+		
+	<test name="LogOutTest">
+		<classes>
+			<class name="tests.LogOutTest" />
+		</classes>
+	</test>
+	
 </suite>

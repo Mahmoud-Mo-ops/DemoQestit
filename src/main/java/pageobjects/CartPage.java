@@ -20,4 +20,16 @@ public class CartPage {
     public WebElement getCheckoutButton() {
     	return driver.findElement(By.id("checkout"));
     }
+    
+    public WebElement getremoveButton() {
+    	return driver.findElement(By.id("remove-sauce-labs-fleece-jacket"));
+    }
+    
+	// find element of shoppingCartTiGetNumberOfItemAddedToCart
+	public WebElement shoppingCartBadgeNumberOnCartPage() {
+		return driver.findElement(By.cssSelector("#shopping_cart_container > a > span"));
+
+
+	}
+    
 }

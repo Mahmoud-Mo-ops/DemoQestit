@@ -10,14 +10,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import pageobjects.ProductCataloguePage;
-import tests.LandingPageTest;
-import utils.AbstractComponents;
 
 public class ProductCatalogueProcedures {
 	private static final Logger logger = LogManager.getLogger(ProductCatalogueProcedures.class);
 
 	private WebDriver driver;
-	ProductCataloguePage productCataloguePage;
+	ProductCataloguePage productCataloguePage; 
 
 	public ProductCatalogueProcedures(WebDriver driver) {
 		this.driver = driver;
@@ -68,7 +66,7 @@ public class ProductCatalogueProcedures {
 	}
 
 	/* method for Price Low to High */
-	public void PriceSortingLowToHoghProcedures() {
+	public void PriceSortingLowToHoghProcedures() throws InterruptedException {
 		// get pirce elements*
 		List<WebElement> priceElements = productCataloguePage.getProductPrices();
 		// initialze an empty array
@@ -113,5 +111,5 @@ public class ProductCatalogueProcedures {
 		}
 
 	}
-
+	
 }

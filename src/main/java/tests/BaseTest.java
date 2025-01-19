@@ -7,14 +7,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
-import com.google.gson.Gson;
-
 import data.SubmitOrderData;
-import io.qameta.allure.Allure;
 import utils.AllureEnvironment;
 import utils.BrowserUtils;
 import utils.ConfigReader;
-import utils.DataReaderUtil;
 import utils.ExtractJsonData;
 import utils.GlobalVariables;
 import utils.ScreenshotUtil;
