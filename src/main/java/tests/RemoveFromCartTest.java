@@ -33,7 +33,7 @@ public class RemoveFromCartTest extends BaseTest {
 		removeFromCartProcedure= new RemoveFromCartProcedure(driver);
 	}
 
-	@Test(dataProvider = "getLandingPageData")
+	@Test(dataProvider = "getLandingPageData", description = "Tc004: Verify that the product catalog sorts items correctly when the 'Price Low to High' option is selected.")
 	public void testRemoveFromCart(LoginLandingPageData data) {
 		Allure.parameter("Username", data.getUserName());
 		Allure.parameter("Password", data.getPassword());
@@ -78,7 +78,6 @@ public class RemoveFromCartTest extends BaseTest {
 
 		// Read the JSON file and convert it into an array of LoginLandingPageData
 		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
-
 		// Wrap the array in an Object[][] structure
 		Object[][] data = new Object[dataArray.length][1];
 		for (int i = 0; i < dataArray.length; i++) {

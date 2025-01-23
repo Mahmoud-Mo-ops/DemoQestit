@@ -31,7 +31,7 @@ public class PriceLowtoHighTest extends BaseTest {
     }
 
     
-    @Test(dataProvider = "getLandingPageData")
+    @Test(dataProvider = "getLandingPageData", description = "Tc003: Verify that the product catalog sorts items correctly when the 'Price Low to High' option is selected.")
     public void verifyPriceLowToHighSorting(LoginLandingPageData data) {    	
     	Allure.parameter("Username", data.getUserName());
     	Allure.parameter("Password",data.getPassword());

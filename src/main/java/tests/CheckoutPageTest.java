@@ -38,24 +38,31 @@ public class CheckoutPageTest extends BaseTest {
     }
 
     @DataProvider
-    public Object[][] getCheckoutPageData() throws IOException {
+    public CheckoutPageData[] getCheckoutPageData() throws IOException {
         // Define the file path of the JSON data
         String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json"; 
 
         // Read data from the JSON file and map it to the appropriate data type (CheckoutPageData)
         CheckoutPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, CheckoutPageData[].class);
 
-        // Initialize a 2D Object array to match the data provider format required by TestNG
-        Object[][] data = new Object[dataArray.length][1];
 
-        // Populate the 2D array with data for checkout (firstName, lastName, postalCode)
-        for (int i = 0; i < dataArray.length; i++) {
-            // Check if the data contains firstName, lastName, and postalCode for checkout
-            if (dataArray[i].getFirstName() != null && dataArray[i].getLastName() != null && dataArray[i].getPostalCode() != null) {
-                data[i][0] = dataArray[i];  // Store valid checkout data
-            }
-        }
-
-        return data; // Return the populated 2D array of checkout data
+        return dataArray; // Return the populated 2D array of checkout data
     }
 }
+
+
+
+
+
+
+
+//// Initialize a 2D Object array to match the data provider format required by TestNG
+//Object[][] data = new Object[dataArray.length][1];
+//
+//// Populate the 2D array with data for checkout (firstName, lastName, postalCode)
+//for (int i = 0; i < dataArray.length; i++) {
+//  // Check if the data contains firstName, lastName, and postalCode for checkout
+//  if (dataArray[i].getFirstName() != null && dataArray[i].getLastName() != null && dataArray[i].getPostalCode() != null) {
+//      data[i][0] = dataArray[i];  // Store valid checkout data
+//  }
+//}

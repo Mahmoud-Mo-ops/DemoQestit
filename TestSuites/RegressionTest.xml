@@ -14,8 +14,7 @@
 		</classes>
 	</test>
 	   
-	
-	<test name="PriceLowtoHighTest">
+	<test name="PriceLowtoHighFilterationTest">
 		<classes>
 			<class name="tests.PriceLowtoHighTest" />
 		</classes>
@@ -26,8 +25,7 @@
 			<class name="tests.RemoveFromCartTest" />
 		</classes>
 	</test>
-	
-		
+
 	<test name="LogOutTest">
 		<classes>
 			<class name="tests.LogOutTest" />

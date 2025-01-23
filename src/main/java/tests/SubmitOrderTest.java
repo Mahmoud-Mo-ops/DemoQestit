@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 
 import data.SubmitOrderData;
 import io.qameta.allure.Allure;
-import io.qameta.allure.TmsLink;
 import procedures.SubmitOrderPurchase;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
 import utils.GlobalVariables;
+import utils.Retry;
 
 public class SubmitOrderTest extends BaseTest {
 	SubmitOrderPurchase submitOrderPurchase;
@@ -28,13 +28,17 @@ public class SubmitOrderTest extends BaseTest {
 		configReader = new ConfigReader();
 		driver.get(configReader.getUrl());
 		submitOrderPurchase = new SubmitOrderPurchase(driver);
-
 	}
 
-	@TmsLink("TC-01")
-	@Test(dataProvider = "getSubmitOrderData", description = "End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation.")
-	public void submitOrderTest(String username, String password, String firstName, String lastName, String postalCode)
+	@Test(dataProvider = "getSubmitOrderData",retryAnalyzer = Retry.class, description = "TC001 :- End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation.")
+	public void submitOrderTest(SubmitOrderData orderData)
 			throws IOException {
+		 // Access data directly using orderData object
+	    String username = orderData.getUsername();
+	    String password = orderData.getPassword();
+	    String firstName = orderData.getFirstName();
+	    String lastName = orderData.getLastName();
+	    String postalCode = orderData.getPostalCode();
 		// Log the login step
 		Allure.step("Logging in on the landing page with username: " + username + " and password: " + password, () -> {
 			submitOrderPurchase.LogIn(username, password);
@@ -63,29 +67,22 @@ public class SubmitOrderTest extends BaseTest {
 		// Verifying the order confirmation message
 		Allure.step("Verifying the order confirmation message to ensure the order was successfully placed", () -> {
 			String confirmationText = submitOrderPurchase.extractConfirmationText();
+
 			Assert.assertEquals(confirmationText, "Thank you for your order!");
 		});
 	}
 
-	@DataProvider()
-	public Object[][] getSubmitOrderData() throws IOException {
-		// Path to the JSON file
-		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
+	@DataProvider
+	public Object[] getSubmitOrderData() throws IOException {
+	    // Path to the JSON file
+	    String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
 
-		// Read the JSON file and convert it into an array of SubmitOrderData
-		SubmitOrderData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, SubmitOrderData[].class);
-
-		// Convert array to Object[][] for DataProvider
-		Object[][] data = new Object[dataArray.length][5];
-		for (int i = 0; i < dataArray.length; i++) {
-			data[i][0] = dataArray[i].getUsername();
-			data[i][1] = dataArray[i].getPassword();
-			data[i][2] = dataArray[i].getFirstName();
-			data[i][3] = dataArray[i].getLastName();
-			data[i][4] = dataArray[i].getPostalCode();
-		}
-
-		return data;
+	    // Read the JSON file and convert it into an array of SubmitOrderData
+	    SubmitOrderData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, SubmitOrderData[].class);
+	    // Return the array of SubmitOrderData directly, TestNG will inject it into the test
+	    return dataArray;
+	    //dataArray is an object from the array SumbitorderData
 	}
+
 
 }

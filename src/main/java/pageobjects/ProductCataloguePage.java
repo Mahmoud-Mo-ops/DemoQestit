@@ -70,14 +70,16 @@ public class ProductCataloguePage  extends AbstractComponents {
 	}
 	
 	// public Webelement hamburger menu
-	public WebElement hamburgerMenu() {
+	public ProductCataloguePage ClickhamburgerMenu() {
         waitForElement(driver.findElement(hamburgerMenuButton));  // Use waitForElement for a single element
-		return	 driver.findElement(hamburgerMenuButton);
+			 driver.findElement(hamburgerMenuButton).click();
+			 return this ;
 	}
 	
 	// public Welbelement LogOut Button
-	public WebElement LogOutButton() {
+	public ProductCataloguePage ClickLogOutButton() {
         waitForElement(driver.findElement(logOutButtonButton));  // Use waitForElement for a single element
-		return driver.findElement(logOutButtonButton);
+		 driver.findElement(logOutButtonButton).click();;
+		 return this;
 	}
 }
