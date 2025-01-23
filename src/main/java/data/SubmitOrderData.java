@@ -1,13 +1,23 @@
 package data;
 
 public class SubmitOrderData {
+    private String testCaseId; // Add this field
     private String username;
     private String password;
     private String firstName;
     private String lastName;
     private String postalCode;
+    private String description;
 
     // Getters and setters for all fields
+    public String getTestCaseId() {
+        return testCaseId;
+    }
+
+    public void setTestCaseId(String testCaseId) {
+        this.testCaseId = testCaseId;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -46,5 +56,13 @@ public class SubmitOrderData {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

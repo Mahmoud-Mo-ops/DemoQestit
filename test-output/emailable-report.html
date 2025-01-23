@@ -8,53 +8,13 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">RegressionTest</th></tr>
-<tr><td><a href="#t0">LoginErrorValidation</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">13,820</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">SubmitOrderTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,002</td><td></td><td></td></tr>
-<tr><td><a href="#t2">RemoveFromCartTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,657</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">LogOutTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,720</td><td></td><td></td></tr>
-<tr><td><a href="#t4">PriceLowtoHighFilterationTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,960</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">12</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">80,159</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,684</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginErrorValidation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ErrorValidationTest</td><td><a href="#m0">testInvalidLoginLandingPage</a></td><td rowspan="1">1737633176487</td><td rowspan="1">458</td></tr><tr><th colspan="4">LoginErrorValidation &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">tests.ErrorValidationTest</td><td><a href="#m1">testInvalidLoginLandingPage</a></td><td rowspan="1">1737633175286</td><td rowspan="1">641</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">SubmitOrderTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.SubmitOrderTest</td><td><a href="#m2">submitOrderTest</a></td><td rowspan="3">1737633176551</td><td rowspan="3">2667</td></tr><tr class="passedeven"><td><a href="#m3">submitOrderTest</a></td></tr><tr class="passedeven"><td><a href="#m4">submitOrderTest</a></td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">RemoveFromCartTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.RemoveFromCartTest</td><td><a href="#m5">testRemoveFromCart</a></td><td rowspan="3">1737633170232</td><td rowspan="3">4286</td></tr><tr class="passedeven"><td><a href="#m6">testRemoveFromCart</a></td></tr><tr class="passedeven"><td><a href="#m7">testRemoveFromCart</a></td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">LogOutTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.LogOutTest</td><td><a href="#m8">testLoginLandingPage</a></td><td rowspan="3">1737633175282</td><td rowspan="3">1701</td></tr><tr class="passedeven"><td><a href="#m9">testLoginLandingPage</a></td></tr><tr class="passedeven"><td><a href="#m10">testLoginLandingPage</a></td></tr></tbody>
-<tbody id="t4"><tr><th colspan="4">PriceLowtoHighFilterationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.PriceLowtoHighTest</td><td><a href="#m11">verifyPriceLowToHighSorting</a></td><td rowspan="3">1737633177525</td><td rowspan="3">2786</td></tr><tr class="passedeven"><td><a href="#m12">verifyPriceLowToHighSorting</a></td></tr><tr class="passedeven"><td><a href="#m13">verifyPriceLowToHighSorting</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.SubmitOrderTest</td><td><a href="#m0">submitOrderTest</a></td><td rowspan="3">1737636259466</td><td rowspan="3">3128</td></tr><tr class="passedeven"><td><a href="#m1">submitOrderTest</a></td></tr><tr class="passedeven"><td><a href="#m2">submitOrderTest</a></td></tr></tbody>
 </table>
-<h2>LoginErrorValidation</h2><h3 id="m0">tests.ErrorValidationTest#testInvalidLoginLandingPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.ErrorValidationTest#testInvalidLoginLandingPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>SubmitOrderTest</h2><h3 id="m2">tests.SubmitOrderTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.SubmitOrderData@49129dd3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.SubmitOrderTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.SubmitOrderData@6a612de5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.SubmitOrderTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.SubmitOrderData@19362014</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>RemoveFromCartTest</h2><h3 id="m5">tests.RemoveFromCartTest#testRemoveFromCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@29a6ee11</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.RemoveFromCartTest#testRemoveFromCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@1c699d5f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.RemoveFromCartTest#testRemoveFromCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@7b2eb6c5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>LogOutTest</h2><h3 id="m8">tests.LogOutTest#testLoginLandingPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@6288b466</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">tests.LogOutTest#testLoginLandingPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@503f3ac3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">tests.LogOutTest#testLoginLandingPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@3b0b4dd</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>PriceLowtoHighFilterationTest</h2><h3 id="m11">tests.PriceLowtoHighTest#verifyPriceLowToHighSorting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@126637aa</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">tests.PriceLowtoHighTest#verifyPriceLowToHighSorting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@7a6c8017</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">tests.PriceLowtoHighTest#verifyPriceLowToHighSorting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.LoginLandingPageData@69cbd325</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">tests.SubmitOrderTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.SubmitOrderData@12d5c30e</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.SubmitOrderTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.SubmitOrderData@40230eb9</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.SubmitOrderTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>data.SubmitOrderData@4eb166a1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

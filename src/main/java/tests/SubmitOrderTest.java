@@ -30,7 +30,7 @@ public class SubmitOrderTest extends BaseTest {
 		submitOrderPurchase = new SubmitOrderPurchase(driver);
 	}
 
-	@Test(dataProvider = "getSubmitOrderData",retryAnalyzer = Retry.class, description = "TC001 :- End To End Testing, adding products to the cart, completing the checkout process, filling shipping information, and verifying order confirmation.")
+	@Test(dataProvider = "getSubmitOrderData",retryAnalyzer = Retry.class)
 	public void submitOrderTest(SubmitOrderData orderData)
 			throws IOException {
 		 // Access data directly using orderData object
@@ -39,6 +39,18 @@ public class SubmitOrderTest extends BaseTest {
 	    String firstName = orderData.getFirstName();
 	    String lastName = orderData.getLastName();
 	    String postalCode = orderData.getPostalCode();
+	    String testCaseId = orderData.getTestCaseId();
+	    String description = orderData.getDescription();
+	    
+	    // Set the test case title dynamically
+        Allure.getLifecycle().updateTestCase(testResult -> testResult.setName(testCaseId + " - " + description));
+	    
+	   //add paramters
+	    Allure.parameter("Test Case ID", testCaseId);
+	    Allure.parameter("Description", description);
+	    Allure.parameter("Username", username);
+	    Allure.parameter("Password", password);
+	    Allure.parameter("Postal Code", postalCode);
 		// Log the login step
 		Allure.step("Logging in on the landing page with username: " + username + " and password: " + password, () -> {
 			submitOrderPurchase.LogIn(username, password);

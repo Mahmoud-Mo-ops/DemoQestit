@@ -23,21 +23,7 @@ public class SubmitOrderPurchase extends BaseTest {
         this.driver = GlobalVariables.getDriver();
     }
 
-    // Initialize Driver and open browser
-    @Step("Initializing browser and setting up WebDriver")
-    public void openBrowser() throws IOException {
-        initialize();
-    }
-
-    public void performCompleteOrderProcess(String firstName, String lastName, String postalCode) throws IOException {
-        LogIn(postalCode, postalCode);
-        addItemsLessThanTenDollarsToCart();
-        NavigateToCheckOutReview();
-        fillOutDataUser(firstName, lastName, postalCode);
-        gotToCompletePage();
-    }
-
-    @Step("Logging in on the landing page with username: {username} and password: {password}")
+    @Step("Logging in on the landing page with username: {0} and password: {1}")
     public SubmitOrderPurchase LogIn(String username, String password) {
         LandingPage landingPage = new LandingPage(driver);
         landingPage.sendKeysUserNameTextField(username);
@@ -64,14 +50,14 @@ public class SubmitOrderPurchase extends BaseTest {
         return this;
     }
 
-    @Step("Navigating to the checkout overview page by clicking the checkout button")
+    @Step("Navigating to the checkout review page by clicking the checkout button")
     public SubmitOrderPurchase NavigateToCheckOutReview() {
         CartPage cartPage = new CartPage(driver);
         cartPage.getCheckoutButton().click();
         return this;
     }
 
-    @Step("Filling out the shipping information with first name: {firstName}, last name: {lastName}, postal code: {postalCode}")
+    @Step("Filling out the shipping information with first name: {0}, last name: {1}, postal code: {2}")
     public SubmitOrderPurchase fillOutDataUser(String firstName, String lastName, String postalCode) {
         CheckoutPage checkoutPage = new CheckoutPage();
         checkoutPage.sendFirstNameTextField(firstName)
@@ -93,6 +79,4 @@ public class SubmitOrderPurchase extends BaseTest {
         CompletePage completePage = new CompletePage(driver);
         return completePage.findConfirmationText().getText();
     }
- 
-
 }
