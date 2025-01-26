@@ -93,7 +93,6 @@ public class SubmitOrderTest extends BaseTest {
 	    SubmitOrderData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, SubmitOrderData[].class);
 	    // Return the array of SubmitOrderData directly, TestNG will inject it into the test
 	    return dataArray;
-	    //dataArray is an object from the array SumbitorderData
 	}
 
 

@@ -56,13 +56,4 @@ public class CheckoutPageTest extends BaseTest {
 
 
 
-//// Initialize a 2D Object array to match the data provider format required by TestNG
-//Object[][] data = new Object[dataArray.length][1];
-//
-//// Populate the 2D array with data for checkout (firstName, lastName, postalCode)
-//for (int i = 0; i < dataArray.length; i++) {
-//  // Check if the data contains firstName, lastName, and postalCode for checkout
-//  if (dataArray[i].getFirstName() != null && dataArray[i].getLastName() != null && dataArray[i].getPostalCode() != null) {
-//      data[i][0] = dataArray[i];  // Store valid checkout data
-//  }
 //}

@@ -34,16 +34,22 @@ public class RemoveFromCartTest extends BaseTest {
 	}
 
 	@Test(dataProvider = "getLandingPageData", description = "Tc004: Verify that the product catalog sorts items correctly when the 'Price Low to High' option is selected.")
-	public void testRemoveFromCart(LoginLandingPageData data) {
-		Allure.parameter("Username", data.getUserName());
-		Allure.parameter("Password", data.getPassword());
+	public void testRemoveFromCart(LoginLandingPageData usedDataForRemveItemTest) {
+		Allure.parameter("Username", usedDataForRemveItemTest.getUserName());
+		Allure.parameter("Password", usedDataForRemveItemTest.getPassword());
+		  String testCaseId = usedDataForRemveItemTest.getTestCaseId();
+		  String description = usedDataForRemveItemTest.getDescription();
+		
+	    // Set the test case title dynamically
+        Allure.getLifecycle().updateTestCase(testResult -> testResult.setName(testCaseId + " - " + description));
+	    
 		// log in
 		Allure.step("Open the Landing Page", () -> {
 			driver.get(configReader.getUrl());
 		});
 
-		Allure.step("Login with username: " + data.getUserName() + "and password " + data.getPassword(), () -> {
-			procedures.login(data, driver);
+		Allure.step("Login with username: " + usedDataForRemveItemTest.getUserName() + "and password " + usedDataForRemveItemTest.getPassword(), () -> {
+			procedures.login(usedDataForRemveItemTest, driver);
 		});
 
 		// Step 3: Add the item to the cart
@@ -68,22 +74,16 @@ public class RemoveFromCartTest extends BaseTest {
 
 	        Assert.assertEquals(updatedCartCount, "0", "The cart count is not correct after removing the item.");
 		});
-
 	}
 
 	@DataProvider
-	public Object[][] getLandingPageData() throws IOException {
+	public Object[] getLandingPageData() throws IOException {
 		// Path to the JSON file
 		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
 
 		// Read the JSON file and convert it into an array of LoginLandingPageData
 		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
-		// Wrap the array in an Object[][] structure
-		Object[][] data = new Object[dataArray.length][1];
-		for (int i = 0; i < dataArray.length; i++) {
-			data[i][0] = dataArray[i];
-		}
-
-		return data;
+	
+		return dataArray;
 	}
 }
