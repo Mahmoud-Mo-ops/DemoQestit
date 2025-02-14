@@ -29,25 +29,34 @@ public class PriceLowtoHighTest extends BaseTest {
         procedures = new LandingPageProcedures(driver);
         productCatalogueProcedures = new ProductCatalogueProcedures(driver);
     }
-
     
-    @Test(dataProvider = "getLandingPageData", description = "Tc003: Verify that the product catalog sorts items correctly when the 'Price Low to High' option is selected.")
-    public void verifyPriceLowToHighSorting(LoginLandingPageData dataUsedForPriceFiltration) {    	
+    
+    
+    @Test(dataProvider = "getLandingPageData" )
+    public void verifyPriceLowToHighSorting(LoginLandingPageData dataUsedForPriceFiltration) throws InterruptedException {    	
+    	
+    	 // Extract test data
+        String username = dataUsedForPriceFiltration.getUserName();
+        String password = dataUsedForPriceFiltration.getPassword();
+        String testCaseId = dataUsedForPriceFiltration.getTestCaseId();
+        String description = dataUsedForPriceFiltration.getDescription();
+
+        // Set dynamic test case name
+        Allure.getLifecycle().updateTestCase(testResult -> 
+            testResult.setName(testCaseId + " - " + description));
+
+        // Attach test parameters
+        Allure.parameter("Test Case ID", testCaseId);
+        Allure.parameter("Description", description);
+        Allure.parameter("Username", username);
+        Allure.parameter("Password", password);
+
     	Allure.parameter("Username", dataUsedForPriceFiltration.getUserName());
     	Allure.parameter("Password",dataUsedForPriceFiltration.getPassword());
     	
-        Allure.step("Open the Landing Page", () -> {
-            driver.get(configReader.getUrl());
-        });
-
-        Allure.step("Login with username: " + dataUsedForPriceFiltration.getUserName()+ "and password "+ dataUsedForPriceFiltration.getPassword(), () -> {
-            procedures.login(dataUsedForPriceFiltration, driver);
-        });
-
-        Allure.step("Sort Products by Price Low to High", () -> {
-            productCatalogueProcedures.PriceSortingLowToHoghProcedures();
-        });
-        
+    	    driver.get(configReader.getUrl());
+    	    procedures.login(dataUsedForPriceFiltration, driver);
+    	    productCatalogueProcedures.PriceSortingLowToHoghProcedures();
     }
     
 	@DataProvider
@@ -58,7 +67,6 @@ public class PriceLowtoHighTest extends BaseTest {
 	    // Read the JSON file and convert it into an array of LoginLandingPageData
 	    LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
 
-	 
 	    return dataArray;
 	}
 }

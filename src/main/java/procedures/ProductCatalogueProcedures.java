@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.qameta.allure.Step;
 import pageobjects.ProductCataloguePage;
 
 public class ProductCatalogueProcedures {
@@ -66,8 +67,9 @@ public class ProductCatalogueProcedures {
 	}
 
 	/* method for Price Low to High */
+	  @Step("Verify sorting by 'Price Low to High'")
 	public void PriceSortingLowToHoghProcedures() throws InterruptedException {
-		// get pirce elements*
+		// get price elements*
 		List<WebElement> priceElements = productCataloguePage.getProductPrices();
 		// initialze an empty array
 		List<Double> extractedPrices = new ArrayList<>();
@@ -78,7 +80,6 @@ public class ProductCatalogueProcedures {
 		}
 		// Sort the extracted prices in ascending order
 		List<Double> sortedPrices = new ArrayList<>(extractedPrices);
-		System.out.println("this is prices before sorting " + sortedPrices);
 		Collections.sort(sortedPrices);
 
 		// Apply "Price Low to High" filter

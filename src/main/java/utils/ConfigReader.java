@@ -3,9 +3,9 @@ package utils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
 import freemarker.log.Logger;
-import io.qameta.allure.Allure;
-import io.qameta.allure.model.Label;
+import io.qameta.allure.Step;
 
 public class ConfigReader {
 	private static final Logger logger = Logger.getLogger(ConfigReader.class.getName());
@@ -26,7 +26,7 @@ public class ConfigReader {
 			throw new RuntimeException("Error while reading config.properties", e);
 		}
 	}
-
+     @Step("open the website")
 	public String getUrl() {
 		String url = properties.getProperty("url", "http://default-url.com");
 		logger.debug("Fetched URL from config: " + url);

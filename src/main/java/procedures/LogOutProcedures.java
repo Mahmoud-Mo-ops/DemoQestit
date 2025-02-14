@@ -1,8 +1,8 @@
 package procedures;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
+import io.qameta.allure.Step;
 import pageobjects.ProductCataloguePage;
 
 public class LogOutProcedures {
@@ -14,6 +14,7 @@ public class LogOutProcedures {
 		this.productCataloguePage = new ProductCataloguePage(driver);
 	}
 
+	@Step("Log Out")
 	public static void assertLogout() {
 		productCataloguePage.ClickhamburgerMenu()
 		                    .ClickLogOutButton();

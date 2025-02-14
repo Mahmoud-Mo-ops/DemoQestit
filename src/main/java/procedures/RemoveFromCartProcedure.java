@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.qameta.allure.Step;
 import pageobjects.CartPage;
 import pageobjects.ProductCataloguePage;
 import utils.GlobalVariables;
@@ -42,6 +43,7 @@ public class RemoveFromCartProcedure {
 	}
 
 	// Add an item to the cart and verify the cart count
+	@Step("addItemToTheCartAndVerifyTheCartCount")
 	public void addItemToTheCartAndVerifyTheCartCount() throws InterruptedException {
 		WebElement addToCartButton = findAddToCartButtonForProduct(productName);
 		if (addToCartButton != null) {
@@ -60,12 +62,14 @@ public class RemoveFromCartProcedure {
 	}
 
 	// Click on the shopping cart
+	@Step("Click on the shopping cart")
 	public void clickOnShoppingCart() {
 		productCataloguePage.goToCart().click();
 		System.out.println("click done sucessfully");
 	}
 
 	// Click on the remove button
+	@Step("Remove the Sauce Labs Fleece Jacket from the cart")
 	public void clickOnRemoveButton() {
 		
 		cartPage.getremoveButton().click();
@@ -74,6 +78,7 @@ public class RemoveFromCartProcedure {
 	}
 
 	// Ensure the cart count updates correctly after removing an item
+	@Step("Verify the cart count updates correctly after removing the item")
 	public String verifyCartCountAfterRemovingItem() {
 	    // Try to find the cart count element after removal
 		WebElement cartCountAfterRemoveItem = null;
