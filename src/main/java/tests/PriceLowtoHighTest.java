@@ -30,8 +30,6 @@ public class PriceLowtoHighTest extends BaseTest {
         productCatalogueProcedures = new ProductCatalogueProcedures(driver);
     }
     
-    
-    
     @Test(dataProvider = "getLandingPageData" )
     public void verifyPriceLowToHighSorting(LoginLandingPageData dataUsedForPriceFiltration) throws InterruptedException {    	
     	
