@@ -24,6 +24,6 @@ public class PriceLowToHighFilterationStepsDefinitions extends BaseTest {
     
     @Then("Verify sorting by Price Low to High") 
     public void Filter_Products_Low_To_High_dependingOn_Price()  throws InterruptedException {
-	    productCatalogueProcedures.PriceSortingLowToHoghProcedures();
+	    productCatalogueProcedures.PriceSortingLowToHighProcedures();
     }
 }

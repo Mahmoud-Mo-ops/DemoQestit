@@ -6,7 +6,9 @@
         "firstName": "Mahmoud",
         "lastName": "Goma",
         "postalCode": "925",
-        "description": "End To End Testing, adding products to the cart, completing the checkout process, filling shipping information using first name: Mahmoud, last name: Goma, and postal code: 925, and verifying order confirmation."
+        "description": "End To End Testing",
+        "Run": "Yes",
+        "TestSuite": "SubmitOrderTest"
     },
     {
         "testCaseId": "TC002",
@@ -15,7 +17,9 @@
         "firstName": "Mueller",
         "lastName": "Mattius",
         "postalCode": "15234",
-        "description": "End To End Testing, adding products to the cart, completing the checkout process, filling shipping information using first name: Mueller, last name: Mattius, and postal code: 15234, and verifying order confirmation."
+        "description": "End To End Testing",
+        "Run": "Yes",
+        "TestSuite": "SubmitOrderTest"
     },
     {
         "testCaseId": "TC003",
@@ -24,6 +28,8 @@
         "firstName": "John",
         "lastName": "Dohn",
         "postalCode": "1153",
-        "description": "End To End Testing, adding products to the cart, completing the checkout process, filling shipping information using first name: John, last name: Dohn, and postal code: 1153, and verifying order confirmation."
+        "description": "End To End Testing",
+        "Run": "Yes",
+        "TestSuite": "SubmitOrderTest"
     }
 ]

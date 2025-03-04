@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TestNGTestRunner">
+      <class name="tests.PriceLowtoHighTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="captureScreenshotAfterTest"/>
+          <include name="initialize"/>
+          <include name="setup"/>
+          <include name="verifyPriceLowToHighSorting" invocation-numbers="0 1 2"/>
+          <include name="setupEnvironment"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.TestNGTestRunner -->
+      </class> <!-- tests.PriceLowtoHighTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

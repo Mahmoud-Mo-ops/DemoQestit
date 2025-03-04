@@ -1,6 +1,7 @@
 package tests;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,12 +10,18 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.google.gson.Gson;
+
 import data.LoginLandingPageData;
+import data.SubmitOrderData;
+import io.qameta.allure.Allure;
 import pageobjects.ProductCataloguePage;
 import procedures.LandingPageProcedures;
 import procedures.LogOutProcedures;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
+import utils.ExcelToJsonConverter;
 import utils.GlobalVariables;
 
 public class LogOutTest extends BaseTest {
@@ -23,9 +30,10 @@ public class LogOutTest extends BaseTest {
 	LogOutProcedures logOutProcedures;
 	ProductCataloguePage productCataloguePage;
 	ConfigReader configReader;
- 
+
 	private static final Logger logger = LogManager.getLogger(LogOutTest.class);
-	@BeforeMethod(description = "Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL.")
+
+	@BeforeMethod
 	public void setUp() throws IOException {
 		configReader = new ConfigReader();
 		driver = GlobalVariables.getDriver();
@@ -33,34 +41,40 @@ public class LogOutTest extends BaseTest {
 		procedures = new LandingPageProcedures(driver);
 		logOutProcedures = new LogOutProcedures(driver);
 	}
+
+	@Test(dataProvider = "getLandingPageData")
+	public void testLogOut(LoginLandingPageData dataLogin) throws IOException {
+
+		String username = dataLogin.getUserName();
+		String password = dataLogin.getPassword();
+		String testCaseId = dataLogin.getTestCaseId();
+		String description = dataLogin.getDescription();
+
+		// Set dynamic test case name
+		Allure.getLifecycle().updateTestCase(testResult -> testResult.setName(testCaseId + " - " + description));
+
+		// Attach test parameters
+		Allure.parameter("Test Case ID", testCaseId);
+		Allure.parameter("Description", description);
+		Allure.parameter("Username", username);
+		Allure.parameter("Password", password);
 	
-	@Test(dataProvider = "getLandingPageData", description = "TC005: Verify the logout functionality to ensure the user is successfully logged out and redirected to the login page.")
-	public void testLoginLandingPage(LoginLandingPageData dataLogin) throws InterruptedException {
-		
-			procedures.login(dataLogin, driver);
-			LogOutProcedures.assertLogout();
-			String currentUrl = driver.getCurrentUrl();
-			Assert.assertTrue(currentUrl.contains("https://www.saucedemo.com/"),
-					"URL does not contain expected URL after logout. Actual URL: " + currentUrl);
-		
-		
+
+		procedures.login(dataLogin, driver);
+		LogOutProcedures.assertLogout();
+		String currentUrl = driver.getCurrentUrl();
+		Assert.assertTrue(currentUrl.contains("https://www.saucedemo.com/"),
+				"URL does not contain expected URL after logout. Actual URL: " + currentUrl);
+
 	}
 
-  
 	@DataProvider
-	public LoginLandingPageData[] getLandingPageData() throws IOException {
-		// Path to the JSON file
-		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
-
-		// Read the JSON file and convert it into an array of LoginLandingPageData
-		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
-
-		// Wrap the array in an Object[][] structure
-//		Object[][] data = new Object[dataArray.length][1];
-//		for (int i = 0; i < dataArray.length; i++) {
-//			data[i][0] = dataArray[i];
-//		}
-		return dataArray;
+	public Object[] getLandingPageData() throws IOException {
+		String excelFilePath = System.getProperty("user.dir") + "/src/main/resources/testData.xlsx";
+		String jsonString = ExcelToJsonConverter.convertExcelToJson(excelFilePath);
+		Gson gson = new Gson();
+		LoginLandingPageData[] dataArray = gson.fromJson(jsonString, LoginLandingPageData[].class);
+		return Arrays.stream(dataArray).filter(data -> "LogOutTest".equalsIgnoreCase(data.getTestSuite())).toArray();
 	}
 
 }

@@ -1,1 +1,0 @@
-This test validates the error message displayed during an invalid login attempt.

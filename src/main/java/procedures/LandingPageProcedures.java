@@ -17,7 +17,7 @@ public class LandingPageProcedures {
 	}
 
 	// Landing page
-    @Step("Logging in on the landing page with username: {0} and password: {1}")
+    //@Step("Logging in on the landing page with username: {0} and password: {1}")
 	public void login(LoginLandingPageData data, WebDriver driver) {
 		loginLandingPage.sendKeysUserNameTextField(data.getUserName())
 		                .sendKeysPasswordTextField(data.getPassword())
@@ -25,9 +25,9 @@ public class LandingPageProcedures {
 		
 	}
 	
-
-	public void LoginInvalidUserName() {
-	   loginLandingPage.sendKeysUserNameTextField("invalidUserName");
+   //for error validation
+	public void LoginInvalidUserName(String username) {
+	   loginLandingPage.sendKeysUserNameTextField(username);
 	   loginLandingPage.clickLoginButton();
 	   
 	}

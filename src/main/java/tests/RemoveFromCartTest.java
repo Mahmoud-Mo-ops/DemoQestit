@@ -1,6 +1,7 @@
 package tests;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -8,13 +9,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.google.gson.Gson;
+
 import data.LoginLandingPageData;
+import data.SubmitOrderData;
 import io.qameta.allure.Allure;
 import procedures.LandingPageProcedures;
 import procedures.ProductCatalogueProcedures;
 import procedures.RemoveFromCartProcedure;
 import utils.ConfigReader;
 import utils.DataReaderUtil;
+import utils.ExcelToJsonConverter;
 import utils.GlobalVariables;
 
 public class RemoveFromCartTest extends BaseTest {
@@ -28,22 +33,23 @@ public class RemoveFromCartTest extends BaseTest {
 	public void setup() {
 		configReader = new ConfigReader();
 		driver = GlobalVariables.getDriver();
+		// open website
+		driver.get(configReader.getUrl());
 		procedures = new LandingPageProcedures(driver);
 		productCatalogueProcedures = new ProductCatalogueProcedures(driver);
 		removeFromCartProcedure = new RemoveFromCartProcedure(driver);
 	}
 
-	@Test(dataProvider = "getLandingPageData", description = "Tc004: Verify that the product catalog sorts items correctly when the 'Price Low to High' option is selected.")
+	@Test(dataProvider = "getLandingPageData")
 	public void testRemoveFromCart(LoginLandingPageData usedDataForRemveItemTest) throws InterruptedException {
-		Allure.parameter("Username", usedDataForRemveItemTest.getUserName());
-		Allure.parameter("Password", usedDataForRemveItemTest.getPassword());
 		String testCaseId = usedDataForRemveItemTest.getTestCaseId();
 		String description = usedDataForRemveItemTest.getDescription();
+     
+		Allure.parameter("Username", usedDataForRemveItemTest.getUserName());
+		Allure.parameter("Password", usedDataForRemveItemTest.getPassword());
 
 		// Set the test case title dynamically
 		Allure.getLifecycle().updateTestCase(testResult -> testResult.setName(testCaseId + " - " + description));
-		// open website
-		driver.get(configReader.getUrl());
 
 		// log in
 		procedures.login(usedDataForRemveItemTest, driver);
@@ -65,12 +71,16 @@ public class RemoveFromCartTest extends BaseTest {
 
 	@DataProvider
 	public Object[] getLandingPageData() throws IOException {
-		// Path to the JSON file
-		String filePath = System.getProperty("user.dir") + "/src/main/resources/globalData.json";
+		String excelFilePath = System.getProperty("user.dir") + "/src/main/resources/testData.xlsx";
+		String jsonString = ExcelToJsonConverter.convertExcelToJson(excelFilePath);
 
-		// Read the JSON file and convert it into an array of LoginLandingPageData
-		LoginLandingPageData[] dataArray = DataReaderUtil.getJsonDataToArray(filePath, LoginLandingPageData[].class);
+		Gson gson = new Gson();
+		LoginLandingPageData[] dataArray = gson.fromJson(jsonString, LoginLandingPageData[].class);
 
-		return dataArray;
+		// Filter only test cases for SubmitOrderTest
+		return Arrays.stream(dataArray).filter(data -> "RemoveFromCartTest".equalsIgnoreCase(data.getTestSuite()))
+				.toArray();
+
 	}
+
 }

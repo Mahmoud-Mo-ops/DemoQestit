@@ -8,7 +8,10 @@ public class SubmitOrderData {
     private String lastName;
     private String postalCode;
     private String description;
-
+    private String Run;      
+    private String TestSuite; 
+    
+    
     // Getters and setters for all fields
     public String getTestCaseId() {
         return testCaseId;
@@ -65,4 +68,15 @@ public class SubmitOrderData {
     public void setDescription(String description) {
         this.description = description;
     }
+    
+    
+    public void setRun(String Run) {
+        this.Run = Run;
+    }
+    
+    public void setTestSuite(String TestSuite) {
+        this.TestSuite= TestSuite;
+    }
+    public String getRun() { return Run; }  // ✅ Getter for "Run"
+    public String getTestSuite() { return TestSuite; } // ✅ Getter for "TestSuite"
 }

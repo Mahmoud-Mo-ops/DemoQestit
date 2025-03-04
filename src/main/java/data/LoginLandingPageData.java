@@ -5,7 +5,8 @@ public class LoginLandingPageData {
     private String username;
     private String password;
     private String description;
-    
+    private String Run;       // ✅ Add "Run" Column
+    private String TestSuite; // ✅ Add "TestSuite" Column
     
     
     // Getters and Setters
@@ -40,5 +41,13 @@ public class LoginLandingPageData {
     public void setDescription(String description) {
         this.description = description;
     }
+    public void setRun(String Run) {
+        this.Run = Run;
+    }
     
+    public void setTestSuite(String TestSuite) {
+        this.TestSuite= TestSuite;
+    }
+    public String getRun() { return Run; }  // ✅ Getter for "Run"
+    public String getTestSuite() { return TestSuite; } // ✅ Getter for "TestSuite"
 }

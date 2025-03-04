@@ -68,7 +68,7 @@ public class ProductCatalogueProcedures {
 
 	/* method for Price Low to High */
 	  @Step("Verify sorting by 'Price Low to High'")
-	public void PriceSortingLowToHoghProcedures() throws InterruptedException {
+	public void PriceSortingLowToHighProcedures() throws InterruptedException {
 		// get price elements*
 		List<WebElement> priceElements = productCataloguePage.getProductPrices();
 		// initialze an empty array
