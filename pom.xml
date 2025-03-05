@@ -115,7 +115,11 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>NewMavenProject</groupId>
+			<artifactId>QestitProject</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
