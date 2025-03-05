@@ -64,7 +64,7 @@ public class SubmitOrderTest extends BaseTest {
         Assert.assertEquals(confirmationText, "Thank you for your order!", 
             "Order confirmation message mismatch!");
     } 
-
+    
     @DataProvider
     public Object[] getSubmitOrderData() throws IOException {
         String excelFilePath = System.getProperty("user.dir") + "/src/main/resources/testData.xlsx";

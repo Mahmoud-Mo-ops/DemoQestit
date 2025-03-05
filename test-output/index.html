@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-RegressionTest" class="navigator-link">
+              <span class="suite-name border-failed">RegressionTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Mahmoud.Gomaa\AppData\Local\Temp\testng-eclipse--1424852097\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-RegressionTest" class="navigator-link ">
+                    <span>C:\Users\Mahmoud.Gomaa\eclipse-workspace\Demo\TestSuites\RegressionTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-RegressionTest" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-RegressionTest" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-RegressionTest" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-RegressionTest" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-RegressionTest" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-RegressionTest" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,31 +93,104 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,  1 skipped,  12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionTest" class="hide-methods failed suite-RegressionTest"> (hide)</a> <!-- hide-methods failed suite-RegressionTest -->
+                      <a href="#" panel-name="suite-RegressionTest" class="show-methods failed suite-RegressionTest"> (show)</a> <!-- show-methods failed suite-RegressionTest -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionTest">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.ErrorValidationTest" class="method navigator-link" hash-for-method="testInvalidLoginLandingPage(data.LoginLandingPageData@2d32622c)">testInvalidLoginLandingPage(data.LoginLandingPageData@2d32622c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-RegressionTest" class="hide-methods skipped suite-RegressionTest"> (hide)</a> <!-- hide-methods skipped suite-RegressionTest -->
+                      <a href="#" panel-name="suite-RegressionTest" class="show-methods skipped suite-RegressionTest"> (show)</a> <!-- show-methods skipped suite-RegressionTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-RegressionTest">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.ErrorValidationTest" class="method navigator-link" hash-for-method="testInvalidLoginLandingPage(data.LoginLandingPageData@5b11f956)">testInvalidLoginLandingPage(data.LoginLandingPageData@5b11f956)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-RegressionTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-RegressionTest" class="hide-methods passed suite-RegressionTest"> (hide)</a> <!-- hide-methods passed suite-RegressionTest -->
+                      <a href="#" panel-name="suite-RegressionTest" class="show-methods passed suite-RegressionTest"> (show)</a> <!-- show-methods passed suite-RegressionTest -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-RegressionTest">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart(data.LoginLandingPageData@58267ba1)">testRemoveFromCart(data.LoginLandingPageData@58267ba1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderTest(data.SubmitOrderData@40faabc6)">submitOrderTest(data.SubmitOrderData@40faabc6)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart(data.LoginLandingPageData@6ae5e1cf)">testRemoveFromCart(data.LoginLandingPageData@6ae5e1cf)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderTest(data.SubmitOrderData@38e159d0)">submitOrderTest(data.SubmitOrderData@38e159d0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart(data.LoginLandingPageData@fd5c7f6)">testRemoveFromCart(data.LoginLandingPageData@fd5c7f6)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderTest(data.SubmitOrderData@316b78a4)">submitOrderTest(data.SubmitOrderData@316b78a4)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.LogOutTest" class="method navigator-link" hash-for-method="testLogOut(data.LoginLandingPageData@e8510e5)">testLogOut(data.LoginLandingPageData@e8510e5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.LogOutTest" class="method navigator-link" hash-for-method="testLogOut(data.LoginLandingPageData@253a64be)">testLogOut(data.LoginLandingPageData@253a64be)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.LogOutTest" class="method navigator-link" hash-for-method="testLogOut(data.LoginLandingPageData@3fa24e94)">testLogOut(data.LoginLandingPageData@3fa24e94)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart(data.LoginLandingPageData@15fd0cbf)">testRemoveFromCart(data.LoginLandingPageData@15fd0cbf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart(data.LoginLandingPageData@37cfbb7e)">testRemoveFromCart(data.LoginLandingPageData@37cfbb7e)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart(data.LoginLandingPageData@456a949b)">testRemoveFromCart(data.LoginLandingPageData@456a949b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.PriceLowtoHighTest" class="method navigator-link" hash-for-method="verifyPriceLowToHighSorting(data.LoginLandingPageData@4f6d555d)">verifyPriceLowToHighSorting(data.LoginLandingPageData@4f6d555d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.PriceLowtoHighTest" class="method navigator-link" hash-for-method="verifyPriceLowToHighSorting(data.LoginLandingPageData@15d81c3c)">verifyPriceLowToHighSorting(data.LoginLandingPageData@15d81c3c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionTest" title="tests.PriceLowtoHighTest" class="method navigator-link" hash-for-method="verifyPriceLowToHighSorting(data.LoginLandingPageData@2197deda)">verifyPriceLowToHighSorting(data.LoginLandingPageData@2197deda)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,8 +201,96 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-RegressionTest" class="panel RegressionTest">
+          <div class="suite-RegressionTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ErrorValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLoginLandingPage(data.LoginLandingPageData@2d32622c)">
+                  </a> <!-- testInvalidLoginLandingPage(data.LoginLandingPageData@2d32622c) -->
+                  <span class="method-name">testInvalidLoginLandingPage</span>
+                  <span class="parameters">(data.LoginLandingPageData@2d32622c)</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest-class-failed -->
+          <div class="suite-RegressionTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.ErrorValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLoginLandingPage(data.LoginLandingPageData@5b11f956)">
+                  </a> <!-- testInvalidLoginLandingPage(data.LoginLandingPageData@5b11f956) -->
+                  <span class="method-name">testInvalidLoginLandingPage</span>
+                  <span class="parameters">(data.LoginLandingPageData@5b11f956)</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at tests.ErrorValidationTest.testInvalidLoginLandingPage(ErrorValidationTest.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest-class-skipped -->
+          <div class="suite-RegressionTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.PriceLowtoHighTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceLowToHighSorting(data.LoginLandingPageData@4f6d555d)">
+                  </a> <!-- verifyPriceLowToHighSorting(data.LoginLandingPageData@4f6d555d) -->
+                  <span class="method-name">verifyPriceLowToHighSorting</span>
+                  <span class="parameters">(data.LoginLandingPageData@4f6d555d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceLowToHighSorting(data.LoginLandingPageData@15d81c3c)">
+                  </a> <!-- verifyPriceLowToHighSorting(data.LoginLandingPageData@15d81c3c) -->
+                  <span class="method-name">verifyPriceLowToHighSorting</span>
+                  <span class="parameters">(data.LoginLandingPageData@15d81c3c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceLowToHighSorting(data.LoginLandingPageData@2197deda)">
+                  </a> <!-- verifyPriceLowToHighSorting(data.LoginLandingPageData@2197deda) -->
+                  <span class="method-name">verifyPriceLowToHighSorting</span>
+                  <span class="parameters">(data.LoginLandingPageData@2197deda)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest-class-passed -->
+          <div class="suite-RegressionTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.RemoveFromCartTest</span>
@@ -137,173 +298,587 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testRemoveFromCart(data.LoginLandingPageData@58267ba1)">
-                  </a> <!-- testRemoveFromCart(data.LoginLandingPageData@58267ba1) -->
+                  <a name="testRemoveFromCart(data.LoginLandingPageData@15fd0cbf)">
+                  </a> <!-- testRemoveFromCart(data.LoginLandingPageData@15fd0cbf) -->
                   <span class="method-name">testRemoveFromCart</span>
-                  <span class="parameters">(data.LoginLandingPageData@58267ba1)</span>
+                  <span class="parameters">(data.LoginLandingPageData@15fd0cbf)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testRemoveFromCart(data.LoginLandingPageData@6ae5e1cf)">
-                  </a> <!-- testRemoveFromCart(data.LoginLandingPageData@6ae5e1cf) -->
+                  <a name="testRemoveFromCart(data.LoginLandingPageData@37cfbb7e)">
+                  </a> <!-- testRemoveFromCart(data.LoginLandingPageData@37cfbb7e) -->
                   <span class="method-name">testRemoveFromCart</span>
-                  <span class="parameters">(data.LoginLandingPageData@6ae5e1cf)</span>
+                  <span class="parameters">(data.LoginLandingPageData@37cfbb7e)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testRemoveFromCart(data.LoginLandingPageData@fd5c7f6)">
-                  </a> <!-- testRemoveFromCart(data.LoginLandingPageData@fd5c7f6) -->
+                  <a name="testRemoveFromCart(data.LoginLandingPageData@456a949b)">
+                  </a> <!-- testRemoveFromCart(data.LoginLandingPageData@456a949b) -->
                   <span class="method-name">testRemoveFromCart</span>
-                  <span class="parameters">(data.LoginLandingPageData@fd5c7f6)</span>
+                  <span class="parameters">(data.LoginLandingPageData@456a949b)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-RegressionTest-class-passed -->
+          <div class="suite-RegressionTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogOut(data.LoginLandingPageData@e8510e5)">
+                  </a> <!-- testLogOut(data.LoginLandingPageData@e8510e5) -->
+                  <span class="method-name">testLogOut</span>
+                  <span class="parameters">(data.LoginLandingPageData@e8510e5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogOut(data.LoginLandingPageData@253a64be)">
+                  </a> <!-- testLogOut(data.LoginLandingPageData@253a64be) -->
+                  <span class="method-name">testLogOut</span>
+                  <span class="parameters">(data.LoginLandingPageData@253a64be)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogOut(data.LoginLandingPageData@3fa24e94)">
+                  </a> <!-- testLogOut(data.LoginLandingPageData@3fa24e94) -->
+                  <span class="method-name">testLogOut</span>
+                  <span class="parameters">(data.LoginLandingPageData@3fa24e94)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest-class-passed -->
+          <div class="suite-RegressionTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SubmitOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderTest(data.SubmitOrderData@40faabc6)">
+                  </a> <!-- submitOrderTest(data.SubmitOrderData@40faabc6) -->
+                  <span class="method-name">submitOrderTest</span>
+                  <span class="parameters">(data.SubmitOrderData@40faabc6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderTest(data.SubmitOrderData@38e159d0)">
+                  </a> <!-- submitOrderTest(data.SubmitOrderData@38e159d0) -->
+                  <span class="method-name">submitOrderTest</span>
+                  <span class="parameters">(data.SubmitOrderData@38e159d0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderTest(data.SubmitOrderData@316b78a4)">
+                  </a> <!-- submitOrderTest(data.SubmitOrderData@316b78a4) -->
+                  <span class="method-name">submitOrderTest</span>
+                  <span class="parameters">(data.SubmitOrderData@316b78a4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest-class-passed -->
+        </div> <!-- panel RegressionTest -->
+        <div panel-name="test-xml-RegressionTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mahmoud.Gomaa\AppData\Local\Temp\testng-eclipse--1424852097\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mahmoud.Gomaa\eclipse-workspace\Demo\TestSuites\RegressionTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;RegressionTest&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;SubmitOrderTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.SubmitOrderTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SubmitOrderTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ErrorValidationTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ErrorValidationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ErrorValidationTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;PriceLowtoHighFilterationTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.PriceLowtoHighTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PriceLowtoHighFilterationTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;RemoveFromCartTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.RemoveFromCartTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- RemoveFromCartTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;LogOutTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LogOutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LogOutTest --&gt;
+&lt;/suite&gt; &lt;!-- RegressionTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-RegressionTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for RegressionTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">SubmitOrderTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ErrorValidationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PriceLowtoHighFilterationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RemoveFromCartTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LogOutTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-RegressionTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for RegressionTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-RegressionTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for RegressionTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_RegressionTest');
+function tableData_RegressionTest() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testRemoveFromCart')
-data.setCell(0, 2, 'tests.RemoveFromCartTest')
-data.setCell(0, 3, 5458);
+data.setCell(0, 1, 'verifyPriceLowToHighSorting')
+data.setCell(0, 2, 'tests.PriceLowtoHighTest')
+data.setCell(0, 3, 15061);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testRemoveFromCart')
 data.setCell(1, 2, 'tests.RemoveFromCartTest')
-data.setCell(1, 3, 2361);
+data.setCell(1, 3, 13515);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testRemoveFromCart')
-data.setCell(2, 2, 'tests.RemoveFromCartTest')
-data.setCell(2, 3, 685);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'submitOrderTest')
+data.setCell(2, 2, 'tests.SubmitOrderTest')
+data.setCell(2, 3, 11356);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogOut')
+data.setCell(3, 2, 'tests.LogOutTest')
+data.setCell(3, 3, 11091);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testRemoveFromCart')
+data.setCell(4, 2, 'tests.RemoveFromCartTest')
+data.setCell(4, 3, 10117);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'submitOrderTest')
+data.setCell(5, 2, 'tests.SubmitOrderTest')
+data.setCell(5, 3, 10066);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLogOut')
+data.setCell(6, 2, 'tests.LogOutTest')
+data.setCell(6, 3, 8378);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyPriceLowToHighSorting')
+data.setCell(7, 2, 'tests.PriceLowtoHighTest')
+data.setCell(7, 3, 7516);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'submitOrderTest')
+data.setCell(8, 2, 'tests.SubmitOrderTest')
+data.setCell(8, 3, 5110);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testInvalidLoginLandingPage')
+data.setCell(9, 2, 'tests.ErrorValidationTest')
+data.setCell(9, 3, 4912);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testRemoveFromCart')
+data.setCell(10, 2, 'tests.RemoveFromCartTest')
+data.setCell(10, 3, 4868);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyPriceLowToHighSorting')
+data.setCell(11, 2, 'tests.PriceLowtoHighTest')
+data.setCell(11, 3, 4806);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testLogOut')
+data.setCell(12, 2, 'tests.LogOutTest')
+data.setCell(12, 3, 4114);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testInvalidLoginLandingPage')
+data.setCell(13, 2, 'tests.ErrorValidationTest')
+data.setCell(13, 3, 2792);
+window.suiteTableData['RegressionTest']= { tableData: data, tableDiv: 'times-div-RegressionTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <div id="times-div-RegressionTest">
+              </div> <!-- times-div-RegressionTest -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-RegressionTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for RegressionTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-RegressionTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-RegressionTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupEnvironment</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">202 ms</span>
+                <span class="method-start">113 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceLowtoHighTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4050 ms</span>
+                <span class="method-start">5095 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6325 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7679 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7999 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testRemoveFromCart(data.LoginLandingPageData@fd5c7f6)</span>
-                <span class="method-start">5523 ms</span>
+                <span class="method-name">testRemoveFromCart(data.LoginLandingPageData@456a949b)</span>
+                <span class="method-start">11081 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceLowtoHighTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15400 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogOut(data.LoginLandingPageData@e8510e5)</span>
+                <span class="method-start">16893 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrderTest(data.SubmitOrderData@40faabc6)</span>
+                <span class="method-start">17640 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLoginLandingPage(data.LoginLandingPageData@5b11f956)</span>
+                <span class="method-start">18366 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceLowtoHighTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceLowToHighSorting(data.LoginLandingPageData@4f6d555d)</span>
+                <span class="method-start">18896 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=testInvalidLoginLandingPage status=SKIP method=ErrorValidationTest.testInvalidLogin...)</span>
+                <span class="method-start">23879 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">24583 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">captureScreenshotAfterTest([TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data...)</span>
-                <span class="method-start">7899 ms</span>
+                <span class="method-start">24608 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidLoginLandingPage(data.LoginLandingPageData@2d32622c)</span>
+                <span class="method-start">25121 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">25155 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFromCart(data.LoginLandingPageData@15fd0cbf)</span>
+                <span class="method-start">25674 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceLowtoHighTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLow...)</span>
+                <span class="method-start">26420 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8175 ms</span>
+                <span class="method-start">27046 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testRemoveFromCart(data.LoginLandingPageData@6ae5e1cf)</span>
-                <span class="method-start">8335 ms</span>
+                <span class="method-name">verifyPriceLowToHighSorting(data.LoginLandingPageData@15d81c3c)</span>
+                <span class="method-start">27244 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOr...)</span>
+                <span class="method-start">27713 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=testInvalidLoginLandingPage status=FAILURE method=ErrorValidationTest.testInvalidLo...)</span>
+                <span class="method-start">27923 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[p...)</span>
+                <span class="method-start">27989 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">28077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrderTest(data.SubmitOrderData@38e159d0)</span>
+                <span class="method-start">28368 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28432 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">28612 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogOut(data.LoginLandingPageData@3fa24e94)</span>
+                <span class="method-start">29577 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">captureScreenshotAfterTest([TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data...)</span>
-                <span class="method-start">9023 ms</span>
+                <span class="method-start">30546 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">9236 ms</span>
+                <span class="method-start">30939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testRemoveFromCart(data.LoginLandingPageData@58267ba1)</span>
-                <span class="method-start">9290 ms</span>
+                <span class="method-name">testRemoveFromCart(data.LoginLandingPageData@37cfbb7e)</span>
+                <span class="method-start">31138 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceLowtoHighTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLow...)</span>
+                <span class="method-start">32055 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">32618 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceLowToHighSorting(data.LoginLandingPageData@2197deda)</span>
+                <span class="method-start">32728 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOr...)</span>
+                <span class="method-start">33482 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[p...)</span>
+                <span class="method-start">33695 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">33897 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrderTest(data.SubmitOrderData@316b78a4)</span>
+                <span class="method-start">34088 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">34216 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogOut(data.LoginLandingPageData@253a64be)</span>
+                <span class="method-start">34529 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveFromCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">captureScreenshotAfterTest([TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data...)</span>
-                <span class="method-start">14750 ms</span>
+                <span class="method-start">41260 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14982 ms</span>
+                <span class="method-start">41674 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[p...)</span>
+                <span class="method-start">42911 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43241 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOr...)</span>
+                <span class="method-start">45453 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45866 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceLowtoHighTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshotAfterTest([TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLow...)</span>
+                <span class="method-start">47799 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48217 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
