@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.PriceLowtoHighTest">
+      <class name="tests.SubmitOrderTest">
         <methods>
           <include name="captureScreenshotAfterTest"/>
           <include name="initialize"/>
+          <include name="submitOrderTest"/>
           <include name="setup"/>
-          <include name="verifyPriceLowToHighSorting" invocation-numbers="0 1 2"/>
           <include name="setupEnvironment"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.PriceLowtoHighTest -->
+      </class> <!-- tests.SubmitOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

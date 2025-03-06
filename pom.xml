@@ -98,9 +98,10 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.10.2</version>
+			<version>7.9.0</version>
 			<scope>test</scope>
 		</dependency>
+
 
 		<!-- Jackson -->
 		<dependency>
@@ -115,11 +116,7 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>NewMavenProject</groupId>
-			<artifactId>QestitProject</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
