@@ -99,7 +99,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.9.0</version>
-			<scope>test</scope>
+			
 		</dependency>
 
 
@@ -139,8 +139,6 @@
 				<version>3.1.2</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
-						<suiteXmlFile>RegressionTest.xml</suiteXmlFile>
 						<suiteXmlFile>ConcurrentShoppingFlowSuite.xml</suiteXmlFile>
 						<suiteXmlFile>EndToEndTestSuite.xml</suiteXmlFile>
 						<suiteXmlFile>ErrorValidationSuite.xml</suiteXmlFile>
@@ -158,7 +156,46 @@
 	</build>
 
 	<profiles>
-		<!-- Profile for Running Regression Tests in Jenkins -->
+		<!-- Profile for Running  Tests in Jenkins -->
+		<!-- FullProcessAndError-->
+		<profile>
+			<id>E2EAndErrorSuite</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.1.2</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>TestSuites/FullProcessAndErrorSuite.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+				<!-- ErrorValidationSuite-->
+		<profile>
+			<id>ErrorValidationSuite</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.1.2</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>TestSuites/ErrorValidationSuite.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<!-- Regression-->
 		<profile>
 			<id>Regression</id>
 			<build>

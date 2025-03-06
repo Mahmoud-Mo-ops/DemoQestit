@@ -2,24 +2,24 @@
 <testng-results retried="1" ignored="0" total="14" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-06T02:36:22 EET" name="RegressionTest" finished-at="2025-03-06T02:37:02 EET" duration-ms="40604">
+  <suite started-at="2025-03-06T15:16:35 EET" name="RegressionTest" finished-at="2025-03-06T15:18:13 EET" duration-ms="97557">
     <groups>
     </groups>
-    <test started-at="2025-03-06T02:36:22 EET" name="ErrorValidationTest" finished-at="2025-03-06T02:36:47 EET" duration-ms="24830">
+    <test started-at="2025-03-06T15:16:35 EET" name="ErrorValidationTest" finished-at="2025-03-06T15:17:39 EET" duration-ms="63414">
       <class name="tests.ErrorValidationTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:22 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T02:36:32 EET" duration-ms="10136" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:16:35 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T15:16:43 EET" duration-ms="7720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:33 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-03-06T02:36:38 EET" duration-ms="5610" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:16:43 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-03-06T15:17:22 EET" duration-ms="39158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:38 EET" name="testInvalidLoginLandingPage" data-provider="getErrorValidationData" finished-at="2025-03-06T02:36:40 EET" duration-ms="2091" status="SKIP">
+        <test-method retried="true" signature="testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:17:22 EET" name="testInvalidLoginLandingPage" data-provider="getErrorValidationData" finished-at="2025-03-06T15:17:23 EET" duration-ms="368" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@6efea2e8]]>
+                <![CDATA[data.LoginLandingPageData@1555574b]]>
               </value>
             </param>
           </params>
@@ -57,26 +57,26 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginLandingPage -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:40 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:41 EET" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:17:23 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:23 EET" duration-ms="125" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidLoginLandingPage status=SKIP method=ErrorValidationTest.testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@1eca3ea7] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidLoginLandingPage status=SKIP method=ErrorValidationTest.testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@7e49ded] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:41 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-03-06T02:36:41 EET" duration-ms="435" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:17:23 EET" name="setUp" description="Sets up the test environment by initializing configurations, launching the browser, and navigating to the base URL." finished-at="2025-03-06T15:17:37 EET" duration-ms="14038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:41 EET" name="testInvalidLoginLandingPage" data-provider="getErrorValidationData" finished-at="2025-03-06T02:36:43 EET" duration-ms="1550" status="FAIL">
+        <test-method signature="testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:17:37 EET" name="testInvalidLoginLandingPage" data-provider="getErrorValidationData" finished-at="2025-03-06T15:17:37 EET" duration-ms="278" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@591a7cea]]>
+                <![CDATA[data.LoginLandingPageData@8f4351a]]>
               </value>
             </param>
           </params>
@@ -114,382 +114,382 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginLandingPage -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:43 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:43 EET" duration-ms="445" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:17:37 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:37 EET" duration-ms="172" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidLoginLandingPage status=FAILURE method=ErrorValidationTest.testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@1eca3ea7] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidLoginLandingPage status=FAILURE method=ErrorValidationTest.testInvalidLoginLandingPage(data.LoginLandingPageData)[pri:0, instance:tests.ErrorValidationTest@7e49ded] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@1eca3ea7]" started-at="2025-03-06T02:36:43 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T02:36:47 EET" duration-ms="3333" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@7e49ded]" started-at="2025-03-06T15:17:37 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T15:17:39 EET" duration-ms="1349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ErrorValidationTest -->
     </test> <!-- ErrorValidationTest -->
-    <test started-at="2025-03-06T02:36:22 EET" name="LogOutTest" finished-at="2025-03-06T02:36:53 EET" duration-ms="30805">
-      <class name="tests.LogOutTest">
-        <test-method is-config="true" signature="setupEnvironment()[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:22 EET" name="setupEnvironment" description="Sets up the environment for Allure reporting." finished-at="2025-03-06T02:36:22 EET" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupEnvironment -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:22 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T02:36:25 EET" duration-ms="3178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:28 EET" name="setUp" finished-at="2025-03-06T02:36:33 EET" duration-ms="5159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:33 EET" name="testLogOut" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:37 EET" duration-ms="3271" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data.LoginLandingPageData@75ce25ec]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogOut -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:37 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:37 EET" duration-ms="630" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@1ee5632d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:37 EET" name="setUp" finished-at="2025-03-06T02:36:38 EET" duration-ms="704" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:38 EET" name="testLogOut" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:43 EET" duration-ms="4769" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data.LoginLandingPageData@3f38c77a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogOut -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:43 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:43 EET" duration-ms="401" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@1ee5632d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:43 EET" name="setUp" finished-at="2025-03-06T02:36:43 EET" duration-ms="198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:43 EET" name="testLogOut" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:51 EET" duration-ms="7468" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data.LoginLandingPageData@67d36d4b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogOut -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:51 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:51 EET" duration-ms="284" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@1ee5632d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogOutTest@1ee5632d]" started-at="2025-03-06T02:36:51 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T02:36:53 EET" duration-ms="1623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.LogOutTest -->
-    </test> <!-- LogOutTest -->
-    <test started-at="2025-03-06T02:36:22 EET" name="RemoveFromCartTest" finished-at="2025-03-06T02:36:56 EET" duration-ms="34537">
+    <test started-at="2025-03-06T15:16:35 EET" name="RemoveFromCartTest" finished-at="2025-03-06T15:17:44 EET" duration-ms="69090">
       <class name="tests.RemoveFromCartTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:22 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T02:36:32 EET" duration-ms="9838" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:16:35 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T15:16:42 EET" duration-ms="6333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:32 EET" name="setup" finished-at="2025-03-06T02:36:35 EET" duration-ms="2719" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:16:42 EET" name="setup" finished-at="2025-03-06T15:17:18 EET" duration-ms="36131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:35 EET" name="testRemoveFromCart" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:43 EET" duration-ms="8321" status="PASS">
+        <test-method signature="testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:18 EET" name="testRemoveFromCart" data-provider="getLandingPageData" finished-at="2025-03-06T15:17:19 EET" duration-ms="912" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@160d7999]]>
+                <![CDATA[data.LoginLandingPageData@7a03bac7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveFromCart -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:43 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:44 EET" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:21 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:21 EET" duration-ms="115" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@7e49ded] output={null}]]]>
+                <![CDATA[[TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@585513a8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:44 EET" name="setup" finished-at="2025-03-06T02:36:44 EET" duration-ms="345" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:21 EET" name="setup" finished-at="2025-03-06T15:17:25 EET" duration-ms="3388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:44 EET" name="testRemoveFromCart" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:47 EET" duration-ms="3250" status="PASS">
+        <test-method signature="testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:25 EET" name="testRemoveFromCart" data-provider="getLandingPageData" finished-at="2025-03-06T15:17:25 EET" duration-ms="581" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@55a85a63]]>
+                <![CDATA[data.LoginLandingPageData@461477e8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveFromCart -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:47 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:48 EET" duration-ms="361" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:25 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:25 EET" duration-ms="157" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@7e49ded] output={null}]]]>
+                <![CDATA[[TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@585513a8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:48 EET" name="setup" finished-at="2025-03-06T02:36:48 EET" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:25 EET" name="setup" finished-at="2025-03-06T15:17:37 EET" duration-ms="11245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:48 EET" name="testRemoveFromCart" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:54 EET" duration-ms="6310" status="PASS">
+        <test-method signature="testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:37 EET" name="testRemoveFromCart" data-provider="getLandingPageData" finished-at="2025-03-06T15:17:43 EET" duration-ms="6033" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@402116a7]]>
+                <![CDATA[data.LoginLandingPageData@6549fbc2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveFromCart -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:54 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:55 EET" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:43 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:43 EET" duration-ms="369" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@7e49ded] output={null}]]]>
+                <![CDATA[[TestResult name=testRemoveFromCart status=SUCCESS method=RemoveFromCartTest.testRemoveFromCart(data.LoginLandingPageData)[pri:0, instance:tests.RemoveFromCartTest@585513a8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RemoveFromCartTest@7e49ded]" started-at="2025-03-06T02:36:55 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T02:36:56 EET" duration-ms="1676" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RemoveFromCartTest@585513a8]" started-at="2025-03-06T15:17:43 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T15:17:44 EET" duration-ms="1406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RemoveFromCartTest -->
     </test> <!-- RemoveFromCartTest -->
-    <test started-at="2025-03-06T02:36:22 EET" name="SubmitOrderTest" finished-at="2025-03-06T02:37:00 EET" duration-ms="38081">
-      <class name="tests.SubmitOrderTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:22 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T02:36:31 EET" duration-ms="8665" status="PASS">
+    <test started-at="2025-03-06T15:16:35 EET" name="LogOutTest" finished-at="2025-03-06T15:17:52 EET" duration-ms="76725">
+      <class name="tests.LogOutTest">
+        <test-method is-config="true" signature="setupEnvironment()[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:16:35 EET" name="setupEnvironment" description="Sets up the environment for Allure reporting." finished-at="2025-03-06T15:16:35 EET" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupEnvironment -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:16:35 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T15:16:43 EET" duration-ms="7476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:31 EET" name="setup" finished-at="2025-03-06T02:36:37 EET" duration-ms="5887" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:16:43 EET" name="setUp" finished-at="2025-03-06T15:17:36 EET" duration-ms="52888" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:37 EET" name="submitOrderTest" data-provider="getSubmitOrderData" finished-at="2025-03-06T02:36:47 EET" duration-ms="10190" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:36 EET" name="testLogOut" data-provider="getLandingPageData" finished-at="2025-03-06T15:17:37 EET" duration-ms="1150" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.SubmitOrderData@23a9dc26]]>
+                <![CDATA[data.LoginLandingPageData@4ef93f4f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:47 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:48 EET" duration-ms="547" status="PASS">
+        </test-method> <!-- testLogOut -->
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:37 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:37 EET" duration-ms="159" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:48 EET" name="setup" finished-at="2025-03-06T02:36:48 EET" duration-ms="371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:48 EET" name="submitOrderTest" data-provider="getSubmitOrderData" finished-at="2025-03-06T02:36:51 EET" duration-ms="2627" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data.SubmitOrderData@53a36410]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:51 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:51 EET" duration-ms="267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b] output={null}]]]>
+                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@492be039] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:51 EET" name="setup" finished-at="2025-03-06T02:36:51 EET" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:37 EET" name="setUp" finished-at="2025-03-06T15:17:41 EET" duration-ms="4225" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:51 EET" name="submitOrderTest" data-provider="getSubmitOrderData" finished-at="2025-03-06T02:36:58 EET" duration-ms="7251" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:41 EET" name="testLogOut" data-provider="getLandingPageData" finished-at="2025-03-06T15:17:43 EET" duration-ms="1200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.SubmitOrderData@6d405e7c]]>
+                <![CDATA[data.LoginLandingPageData@3002a18f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrderTest -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:58 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:59 EET" duration-ms="254" status="PASS">
+        </test-method> <!-- testLogOut -->
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:43 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:43 EET" duration-ms="261" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@35eb4a3b] output={null}]]]>
+                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@492be039] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@35eb4a3b]" started-at="2025-03-06T02:36:59 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T02:37:00 EET" duration-ms="1459" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:43 EET" name="setUp" finished-at="2025-03-06T15:17:44 EET" duration-ms="1493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:44 EET" name="testLogOut" data-provider="getLandingPageData" finished-at="2025-03-06T15:17:50 EET" duration-ms="6039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.LoginLandingPageData@23a7bdce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogOut -->
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:50 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:51 EET" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogOut status=SUCCESS method=LogOutTest.testLogOut(data.LoginLandingPageData)[pri:0, instance:tests.LogOutTest@492be039] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotAfterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogOutTest@492be039]" started-at="2025-03-06T15:17:51 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T15:17:52 EET" duration-ms="1387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LogOutTest -->
+    </test> <!-- LogOutTest -->
+    <test started-at="2025-03-06T15:16:35 EET" name="SubmitOrderTest" finished-at="2025-03-06T15:17:56 EET" duration-ms="81029">
+      <class name="tests.SubmitOrderTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:16:35 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T15:16:38 EET" duration-ms="2464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:16:39 EET" name="setup" finished-at="2025-03-06T15:17:18 EET" duration-ms="38537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:18 EET" name="submitOrderTest" data-provider="getSubmitOrderData" finished-at="2025-03-06T15:17:19 EET" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.SubmitOrderData@50d0b20b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderTest -->
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:21 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:21 EET" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@3a22bad6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotAfterTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:21 EET" name="setup" finished-at="2025-03-06T15:17:45 EET" duration-ms="23452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:45 EET" name="submitOrderTest" data-provider="getSubmitOrderData" finished-at="2025-03-06T15:17:46 EET" duration-ms="1459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.SubmitOrderData@ced4964]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderTest -->
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:46 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:46 EET" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@3a22bad6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotAfterTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:46 EET" name="setup" finished-at="2025-03-06T15:17:48 EET" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:48 EET" name="submitOrderTest" data-provider="getSubmitOrderData" finished-at="2025-03-06T15:17:55 EET" duration-ms="6293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.SubmitOrderData@518fbab0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderTest -->
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:55 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:55 EET" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitOrderTest status=SUCCESS method=SubmitOrderTest.submitOrderTest(data.SubmitOrderData)[pri:0, instance:tests.SubmitOrderTest@3a22bad6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshotAfterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@3a22bad6]" started-at="2025-03-06T15:17:55 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T15:17:56 EET" duration-ms="1319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.SubmitOrderTest -->
     </test> <!-- SubmitOrderTest -->
-    <test started-at="2025-03-06T02:36:22 EET" name="PriceLowtoHighFilterationTest" finished-at="2025-03-06T02:37:02 EET" duration-ms="40604">
+    <test started-at="2025-03-06T15:16:35 EET" name="PriceLowtoHighFilterationTest" finished-at="2025-03-06T15:18:13 EET" duration-ms="97556">
       <class name="tests.PriceLowtoHighTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:22 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T02:36:31 EET" duration-ms="9357" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:16:35 EET" name="initialize" description="Sets up the browser instance for each test." finished-at="2025-03-06T15:16:42 EET" duration-ms="7065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:32 EET" name="setup" finished-at="2025-03-06T02:36:38 EET" duration-ms="5747" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:16:42 EET" name="setup" finished-at="2025-03-06T15:17:56 EET" duration-ms="73294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:38 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:45 EET" duration-ms="6947" status="PASS">
+        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:17:56 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-03-06T15:17:57 EET" duration-ms="727" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@40717d9a]]>
+                <![CDATA[data.LoginLandingPageData@6fd76754]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPriceLowToHighSorting -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:45 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:46 EET" duration-ms="606" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:17:57 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:17:57 EET" duration-ms="148" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:46 EET" name="setup" finished-at="2025-03-06T02:36:46 EET" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:17:57 EET" name="setup" finished-at="2025-03-06T15:18:00 EET" duration-ms="3261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:46 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-03-06T02:36:49 EET" duration-ms="2691" status="PASS">
+        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:18:00 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-03-06T15:18:00 EET" duration-ms="506" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@127df371]]>
+                <![CDATA[data.LoginLandingPageData@7eb4132d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPriceLowToHighSorting -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:49 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:36:49 EET" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:18:00 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:18:01 EET" duration-ms="137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:49 EET" name="setup" finished-at="2025-03-06T02:36:49 EET" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:18:01 EET" name="setup" finished-at="2025-03-06T15:18:01 EET" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:36:49 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-03-06T02:37:01 EET" duration-ms="11684" status="PASS">
+        <test-method signature="verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:18:01 EET" name="verifyPriceLowToHighSorting" data-provider="getLandingPageData" finished-at="2025-03-06T15:18:11 EET" duration-ms="10609" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[data.LoginLandingPageData@36cabac6]]>
+                <![CDATA[data.LoginLandingPageData@51a58d4f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPriceLowToHighSorting -->
-        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:37:01 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T02:37:01 EET" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="captureScreenshotAfterTest(org.testng.ITestResult)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:18:11 EET" name="captureScreenshotAfterTest" description="Takes a screenshot after each test method." finished-at="2025-03-06T15:18:11 EET" duration-ms="216" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@51ba952e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPriceLowToHighSorting status=SUCCESS method=PriceLowtoHighTest.verifyPriceLowToHighSorting(data.LoginLandingPageData)[pri:0, instance:tests.PriceLowtoHighTest@563ccd31] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshotAfterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PriceLowtoHighTest@51ba952e]" started-at="2025-03-06T02:37:01 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T02:37:02 EET" duration-ms="1433" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PriceLowtoHighTest@563ccd31]" started-at="2025-03-06T15:18:11 EET" name="tearDown" description="Cleans up resources and quits the browser after each test." finished-at="2025-03-06T15:18:13 EET" duration-ms="1339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
