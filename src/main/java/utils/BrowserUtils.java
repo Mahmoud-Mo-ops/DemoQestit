@@ -23,9 +23,10 @@ public class BrowserUtils {
             FileInputStream fileStream = new FileInputStream(filePath);
             property.load(fileStream);
             
-            // Get the browser and headless properties from the config file
-            String browserName = property.getProperty("browser");
-            String headless = property.getProperty("headless");
+            // Read from Jenkins environment variable first, otherwise use config.properties
+            String browserName = System.getProperty("browser", property.getProperty("browser"));
+            String headless = System.getProperty("headless", property.getProperty("headless"));
+            
 
             // Check if the browser is set to "edge"
             if ("edge".equalsIgnoreCase(browserName)) {
