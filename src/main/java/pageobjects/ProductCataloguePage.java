@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utils.AbstractComponents; // Import AbstractComponents
+import utils.GlobalVariables;
 
 
 public class ProductCataloguePage  extends AbstractComponents {
@@ -23,8 +24,7 @@ public class ProductCataloguePage  extends AbstractComponents {
 
 	public ProductCataloguePage(WebDriver driver) {
         super(driver);  // Explicitly call the constructor of AbstractComponents
-
-		this.driver = driver;
+        this.driver = GlobalVariables.getDriver();
 	}
 
 	public List<WebElement> getProductCarts() {
@@ -83,3 +83,8 @@ public class ProductCataloguePage  extends AbstractComponents {
 		 return this;
 	}
 }
+
+
+/*✅ Inheritance is always from Parent → Child.
+✅ The super keyword is used in the child to call the parent’s constructor or methods.
+✅ If the parent has a constructor with parameters, the child must pass values using super(arguments).*/

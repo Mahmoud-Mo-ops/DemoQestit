@@ -1,4 +1,4 @@
-package tests;
+package tests.cucumber;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -7,6 +7,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import procedures.LandingPageProcedures;
 import procedures.LogOutProcedures;
+import tests.functional.BaseTest;
+
 import utils.GlobalVariables;
 
 public class LogOutStepsDefinitions extends BaseTest {

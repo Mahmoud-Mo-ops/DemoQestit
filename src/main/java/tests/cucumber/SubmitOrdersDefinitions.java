@@ -1,20 +1,21 @@
-package tests;
+package tests.cucumber;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import procedures.*;
+import tests.functional.BaseTest;
 import utils.GlobalVariables;
 
-public class PurchaseOrderStepDefinitions extends BaseTest {
+public class SubmitOrdersDefinitions extends BaseTest {
     WebDriver driver;
     ProductCatalogueProcedures addItemToCartProcedure;
     CartPageProcedures cartPageProcedures;
     CheckoutPageProcedures checkoutPageProcedures;
 
     // Add a constructor to initialize WebDriver and procedures
-    public PurchaseOrderStepDefinitions() {
+    public SubmitOrdersDefinitions() {
         this.driver = GlobalVariables.getDriver(); // Ensure WebDriver is set
         this.addItemToCartProcedure = new ProductCatalogueProcedures(driver);
         this.cartPageProcedures = new CartPageProcedures(driver);

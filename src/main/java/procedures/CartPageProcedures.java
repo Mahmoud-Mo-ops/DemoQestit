@@ -3,14 +3,14 @@ package procedures;
 import org.openqa.selenium.WebDriver;
 
 import pageobjects.CartPage;
-import utils.GlobalVariables;
 
 public class CartPageProcedures  {
     private CartPage cartPage;
 	private WebDriver driver;
+	
     public CartPageProcedures(WebDriver driver) {
-        this.driver =GlobalVariables.getDriver();
-        cartPage=new CartPage(driver);
+    	 cartPage=new CartPage(driver);
+        this.driver =driver;
     }
 
 

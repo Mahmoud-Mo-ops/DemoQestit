@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import io.qameta.allure.Step;
 import pageobjects.CartPage;
 import pageobjects.ProductCataloguePage;
-import utils.GlobalVariables;
 
 public class RemoveFromCartProcedure {
 	String productName;
@@ -19,7 +18,7 @@ public class RemoveFromCartProcedure {
 
 	// Constructor to initialize ProductCataloguePage
 	public RemoveFromCartProcedure(WebDriver driver) {
-		 this.driver = GlobalVariables.getDriver();
+		 this.driver = driver;
          productCataloguePage = new ProductCataloguePage(driver);
          cartPage = new CartPage(driver);
 	}
@@ -72,7 +71,7 @@ public class RemoveFromCartProcedure {
 	@Step("Remove the Sauce Labs Fleece Jacket from the cart")
 	public void clickOnRemoveButton() {
 		
-		cartPage.getremoveButton().click();
+		cartPage.getRemoveButton().click();
 		System.out.println("click remove done sucessfully");
 
 	}

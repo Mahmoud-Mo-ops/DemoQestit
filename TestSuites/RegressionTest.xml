@@ -4,31 +4,31 @@
 <!-- 1,2,3-->
 	<test name="SubmitOrderTest">
 		<classes>
-			<class name="tests.SubmitOrderTest" />
+			<class name="tests.functional.SubmitOrderTest" />
 		</classes>
 	</test>
 
 	<test name="ErrorValidationTest">
 		<classes>
-			<class name="tests.ErrorValidationTest" />
+			<class name="tests.functional.ErrorValidationTest" />
 		</classes>
 	</test>
 	   
 	<test name="PriceLowtoHighFilterationTest">
 		<classes>
-			<class name="tests.PriceLowtoHighTest" />
+			<class name="tests.functional.PriceLowtoHighTest" />
 		</classes>
 	</test>
 	
 	<test name="RemoveFromCartTest">
 		<classes>
-			<class name="tests.RemoveFromCartTest" />
+			<class name="tests.functional.RemoveFromCartTest" />
 		</classes>
 	</test>
  
 	<test name="LogOutTest">
 		<classes>
-			<class name="tests.LogOutTest" />
+			<class name="tests.functional.LogOutTest" />
 		</classes>
 	</test>
 	

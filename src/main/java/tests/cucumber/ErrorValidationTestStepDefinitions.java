@@ -1,4 +1,4 @@
-package tests;
+package tests.cucumber;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -8,6 +8,7 @@ import procedures.CartPageProcedures;
 import procedures.CheckoutPageProcedures;
 import procedures.LandingPageProcedures;
 import procedures.ProductCatalogueProcedures;
+import tests.functional.BaseTest;
 import utils.GlobalVariables;
 
 public class ErrorValidationTestStepDefinitions extends BaseTest {

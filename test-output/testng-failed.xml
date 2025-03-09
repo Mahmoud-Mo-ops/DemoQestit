@@ -3,16 +3,16 @@
 <suite parallel="tests" name="Failed suite [RegressionTest]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="ErrorValidationTest(failed)">
     <classes>
-      <class name="tests.ErrorValidationTest">
+      <class name="tests.functional.ErrorValidationTest">
         <methods>
-          <include name="captureScreenshotAfterTest"/>
-          <include name="initialize"/>
           <include name="testInvalidLoginLandingPage" invocation-numbers="0 0"/>
+          <include name="captureScreenshotAfterTest"/>
+          <include name="tearDown"/>
+          <include name="initialize"/>
           <include name="setUp"/>
           <include name="setupEnvironment"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.ErrorValidationTest -->
+      </class> <!-- tests.functional.ErrorValidationTest -->
     </classes>
   </test> <!-- ErrorValidationTest(failed) -->
 </suite> <!-- Failed suite [RegressionTest] -->

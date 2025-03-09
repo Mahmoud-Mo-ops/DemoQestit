@@ -1,9 +1,10 @@
-package tests;
+package tests.cucumber;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import procedures.*;
+import tests.functional.BaseTest;
 import utils.GlobalVariables;
 
 public class CommonStepDefinitions extends BaseTest {

@@ -1,4 +1,4 @@
-package tests;
+package tests.cucumber;
 
 import org.openqa.selenium.WebDriver;
 
@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import procedures.CartPageProcedures;
 import procedures.CheckoutPageProcedures;
 import procedures.ProductCatalogueProcedures;
+import tests.functional.BaseTest;
 import utils.GlobalVariables;
 
 public class PriceLowToHighFilterationStepsDefinitions extends BaseTest {

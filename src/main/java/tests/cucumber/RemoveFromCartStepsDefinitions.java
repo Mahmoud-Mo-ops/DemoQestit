@@ -1,9 +1,10 @@
-package tests;
+package tests.cucumber;
 
 import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import procedures.RemoveFromCartProcedure;
+import tests.functional.BaseTest;
 import utils.GlobalVariables;
 import org.testng.Assert;
 

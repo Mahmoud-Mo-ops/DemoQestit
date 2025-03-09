@@ -3,33 +3,31 @@ package pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.GlobalVariables;
 
-import java.time.Duration;
-
 public class CartPage {
-    private WebDriver driver;
-    public CartPage(WebDriver driver) {
-        this.driver = GlobalVariables.getDriver();
+	private WebDriver driver;
+	private By checkOutButton = By.id("checkout");
+	private By removeButton = By.id("remove-sauce-labs-fleece-jacket");
+	private By shoppingCartBadgeNumber = By.cssSelector("#shopping_cart_container > a > span");
 
-    }
+	public CartPage(WebDriver driver) {
+		this.driver = GlobalVariables.getDriver();
+	}
 
-    public WebElement getCheckoutButton() {
-    	return driver.findElement(By.id("checkout"));
-    }
-    
-    public WebElement getremoveButton() {
-    	return driver.findElement(By.id("remove-sauce-labs-fleece-jacket"));
-    }
-    
-	// find element of shoppingCartTiGetNumberOfItemAddedToCart
-	public WebElement shoppingCartBadgeNumberOnCartPage() {
-		return driver.findElement(By.cssSelector("#shopping_cart_container > a > span"));
+	public WebElement getCheckoutButton() {
+		return driver.findElement(checkOutButton);
+	}
 
+	public WebElement getRemoveButton() {
+		return driver.findElement(removeButton);
+	}
+
+	// Get the number of items added to the cart
+	public WebElement getShoppingCartItemCount() {
+		return driver.findElement(shoppingCartBadgeNumber);
 
 	}
-    
+
 }

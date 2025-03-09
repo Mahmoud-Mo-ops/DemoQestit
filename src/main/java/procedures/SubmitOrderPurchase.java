@@ -13,14 +13,14 @@ import pageobjects.CheckoutPage;
 import pageobjects.CompletePage;
 import pageobjects.LandingPage;
 import pageobjects.ProductCataloguePage;
-import tests.BaseTest;
+import tests.functional.*;
 import utils.GlobalVariables;
 
 public class SubmitOrderPurchase extends BaseTest {
     WebDriver driver;
 
     public SubmitOrderPurchase(WebDriver driver) {
-        this.driver = GlobalVariables.getDriver();
+        this.driver = driver;
     }
 
     @Step("Logging in on the landing page with username: {0} and password: {1}")
@@ -74,7 +74,7 @@ public class SubmitOrderPurchase extends BaseTest {
         return this;
     }
 
-    @Step("Verifying the order confirmation message to ensure the order was successfully placed")
+    @Step("Verifying the order confirmation message to ensure the order was successfully Placed")
     public String extractConfirmationText() {
         CompletePage completePage = new CompletePage(driver);
         return completePage.findConfirmationText().getText();

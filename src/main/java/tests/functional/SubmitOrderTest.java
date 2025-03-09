@@ -1,4 +1,4 @@
-package tests;
+package tests.functional;
 
 import java.io.IOException;
 import java.util.Arrays;

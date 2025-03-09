@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import utils.GlobalVariables;
+
 public class LandingPage {
     private static final Logger logger = LogManager.getLogger(LandingPage.class);
 
@@ -15,7 +17,7 @@ public class LandingPage {
     private By errorMessage = By.xpath("//h3[@data-test='error']");
 
     public LandingPage(WebDriver driver) {
-        this.driver = driver;
+        this.driver = GlobalVariables.getDriver();
     }
 
     public LandingPage sendKeysUserNameTextField(String username) {
@@ -31,7 +33,6 @@ public class LandingPage {
     }
 
     public LandingPage clickLoginButton() {
-        logger.info("Clicking login button");
         driver.findElement(loginButton).click();
         return this;
     }
